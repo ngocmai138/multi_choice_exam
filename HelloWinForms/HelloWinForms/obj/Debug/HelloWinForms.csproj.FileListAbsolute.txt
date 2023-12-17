@@ -1,0 +1,10 @@
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\bin\Debug\HelloWinForms.exe.config
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\bin\Debug\HelloWinForms.exe
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\bin\Debug\HelloWinForms.pdb
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\obj\Debug\HelloWinForms.csproj.AssemblyReference.cache
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\obj\Debug\HelloWinForms.Form1.resources
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\obj\Debug\HelloWinForms.Properties.Resources.resources
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\obj\Debug\HelloWinForms.csproj.GenerateResource.cache
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\obj\Debug\HelloWinForms.csproj.CoreCompileInputs.cache
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\obj\Debug\HelloWinForms.exe
+F:\Downloads\Github projects\ASP.NET\HelloWinForms\HelloWinForms\obj\Debug\HelloWinForms.pdb
