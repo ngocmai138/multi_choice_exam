@@ -19,8 +19,7 @@ namespace HelloWinForms
         }
         private void btnXem_Click(object sender, EventArgs e)
         {
-            string query = "select PK_sHangID as ID, sTenHang as N'Tên hàng hóa', FK_sNhacungcapID as N'Nhà cung cấp', sDonvitinh as N'Đơn vị tính', sQuycach as N'Quy cách' from tblHang";
-            dtgData.DataSource = DataProvider.Instance.ExecuteQuery(query);
+            UserBUS.Instance.Xem(dtgData);
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -35,16 +34,20 @@ namespace HelloWinForms
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
+            if (UserBUS.Instance.Xoa_ID(dtgData))
+            {
+                MessageBox.Show("Xóa thành công");
+                btnXem_Click(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Xóa không thành công");
+            }
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            string query = "select PK_sHangID as ID, sTenHang as N'Tên hàng hóa', FK_sNhacungcapID as N'Nhà cung cấp', sDonvitinh as N'Đơn vị tính', sQuycach as N'Quy cách' from tblHang where PK_sHangID like @ID";
-            string[] paramNames = new string[] {"@ID"};
-            object[] paramValues = new object[]{txtTim.Text};
-            dtgData.DataSource = DataProvider.Instance.ExecuteQuery(query,paramNames,paramValues);
-
+            UserBUS.Instance.Tim_ID(dtgData, txtTim.Text);
         }
 
     }

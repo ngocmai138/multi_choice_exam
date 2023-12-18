@@ -41,5 +41,31 @@ namespace HelloWinForms
             }
             return dt;
         }
+        /// <summary>
+        /// kiểm tra câu lệnh thực hiện được bao nhiêu dòng 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="paraNames"></param>
+        /// <param name="paraValues"></param>
+        /// <returns></returns>
+        public int ExecuteNonQuery(string query, string[] paraNames = null, params object[] paraValues)
+        {
+            int acceptedRows = 0;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand command = new SqlCommand(query, conn);
+                if (paraNames != null && paraValues != null)
+                {
+                    for (int i = 0; i < paraNames.Length; i++)
+                    {
+                        command.Parameters.AddWithValue(paraNames[i], paraValues[i]);
+                    }
+                }
+                acceptedRows = command.ExecuteNonQuery();
+                conn.Close();
+            }
+            return acceptedRows;
+        }
     }
 }
