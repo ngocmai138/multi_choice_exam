@@ -1,5 +1,4 @@
-﻿select SYSTEM_USER
-use master;
+﻿use master;
 drop database QlyHangHoaNhap;
 create database QlyHangHoaNhap;
 use QlyHangHoaNhap;

@@ -19,22 +19,38 @@ namespace HelloWinForms
         }
         private void btnXem_Click(object sender, EventArgs e)
         {
-            UserBUS.Instance.Xem(dtgData);
+            HangBUS.Instance.Xem(dtgData);
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-
+            if (HangBUS.Instance.Them(dtgData))
+            {
+                MessageBox.Show("Thêm thành công");
+                btnXem_Click(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Thêm không thành công");
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-
+            if (HangBUS.Instance.Sua_ID(dtgData))
+            {
+                MessageBox.Show("Sửa thành công");
+                btnXem_Click(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Sửa không thành công");
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (UserBUS.Instance.Xoa_ID(dtgData))
+            if (HangBUS.Instance.Xoa_ID(dtgData))
             {
                 MessageBox.Show("Xóa thành công");
                 btnXem_Click(sender, e);
@@ -47,7 +63,7 @@ namespace HelloWinForms
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            UserBUS.Instance.Tim_ID(dtgData, txtTim.Text);
+            HangBUS.Instance.Tim_ID(dtgData, txtTim.Text);
         }
 
     }

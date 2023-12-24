@@ -1,0 +1,12 @@
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\bin\Debug\QuanLyThiTracNghiem.exe.config
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\bin\Debug\QuanLyThiTracNghiem.exe
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\bin\Debug\QuanLyThiTracNghiem.pdb
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.csproj.AssemblyReference.cache
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.FormLogin.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.MainForm.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.NganHangCauHoi.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Properties.Resources.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.csproj.GenerateResource.cache
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.csproj.CoreCompileInputs.cache
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.exe
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.pdb

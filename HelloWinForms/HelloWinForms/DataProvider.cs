@@ -67,5 +67,25 @@ namespace HelloWinForms
             }
             return acceptedRows;
         }
+
+        public object ExecuteScalar(string query, string[] paraNames=null, object[] paraValues=null)
+        {
+            object acceptedRow = 0;
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, conn);
+                if(paraNames != null && paraValues != null)
+                {
+                    for(int i = 0;i < paraNames.Length; i++)
+                    {
+                        sqlCommand.Parameters.AddWithValue(paraNames[i], paraValues[i]);
+                    }
+                }
+                acceptedRow = sqlCommand.ExecuteScalar();
+                conn.Close();
+            }
+            return acceptedRow;
+        }
     }
 }
