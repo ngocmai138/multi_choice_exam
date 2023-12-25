@@ -30,8 +30,8 @@ namespace QuanLyThiTracNghiem
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                DataTable table = new DataTable();
                 connection.Open();
+                DataTable table = new DataTable();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (paraName != null && paraValue != null)
                 {
@@ -44,6 +44,33 @@ namespace QuanLyThiTracNghiem
                 adapter.Fill(table);
                 connection.Close();
                 return table;
+            }
+        }
+        /// <summary>
+        /// Thực hiện thêm || sửa || xóa
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="paraName"></param>
+        /// <param name="paraValue"></param>
+        /// <returns></returns>
+        public int ExecuteNonQuery(String query, string[] paraName=null, object[] paraValue = null)
+        {
+            int acceptedRow = 0;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                DataTable table = new DataTable();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (paraName != null && paraValue != null)
+                {
+                    for (int i = 0; i < paraValue.Length; i++)
+                    {
+                        command.Parameters.AddWithValue(paraName[i], paraValue[i]);
+                    }
+                }
+                acceptedRow = command.ExecuteNonQuery();
+                connection.Close();
+                return acceptedRow;
             }
         }
     }

@@ -52,6 +52,7 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataProvider.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,8 @@
     <Compile Include="NganHangCauHoi.Designer.cs">
       <DependentUpon>NganHangCauHoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="NHCH_DAO.cs" />
+    <Compile Include="NHCH_BUS.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DangNhap.resx">

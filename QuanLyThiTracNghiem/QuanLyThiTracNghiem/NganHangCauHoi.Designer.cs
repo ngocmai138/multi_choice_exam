@@ -68,7 +68,7 @@
             // 
             // btnXem
             // 
-            this.btnXem.Location = new System.Drawing.Point(838, 360);
+            this.btnXem.Location = new System.Drawing.Point(576, 353);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(98, 34);
             this.btnXem.TabIndex = 2;
@@ -105,12 +105,12 @@
             this.panel1.Controls.Add(this.btnXem);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1229, 576);
+            this.panel1.Size = new System.Drawing.Size(985, 602);
             this.panel1.TabIndex = 4;
             // 
             // txtCauHoi
             // 
-            this.txtCauHoi.Location = new System.Drawing.Point(919, 83);
+            this.txtCauHoi.Location = new System.Drawing.Point(657, 76);
             this.txtCauHoi.Name = "txtCauHoi";
             this.txtCauHoi.Size = new System.Drawing.Size(223, 96);
             this.txtCauHoi.TabIndex = 11;
@@ -119,12 +119,12 @@
             // dtgChiTietCH
             // 
             this.dtgChiTietCH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgChiTietCH.Location = new System.Drawing.Point(385, 76);
+            this.dtgChiTietCH.Location = new System.Drawing.Point(24, 307);
             this.dtgChiTietCH.Name = "dtgChiTietCH";
             this.dtgChiTietCH.RowHeadersWidth = 62;
             this.dtgChiTietCH.RowTemplate.Height = 28;
             this.dtgChiTietCH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgChiTietCH.Size = new System.Drawing.Size(436, 467);
+            this.dtgChiTietCH.Size = new System.Drawing.Size(526, 292);
             this.dtgChiTietCH.TabIndex = 10;
             // 
             // dtgNHCH
@@ -135,7 +135,7 @@
             this.dtgNHCH.RowHeadersWidth = 62;
             this.dtgNHCH.RowTemplate.Height = 28;
             this.dtgNHCH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgNHCH.Size = new System.Drawing.Size(355, 467);
+            this.dtgNHCH.Size = new System.Drawing.Size(526, 225);
             this.dtgNHCH.TabIndex = 9;
             this.dtgNHCH.SelectionChanged += new System.EventHandler(this.dtgNHCH_SelectionChanged);
             // 
@@ -154,7 +154,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1159, 153);
+            this.label1.Location = new System.Drawing.Point(897, 146);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 7;
@@ -163,7 +163,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(1163, 250);
+            this.checkBox4.Location = new System.Drawing.Point(901, 243);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(22, 21);
             this.checkBox4.TabIndex = 6;
@@ -173,7 +173,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(1163, 285);
+            this.checkBox3.Location = new System.Drawing.Point(901, 278);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(22, 21);
             this.checkBox3.TabIndex = 6;
@@ -183,7 +183,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(1163, 221);
+            this.checkBox2.Location = new System.Drawing.Point(901, 214);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(22, 21);
             this.checkBox2.TabIndex = 6;
@@ -193,7 +193,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(1163, 186);
+            this.checkBox1.Location = new System.Drawing.Point(901, 179);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(22, 21);
             this.checkBox1.TabIndex = 6;
@@ -202,7 +202,7 @@
             // 
             // txtAnswer4
             // 
-            this.txtAnswer4.Location = new System.Drawing.Point(919, 281);
+            this.txtAnswer4.Location = new System.Drawing.Point(657, 274);
             this.txtAnswer4.Name = "txtAnswer4";
             this.txtAnswer4.Size = new System.Drawing.Size(223, 26);
             this.txtAnswer4.TabIndex = 5;
@@ -210,7 +210,7 @@
             // lbAnswer4
             // 
             this.lbAnswer4.AutoSize = true;
-            this.lbAnswer4.Location = new System.Drawing.Point(842, 281);
+            this.lbAnswer4.Location = new System.Drawing.Point(580, 274);
             this.lbAnswer4.Name = "lbAnswer4";
             this.lbAnswer4.Size = new System.Drawing.Size(74, 20);
             this.lbAnswer4.TabIndex = 4;
@@ -218,7 +218,7 @@
             // 
             // txtAnswer3
             // 
-            this.txtAnswer3.Location = new System.Drawing.Point(919, 249);
+            this.txtAnswer3.Location = new System.Drawing.Point(657, 242);
             this.txtAnswer3.Name = "txtAnswer3";
             this.txtAnswer3.Size = new System.Drawing.Size(223, 26);
             this.txtAnswer3.TabIndex = 5;
@@ -226,7 +226,7 @@
             // lbAnswer3
             // 
             this.lbAnswer3.AutoSize = true;
-            this.lbAnswer3.Location = new System.Drawing.Point(842, 249);
+            this.lbAnswer3.Location = new System.Drawing.Point(580, 242);
             this.lbAnswer3.Name = "lbAnswer3";
             this.lbAnswer3.Size = new System.Drawing.Size(74, 20);
             this.lbAnswer3.TabIndex = 4;
@@ -234,7 +234,7 @@
             // 
             // txtAnswer2
             // 
-            this.txtAnswer2.Location = new System.Drawing.Point(919, 217);
+            this.txtAnswer2.Location = new System.Drawing.Point(657, 210);
             this.txtAnswer2.Name = "txtAnswer2";
             this.txtAnswer2.Size = new System.Drawing.Size(223, 26);
             this.txtAnswer2.TabIndex = 5;
@@ -242,7 +242,7 @@
             // lbAnswer2
             // 
             this.lbAnswer2.AutoSize = true;
-            this.lbAnswer2.Location = new System.Drawing.Point(842, 217);
+            this.lbAnswer2.Location = new System.Drawing.Point(580, 210);
             this.lbAnswer2.Name = "lbAnswer2";
             this.lbAnswer2.Size = new System.Drawing.Size(74, 20);
             this.lbAnswer2.TabIndex = 4;
@@ -250,7 +250,7 @@
             // 
             // txtAnswer1
             // 
-            this.txtAnswer1.Location = new System.Drawing.Point(919, 185);
+            this.txtAnswer1.Location = new System.Drawing.Point(657, 178);
             this.txtAnswer1.Name = "txtAnswer1";
             this.txtAnswer1.Size = new System.Drawing.Size(223, 26);
             this.txtAnswer1.TabIndex = 5;
@@ -258,7 +258,7 @@
             // lbAnswer1
             // 
             this.lbAnswer1.AutoSize = true;
-            this.lbAnswer1.Location = new System.Drawing.Point(842, 185);
+            this.lbAnswer1.Location = new System.Drawing.Point(580, 178);
             this.lbAnswer1.Name = "lbAnswer1";
             this.lbAnswer1.Size = new System.Drawing.Size(74, 20);
             this.lbAnswer1.TabIndex = 4;
@@ -267,7 +267,7 @@
             // lbQuestion
             // 
             this.lbQuestion.AutoSize = true;
-            this.lbQuestion.Location = new System.Drawing.Point(842, 86);
+            this.lbQuestion.Location = new System.Drawing.Point(580, 79);
             this.lbQuestion.Name = "lbQuestion";
             this.lbQuestion.Size = new System.Drawing.Size(63, 20);
             this.lbQuestion.TabIndex = 4;
@@ -275,7 +275,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(1130, 360);
+            this.btnXoa.Location = new System.Drawing.Point(868, 353);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(88, 34);
             this.btnXoa.TabIndex = 2;
@@ -285,7 +285,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(1036, 360);
+            this.btnSua.Location = new System.Drawing.Point(774, 353);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 34);
             this.btnSua.TabIndex = 2;
@@ -295,7 +295,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(942, 360);
+            this.btnThem.Location = new System.Drawing.Point(680, 353);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(88, 34);
             this.btnThem.TabIndex = 2;
@@ -327,7 +327,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 603);
+            this.ClientSize = new System.Drawing.Size(1039, 626);
             this.Controls.Add(this.panel1);
             this.Name = "NganHangCauHoi";
             this.Text = "NganHangCauHoi";

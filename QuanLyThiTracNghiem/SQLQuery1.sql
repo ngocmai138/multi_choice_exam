@@ -112,8 +112,8 @@ create procedure p_DanhSachCH
 as
 select maCH as N'Mã câu hỏi', noiDungCH as N'Nội dung câu hỏi'
 from tblCauHoi
-
--- xem chi tiết câu hỏi kèm đáp án
+exec p_DanhSachCH
+-- Xem đáp án theo maCH
 drop procedure if exists p_ChiTietDA
 create procedure p_ChiTietDA
 	@maCH nvarchar(6)
@@ -231,14 +231,14 @@ exec p_SuaCauHoivaDapAn
 		@dung4 = 1
 
 -- Xóa câu hỏi và đáp án
-create procedure p_XoaCauHoiVaDapAn
+create procedure p_XoaCauHoi
 @maCH nvarchar(10)
 as
 begin
 delete from tblCauHoi
 where maCH = @maCH;
 end;
-exec p_XoaCauHoiVaDapAn @maCH = 'CH0002'
+exec p_XoaCauHoi @maCH = 'CH0002'
 
 -- Tạo đề thi mới
 drop procedure p_TaoDeThi
