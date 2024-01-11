@@ -1,9 +1,10 @@
-﻿use master
-drop database NganHangCauHoi;
+﻿drop database NganHangCauHoi;
+go
 
 create database NganHangCauHoi;
+go
 use NganHangCauHoi;
-
+go
 create table tblLop(
 					maLop nvarchar(10) primary key
 					);
@@ -37,15 +38,18 @@ create table tblDeThi(
 create table tblDeThi_CauHoi(
 					maDe nvarchar(6) references tblDeThi(maDe),
 					maCH nvarchar(6) references tblCauHoi(maCH),
-					primary key(maDe, maCH)
+					maDA nvarchar(6),
+					primary key(maDe, maCH),
+					foreign key(maCH, maDA) references tblDapAn(maCH, maDA)
 					);
+
 create table tblKetQua(
 					ID int identity(1,1),
 					maKQ as 'KQ' + right(cast (ID as nvarchar(10)),4) persisted primary key, 
 					maSV nvarchar(6) references tblSinhVien(maSV), 
 					maDe nvarchar(6) references tblDeThi(maDe), 
 					ngayThi datetime, 
-					diem float,
+					diem float
 					);
 create table tblBaiLam(
 					maKQ nvarchar(6) references tblKetQua(maKQ) on delete cascade, 
@@ -57,8 +61,8 @@ create table tblTaiKhoan(
 					id nvarchar(10) primary key,
 					matKhau nvarchar(20) default '123',
 					loaiTK nvarchar(10) check(loaiTK in ('GiaoVien','SinhVien')));
-SELECT * FROM INFORMATION_SCHEMA.TABLES;
 
+go
 -- Dữ liệu mẫu 
 INSERT INTO tblLop(maLop) VALUES ('Lop1'), ('Lop2');
 
@@ -94,9 +98,9 @@ BEGIN
   END
   SET @j = @j + 1;
 END
+go
 
-
-select * from tblDapAn
+--select * from tblDapAn
 
 --TÀI KHOẢN
 -- Đăng nhập
@@ -104,36 +108,41 @@ create procedure p_DangNhap
 	@id nvarchar(10),
 	@mk nvarchar(10)
 as
-select * from tblTaiKhoan where id = @id and matKhau = @mk;
-
+select loaiTK from tblTaiKhoan where id = @id and matKhau = @mk;
+go
+-- Xem thông tin sv
+create procedure p_SinhVien @maSV nvarchar(10)
+as
+select tenSV, maLop from tblSinhVien where maSV = @maSV
+go
 -- NGÂN HÀNG CÂU HỎI
 -- xem danh sách Câu hỏi
 create procedure p_DanhSachCH
 as
 select maCH as N'Mã câu hỏi', noiDungCH as N'Nội dung câu hỏi'
 from tblCauHoi
-exec p_DanhSachCH
+go
+--exec p_DanhSachCH
 -- Xem đáp án theo maCH
-drop procedure if exists p_ChiTietDA
 create procedure p_ChiTietDA
 	@maCH nvarchar(6)
 as
-select c.maCH as N'Mã câu hỏi', noiDungDA as N'Câu trả lời', dung as N'Đáp án đúng'
+select c.maCH as N'Mã câu hỏi', maDA as 'Mã đáp án', noiDungDA as N'Câu trả lời', dung as N'Đáp án đúng'
 from tblCauHoi c
 join tblDapAn d
 on c.maCH = d.maCH
 where c.maCH = @maCH
-
+go
+--exec p_ChiTietDA 'Ch0003'
 -- Tìm kiếm câu hỏi theo mã câu hỏi
-drop procedure p_TimCHTheoMaCH
 create procedure p_TimCHTheoMaCH
 	@maCH nvarchar(6)
 as
 select maCH as N'Mã câu hỏi', noiDungCH as N'Nội dung câu hỏi' 
 from tblCauHoi 
 where maCH like @maCH;
-exec p_TimCHTheoMaCH @maCH='CH0001'
-
+--exec p_TimCHTheoMaCH @maCH='CH0001'
+go
 -- Tìm kiếm câu hỏi theo nội dung
 create procedure p_TimCHTheoND
 	@noiDungCH nvarchar(50)
@@ -141,9 +150,8 @@ as
 select maCH as N'Mã câu hỏi', noiDungCH as N'Nội dung câu hỏi' 
 from tblCauHoi 
 where noiDungCH like '%'+@noiDungCH+'%';
-
+go
 -- Thêm câu hỏi và đáp án
-drop procedure p_ThemCauHoivaDapAn
 create procedure p_ThemCauHoivaDapAn
 	@noidungCH nvarchar(100),
 	@noidungda1 nvarchar(100),
@@ -169,66 +177,32 @@ values
 	(@maCH,@noidungda3,@dung3),
 	(@maCH,@noidungda4,@dung4);
 end;
+go
 
-exec p_ThemCauHoivaDapAn
-		@noidungCH = N'Câu hỏi mới thêm vào',
-		@noidungda1 = N'Đáp án 1', @dung1 = 0,
-		@noidungda2 = N'Đáp án 2', @dung2 = 1,
-		@noidungda3 = N'Đáp án 3', @dung3 = 0,
-		@noidungda4 = N'Đáp án 4', @dung4 = 0;
-
-exec p_DanhSachNHCH
-
--- Sửa câu hỏi và đáp án
-create procedure p_SuaCauHoivaDapAn
+-- Sửa câu hỏi 
+create procedure p_SuaCauHoi
 	@maCH nvarchar(10),
-	@noiDungCH nvarchar(100),
-	@noidungda1 nvarchar(100),
-	@dung1 bit,
-	@noidungda2 nvarchar(100),
-	@dung2 bit,
-	@noidungda3 nvarchar(100),
-	@dung3 bit,
-	@noidungda4 nvarchar(100),
-	@dung4 bit
+	@noiDungCH nvarchar(100)
 as
 begin
 update tblCauHoi
 set noiDungCH = @noiDungCH
 where maCH = @maCH;
-
-with cte as(
-select maDA, noiDungDA, dung, ROW_NUMBER() over (order by maDA)
-as RowNum
-from tblDapAn
-where maCH = @maCH)
-
-update cte
-set noiDungDA = 
-case RowNum when 1 then @noidungda1
-			when 2 then @noidungda2
-			when 3 then @noidungda3
-			when 4 then @noidungda4
-			end,
-dung = 
-case RowNum when 1 then @dung1
-			when 2 then @dung2
-			when 3 then @dung3
-			when 4 then @dung4
-			end;
+end
+go
+-- Sửa đáp án
+create procedure p_SuaDapAn
+	@maCH nvarchar(10),
+	@maDA nvarchar(10),
+	@noiDungDA nvarchar(100),
+	@dung bit
+as
+begin
+update tblDapAn
+set noiDungDA = @noiDungDA, dung = @dung
+where maCH = @maCH and maDA = @maDA
 end;
-
-exec p_SuaCauHoivaDapAn
-		@maCH = 'CH0022',
-		@noiDungCH = N'Câu hỏi sửa 1',
-		@noidungda1 = N'Sửa Đáp án 1',
-		@dung1 = 0,
-		@noidungda2 = N'Đáp án sửa 2',
-		@dung2 = 0,
-		@noidungda3 = N'Đáp án sửa 3',
-		@dung3 = 0,
-		@noidungda4 = N'Đáp án sửa 4',
-		@dung4 = 1
+go
 
 -- Xóa câu hỏi và đáp án
 create procedure p_XoaCauHoi
@@ -238,33 +212,84 @@ begin
 delete from tblCauHoi
 where maCH = @maCH;
 end;
-exec p_XoaCauHoi @maCH = 'CH0002'
+go
+--exec p_XoaCauHoi @maCH = 'CH0002'
 
+--NGÂN HÀNG ĐỀ THI
+-- Xem danh sách mã đề thi
+create proc p_XemDeThi
+as
+select maDe as N'Mã đề' from tblDeThi order by cast(SUBSTRING(maDe, 3, Len(maDE)) as int) desc
+go
+--exec p_XemDeThi
 -- Tạo đề thi mới
-drop procedure p_TaoDeThi
 create procedure p_TaoDeThi
-@socau int
+@socau int, @maDe nvarchar(6) output
 as
 begin
-declare @maDe nvarchar(6);
-declare @maCH nvarchar(6);
-declare @counter int = 0;
-insert into tblDeThi default values;
-set @maDe = (select top 1 maDe from tblDeThi order by id desc);
-while @counter < @socau
-begin 
-select top 1 @maCH = maCH from tblCauHoi 
-where maCH NOT IN (select maCH from tblDeThi_CauHoi where maDe = @maDe) 
-order by NEWID();
-insert into tblDeThi_CauHoi(maDe,maCH) values (@maDe,@maCH);
-set @counter = @counter + 1;
+	declare @maCH nvarchar(6);
+	declare @counter int = 0;
+	insert into tblDeThi default values;
+	set @maDe = (select top 1 maDe from tblDeThi order by id desc);
+	while @counter < @socau
+	begin 
+		select top 1 @maCH = maCH from tblCauHoi 
+		where maCH NOT IN (select maCH from tblDeThi_CauHoi where maDe = @maDe) 
+		order by NEWID();
+		insert into tblDeThi_CauHoi(maDe,maCH) values (@maDe,@maCH);
+		set @counter = @counter + 1;
+	end
 end
-end
-exec p_TaoDeThi @socau=10
+go
+-- Xem câu hỏi trong Đề thi
+--drop proc p_DeThi_CauHoi 
+create proc p_DeThi_CauHoi 
+	@maDe nvarchar(6)
+as
+select d.maCH, c.noiDungCH 
+from tblDeThi_CauHoi d 
+join tblCauHoi c 
+on  d.maCH = c.maCH
+where d.maDe = @maDe
 
-select * from tblDeThi_CauHoi
-
+--exec p_DeThi_CauHoi @maDe = 'DE2'
+go
 -- QUẢN LÝ BÀI THI
+-- Xem kết quả
+create proc p_XemBaiThi
+as
+select maKQ as N'Mã bài thi', maSV as N'Mã sinh viên', maDe as N'Mã đề', ngayThi as N'Ngày thi', diem as N'Điểm' 
+from tblKetQua 
+order by cast(SUBSTRING(maKQ, 3, len(maKQ)) as int) desc
+go
+exec p_XemBaiThi
+go
+-- Xem bài thi theo maSV và maDe
+--drop proc p_XemKetQua
+create proc p_XemKetQua @maSV nvarchar(6), @maDe nvarchar(6)
+as
+select maKQ, ngayThi, diem
+from tblKetQua 
+where maSV = @maSV and maDe = @maDe
+order by cast(SUBSTRING(maKQ, 3, len(maKQ)) as int) desc
+go
+exec p_XemKetQua @maSV='sv0001', @maDe = 'De1'
+go
+-- Xem maKQ ket qua theo maSV va maDe
+create proc p_XemBaiThi_maSVmaDe @maSV nvarchar(6), @maDe nvarchar(6)
+as
+select maKQ as N'Mã bài thi'from tblKetQua where maSV = @maSV and maDe = @maDe
+go
+--Xem maDe
+create proc p_XemMaDe
+as
+select maDe as N'Mã đề' from tblDeThi order by cast(SUBSTRING(maDe, 3, len(maDe)) as int) desc
+go
+--Xem maSV
+create proc p_XemMaSV
+as
+select maSV as N'Mã sinh viên' from tblSinhVien order by cast(SUBSTRING(maSV, 3, len(maSV)) as int) desc
+go
 -- Thêm mới bài làm
 create procedure p_ThemBaiLamMoi
 	@maKQ nvarchar(6),
@@ -281,20 +306,43 @@ set diem = (
 			where b.maKQ = @maKQ and d.dung = 1)
 where maKQ = @maKQ;
 end;
-
+go
 -- Thêm mới bài thi
-drop procedure p_ThemBaiThiMoi if exists p_ThemBaiThiMoi
+--drop procedure p_ThemBaiThiMoi
 create procedure p_ThemBaiThiMoi
 	@maDe nvarchar(6),
-	@maSV nvarchar(6)
+	@maSV nvarchar(6),
+	@maKQ nvarchar(6) output,
+	 @ngaythi datetime output
 as
 begin
-declare @ngaythi datetime;
+declare @OutputTbl table (maKQ nvarchar(6));
 set @ngaythi = GETDATE();
-insert into tblKetQua(maSV, maDe, ngayThi) values (@maSV, @maDe, @ngaythi);
+insert into tblKetQua(maSV, maDe, ngayThi)
+output inserted.maKQ into @OutputTbl values (@maSV, @maDe, @ngaythi);
+select @maKQ = maKQ from @OutputTbl
 end
-exec p_ThemBaiThiMoi @maDe='DE2',@maSV='SV0001'
 
+go
+-- cập nhật điểm vào tblKetQua
+drop proc p_CapNhatDiem 
+create proc p_CapNhatDiem 
+			@maKQ nvarchar(6), @diem float
+as
+update tblKetQua 
+set diem = @diem
+where maKQ = @maKQ;
+go
+exec p_CapNhatDiem @maKQ = 'kq4', @diem=2
+--lấy mã đề ngẫu nhiên
+--drop proc p_LayMaDeNgauNhien
+create proc p_LayMaDeNgauNhien
+as
+select top 1 maDe
+from tblDeThi
+order by NEWID()
+go
+exec p_LayMaDeNgauNhien
 -- TRIGGER
 -- Tự động thêm mới tk vào tblTaiKhoan
 create trigger t_ThemMoiTKGV
@@ -304,7 +352,7 @@ as
 begin
 insert into tblTaiKhoan(id, loaiTK) select maGV, 'GiaoVien' from inserted;
 end;
-
+go
 create trigger t_ThemMoiTKSV
 on tblSinhVien
 after insert
@@ -312,4 +360,9 @@ as
 begin
 insert into tblTaiKhoan(id, loaiTK) select maSV, 'SinhVien' from inserted;
 end;
-select * from tblTaiKhoan
+go
+--select * from tblTaiKhoan
+
+
+--select * from tblDeThi
+select * from tblKetQua

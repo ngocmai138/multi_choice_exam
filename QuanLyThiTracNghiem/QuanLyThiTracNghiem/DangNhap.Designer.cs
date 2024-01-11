@@ -52,7 +52,7 @@
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(262, 26);
             this.txtTenDN.TabIndex = 1;
-            this.txtTenDN.Text = "gv0001";
+            this.txtTenDN.Text = "sv0001";
             // 
             // lbPass
             // 
@@ -67,6 +67,7 @@
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(176, 100);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '-';
             this.txtMatKhau.Size = new System.Drawing.Size(262, 26);
             this.txtMatKhau.TabIndex = 1;
             this.txtMatKhau.Text = "123";
@@ -75,7 +76,7 @@
             // 
             this.btnLogin.Location = new System.Drawing.Point(92, 157);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(107, 29);
+            this.btnLogin.Size = new System.Drawing.Size(107, 37);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -85,7 +86,7 @@
             // 
             this.btnCancel.Location = new System.Drawing.Point(250, 157);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(107, 29);
+            this.btnCancel.Size = new System.Drawing.Size(107, 37);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Thoát";
             this.btnCancel.UseVisualStyleBackColor = true;

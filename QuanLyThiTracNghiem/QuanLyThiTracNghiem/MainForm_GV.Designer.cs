@@ -1,6 +1,6 @@
 ﻿namespace QuanLyThiTracNghiem
 {
-    partial class MainForm
+    partial class MainForm_GV
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,8 @@
             this.btnExamManagement = new System.Windows.Forms.Button();
             this.btnStatistic = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.btnQuanLyDeThi = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnQuestionBank
@@ -52,6 +54,7 @@
             this.btnExamManagement.TabIndex = 0;
             this.btnExamManagement.Text = "Quản lý bài thi";
             this.btnExamManagement.UseVisualStyleBackColor = true;
+            this.btnExamManagement.Click += new System.EventHandler(this.btnExamManagement_Click);
             // 
             // btnStatistic
             // 
@@ -72,17 +75,38 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // MainForm
+            // btnQuanLyDeThi
+            // 
+            this.btnQuanLyDeThi.Location = new System.Drawing.Point(597, 54);
+            this.btnQuanLyDeThi.Name = "btnQuanLyDeThi";
+            this.btnQuanLyDeThi.Size = new System.Drawing.Size(163, 90);
+            this.btnQuanLyDeThi.TabIndex = 0;
+            this.btnQuanLyDeThi.Text = "Quản lý đề thi";
+            this.btnQuanLyDeThi.UseVisualStyleBackColor = true;
+            this.btnQuanLyDeThi.Click += new System.EventHandler(this.btnQuanLyDeThi_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(600, 195);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(163, 90);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Quản lý sinh viên";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // MainForm_GV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 344);
+            this.ClientSize = new System.Drawing.Size(797, 315);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnStatistic);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnQuanLyDeThi);
             this.Controls.Add(this.btnExamManagement);
             this.Controls.Add(this.btnQuestionBank);
-            this.Name = "MainForm";
-            this.Text = "Chức năng chính";
+            this.Name = "MainForm_GV";
+            this.Text = "Chức năng chính của Giáo Viên";
             this.ResumeLayout(false);
 
         }
@@ -93,5 +117,7 @@
         private System.Windows.Forms.Button btnExamManagement;
         private System.Windows.Forms.Button btnStatistic;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnQuanLyDeThi;
+        private System.Windows.Forms.Button button2;
     }
 }

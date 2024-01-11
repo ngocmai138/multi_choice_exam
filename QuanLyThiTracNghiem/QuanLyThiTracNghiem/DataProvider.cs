@@ -68,10 +68,96 @@ namespace QuanLyThiTracNghiem
                         command.Parameters.AddWithValue(paraName[i], paraValue[i]);
                     }
                 }
-                acceptedRow = command.ExecuteNonQuery();
+                try
+                {
+                    acceptedRow = command.ExecuteNonQuery();
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
                 connection.Close();
                 return acceptedRow;
             }
+        }
+        public string ExecuteScalar(String query, SqlParameter[] parameters = null)
+        {
+            string outputValue = null;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {                
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (parameters!=null)
+                {
+                        command.Parameters.AddRange(parameters);
+                    
+                }
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    outputValue = result.ToString();
+                }
+                connection.Close();
+            }
+            return outputValue;
+        }
+        /// <summary>
+        /// Trả về đối tượng từ câu lệnh query
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="paraName"></param>
+        /// <param name="paraValue"></param>
+        /// <returns></returns>
+        public object ExecuteScalar(String query, string[] paraName=null, object[] paraValue = null)
+        {
+            object obj = null;
+            using(SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+                if(paraName != null && paraValue != null)
+                {
+                    for(int i = 0;i < paraValue.Length; i++)
+                    {
+                        sqlCommand.Parameters.AddWithValue(paraName[i], paraValue[i]);
+                    }
+                }
+                obj = sqlCommand.ExecuteScalar();
+                connection.Close();
+                return obj;
+            }
+        }
+        /// <summary>
+        /// Trả về danh sách đối tượng từ câu query
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="paraName"></param>
+        /// <param name="paraValue"></param>
+        /// <returns></returns>
+        public List<object> ExecuteReader(string query, string[] paraName, object[] paraValue)
+        {
+            List<object> obj = new List<object>();
+            using(SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+                if( paraName != null && paraValue != null)
+                {
+                    for(int i = 0; i< paraValue.Length; i++)
+                    {
+                        sqlCommand.Parameters.AddWithValue(paraName[i], paraValue[i]);
+                    }
+                }
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    for(int i = 0; i<reader.FieldCount; i++)
+                    {
+                        obj.Add( reader.GetValue(i));
+                    }
+                }
+            }
+            return obj;
         }
     }
 }

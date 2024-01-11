@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,19 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLyThiTracNghiem
 {
-    public partial class FormLogin : Form
+    public partial class NopBai : Form
     {
-        public FormLogin()
+        public NopBai(float diem, BaiThi_DTO baiThi)
         {
             InitializeComponent();
+            ThiTN_BUS.Instance.LuuBaiThi(baiThi);
+            lbKetQua.Text = diem.ToString();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            NHCH_BUS.Instance.DangNhap(this, txtTenDN, txtMatKhau);           
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

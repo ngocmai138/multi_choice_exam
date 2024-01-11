@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QuanLyThiTracNghiem
 {
-    public partial class MainForm : Form
+    public partial class MainForm_GV : Form
     {
         private FormLogin dangNhap;
-        public MainForm(FormLogin dangNhap)
+        public MainForm_GV(FormLogin dangNhap)
         {
             InitializeComponent();
             this.dangNhap = dangNhap;
@@ -30,6 +30,20 @@ namespace QuanLyThiTracNghiem
         {
             this.Hide();
             dangNhap.Show();
+        }
+
+        private void btnQuanLyDeThi_Click(object sender, EventArgs e)
+        {
+            NganHangDeThi n = new NganHangDeThi(this);
+            this.Hide();
+            n.Show();
+        }
+
+        private void btnExamManagement_Click(object sender, EventArgs e)
+        {
+            QuanLyBaiThi quanLyBaiThi = new QuanLyBaiThi(this);
+            this.Hide();
+            quanLyBaiThi.Show();
         }
     }
 }
