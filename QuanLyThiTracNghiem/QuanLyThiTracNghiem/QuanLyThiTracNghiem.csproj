@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,19 +65,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaiLam_BUS.cs" />
-    <Compile Include="BaiLam_DAO.cs" />
-    <Compile Include="BaiThi_DTO.cs" />
-    <Compile Include="CauHoi_DTO.cs" />
+    <Compile Include="BUS_BaiLam.cs" />
+    <Compile Include="BUS_SinhVien.cs" />
+    <Compile Include="BUS_ThongKe.cs" />
+    <Compile Include="DAO_BaiLam.cs" />
+    <Compile Include="DAO_SinhVien.cs" />
+    <Compile Include="DAO_ThongKe.cs" />
+    <Compile Include="DTO_BaiThi.cs" />
+    <Compile Include="BaoCaoThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoThongKe.Designer.cs">
+      <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO_CauHoi.cs" />
+    <Compile Include="ChiTietBaiLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietBaiLam.Designer.cs">
+      <DependentUpon>ChiTietBaiLam.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="DapAn_DTO.cs" />
+    <Compile Include="DTO_DapAn.cs" />
     <Compile Include="DataProvider.cs" />
-    <Compile Include="DeThi_DTO.cs" />
+    <Compile Include="DTO_DeThi.cs" />
+    <Compile Include="QLSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLSinhVien.Designer.cs">
+      <DependentUpon>QLSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UKQThiTheoLop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UKQThiTheoLop.Designer.cs">
+      <DependentUpon>UKQThiTheoLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UKQThiTheoSV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UKQThiTheoSV.Designer.cs">
+      <DependentUpon>UKQThiTheoSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm_GV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,17 +130,37 @@
     <Compile Include="NganHangCauHoi.Designer.cs">
       <DependentUpon>NganHangCauHoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="NganHangCauHoiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NganHangCauHoiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NganHangCauHoiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NganHangCauHoiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NganHangCauHoiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NganHangCauHoiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NganHangCauHoiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NganHangCauHoiDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NganHangDeThi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NganHangDeThi.Designer.cs">
       <DependentUpon>NganHangDeThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="NHCH_DAO.cs" />
-    <Compile Include="NHCH_BUS.cs" />
-    <Compile Include="NHCH_DTO.cs" />
-    <Compile Include="NHDT_BUS.cs" />
-    <Compile Include="NHDT_DAO.cs" />
+    <Compile Include="DAO_NHCH.cs" />
+    <Compile Include="BUS_NHCH.cs" />
+    <Compile Include="DTO_NHCH.cs" />
+    <Compile Include="BUS_NHDT.cs" />
+    <Compile Include="DAO_NHDT.cs" />
     <Compile Include="NopBai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,17 +175,39 @@
     <Compile Include="QuanLyBaiThi.Designer.cs">
       <DependentUpon>QuanLyBaiThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="SinhVien_DTO.cs" />
-    <Compile Include="ThiTN_BUS.cs" />
-    <Compile Include="ThiTN_DAO.cs" />
+    <Compile Include="DTO_SinhVien.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="BUS_ThiTN.cs" />
+    <Compile Include="DAO_ThiTN.cs" />
     <Compile Include="ThiTracNghiem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThiTracNghiem.Designer.cs">
       <DependentUpon>ThiTracNghiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="UThongKe_NHCH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UThongKe_NHCH.Designer.cs">
+      <DependentUpon>UThongKe_NHCH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCaoThongKe.resx">
+      <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietBaiLam.resx">
+      <DependentUpon>ChiTietBaiLam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLSinhVien.resx">
+      <DependentUpon>QLSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UKQThiTheoLop.resx">
+      <DependentUpon>UKQThiTheoLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UKQThiTheoSV.resx">
+      <DependentUpon>UKQThiTheoSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm_GV.resx">
       <DependentUpon>MainForm_GV.cs</DependentUpon>
@@ -142,9 +236,60 @@
     <EmbeddedResource Include="QuanLyBaiThi.resx">
       <DependentUpon>QuanLyBaiThi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptChiTietBaiLam.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThiTracNghiem.resx">
       <DependentUpon>ThiTracNghiem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UThongKe_NHCH.resx">
+      <DependentUpon>UThongKe_NHCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NganHangCauHoiDataSet.xsc">
+      <DependentUpon>NganHangCauHoiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NganHangCauHoiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NganHangCauHoiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NganHangCauHoiDataSet.xss">
+      <DependentUpon>NganHangCauHoiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NganHangCauHoiDataSet1.xsc">
+      <DependentUpon>NganHangCauHoiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NganHangCauHoiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NganHangCauHoiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NganHangCauHoiDataSet1.xss">
+      <DependentUpon>NganHangCauHoiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NganHangCauHoiDataSet2.xsc">
+      <DependentUpon>NganHangCauHoiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NganHangCauHoiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NganHangCauHoiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NganHangCauHoiDataSet2.xss">
+      <DependentUpon>NganHangCauHoiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NganHangCauHoiDataSet3.xsc">
+      <DependentUpon>NganHangCauHoiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="NganHangCauHoiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NganHangCauHoiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NganHangCauHoiDataSet3.xss">
+      <DependentUpon>NganHangCauHoiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -157,6 +302,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ namespace QuanLyThiTracNghiem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            NHCH_BUS.Instance.DangNhap(this, txtTenDN, txtMatKhau);           
+            BUS_NHCH.Instance.DangNhap(this, txtTenDN, txtMatKhau);           
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

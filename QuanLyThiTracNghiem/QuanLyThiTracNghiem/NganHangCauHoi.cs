@@ -23,10 +23,6 @@ namespace QuanLyThiTracNghiem
             btnXem_Click();
         }
        
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtExit_Click(object sender, EventArgs e)
         {
@@ -36,17 +32,17 @@ namespace QuanLyThiTracNghiem
 
         private void btnXem_Click(object sender, EventArgs e)
         {
-            NHCH_BUS.Instance.Xem(dtgNHCH);
+            BUS_NHCH.Instance.Xem(dtgNHCH);
         }
         private void btnXem_Click()
         {
-            NHCH_BUS.Instance.Xem(dtgNHCH);
+            BUS_NHCH.Instance.Xem(dtgNHCH);
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             
-            if (NHCH_BUS.Instance.Them(txtCauHoi, txtAnswer1, txtAnswer2, txtAnswer3, txtAnswer4, cb1, cb2, cb3, cb4))
+            if (BUS_NHCH.Instance.Them(txtCauHoi, txtAnswer1, txtAnswer2, txtAnswer3, txtAnswer4, cb1, cb2, cb3, cb4))
             {
                 MessageBox.Show("Thêm mới thành công");
                 btnXem_Click(sender, e);
@@ -57,7 +53,7 @@ namespace QuanLyThiTracNghiem
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (NHCH_BUS.Instance.Sua(dtgNHCH,dtgDA))
+            if (BUS_NHCH.Instance.Sua(dtgNHCH,dtgDA))
             {
                 MessageBox.Show("Sửa thành công");
                 btnXem_Click(sender, e);
@@ -71,7 +67,7 @@ namespace QuanLyThiTracNghiem
         {
             try
             {
-                if (NHCH_BUS.Instance.XoaCH_MaCH(dtgNHCH))
+                if (BUS_NHCH.Instance.XoaCH_MaCH(dtgNHCH))
                 {
                     MessageBox.Show("Xóa thành công");
                     btnXem_Click(sender, e);
@@ -84,12 +80,12 @@ namespace QuanLyThiTracNghiem
      
         private void dtgNHCH_SelectionChanged(object sender, EventArgs e)
         {
-                NHCH_BUS.Instance.Xem_DA(dtgNHCH,dtgDA);
+                BUS_NHCH.Instance.Xem_DA(dtgNHCH,dtgDA);
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            NHCH_BUS.Instance.TimKiem(dtgNHCH, cbbTimKiem, txtTimKiem);
+            BUS_NHCH.Instance.TimKiem(dtgNHCH, cbbTimKiem, txtTimKiem);
         }
 
         

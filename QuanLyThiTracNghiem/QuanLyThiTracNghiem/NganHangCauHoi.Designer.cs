@@ -168,7 +168,6 @@
             this.cb3.Size = new System.Drawing.Size(22, 21);
             this.cb3.TabIndex = 6;
             this.cb3.UseVisualStyleBackColor = true;
-            this.cb3.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // cb4
             // 
@@ -178,7 +177,6 @@
             this.cb4.Size = new System.Drawing.Size(22, 21);
             this.cb4.TabIndex = 6;
             this.cb4.UseVisualStyleBackColor = true;
-            this.cb4.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // cb2
             // 
@@ -188,7 +186,6 @@
             this.cb2.Size = new System.Drawing.Size(22, 21);
             this.cb2.TabIndex = 6;
             this.cb2.UseVisualStyleBackColor = true;
-            this.cb2.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // cb1
             // 
@@ -198,7 +195,6 @@
             this.cb1.Size = new System.Drawing.Size(22, 21);
             this.cb1.TabIndex = 6;
             this.cb1.UseVisualStyleBackColor = true;
-            this.cb1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // txtAnswer4
             // 

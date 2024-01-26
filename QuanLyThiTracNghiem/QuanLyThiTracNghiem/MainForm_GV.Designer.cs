@@ -30,7 +30,7 @@
         {
             this.btnQuestionBank = new System.Windows.Forms.Button();
             this.btnExamManagement = new System.Windows.Forms.Button();
-            this.btnStatistic = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnQuanLyDeThi = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -38,9 +38,9 @@
             // 
             // btnQuestionBank
             // 
-            this.btnQuestionBank.Location = new System.Drawing.Point(50, 54);
+            this.btnQuestionBank.Location = new System.Drawing.Point(40, 48);
             this.btnQuestionBank.Name = "btnQuestionBank";
-            this.btnQuestionBank.Size = new System.Drawing.Size(163, 90);
+            this.btnQuestionBank.Size = new System.Drawing.Size(171, 109);
             this.btnQuestionBank.TabIndex = 0;
             this.btnQuestionBank.Text = "Ngân hàng câu hỏi";
             this.btnQuestionBank.UseVisualStyleBackColor = true;
@@ -48,59 +48,61 @@
             // 
             // btnExamManagement
             // 
-            this.btnExamManagement.Location = new System.Drawing.Point(317, 54);
+            this.btnExamManagement.Location = new System.Drawing.Point(307, 48);
             this.btnExamManagement.Name = "btnExamManagement";
-            this.btnExamManagement.Size = new System.Drawing.Size(163, 90);
-            this.btnExamManagement.TabIndex = 0;
+            this.btnExamManagement.Size = new System.Drawing.Size(171, 109);
+            this.btnExamManagement.TabIndex = 1;
             this.btnExamManagement.Text = "Quản lý bài thi";
             this.btnExamManagement.UseVisualStyleBackColor = true;
             this.btnExamManagement.Click += new System.EventHandler(this.btnExamManagement_Click);
             // 
-            // btnStatistic
+            // btnThongKe
             // 
-            this.btnStatistic.Location = new System.Drawing.Point(50, 195);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.Size = new System.Drawing.Size(163, 90);
-            this.btnStatistic.TabIndex = 0;
-            this.btnStatistic.Text = "Báo cáo thống kê";
-            this.btnStatistic.UseVisualStyleBackColor = true;
+            this.btnThongKe.Location = new System.Drawing.Point(40, 178);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(171, 109);
+            this.btnThongKe.TabIndex = 3;
+            this.btnThongKe.Text = "Báo cáo thống kê";
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(317, 195);
+            this.btnThoat.Location = new System.Drawing.Point(587, 178);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(163, 90);
-            this.btnThoat.TabIndex = 0;
+            this.btnThoat.Size = new System.Drawing.Size(171, 109);
+            this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnQuanLyDeThi
             // 
-            this.btnQuanLyDeThi.Location = new System.Drawing.Point(597, 54);
+            this.btnQuanLyDeThi.Location = new System.Drawing.Point(587, 48);
             this.btnQuanLyDeThi.Name = "btnQuanLyDeThi";
-            this.btnQuanLyDeThi.Size = new System.Drawing.Size(163, 90);
-            this.btnQuanLyDeThi.TabIndex = 0;
+            this.btnQuanLyDeThi.Size = new System.Drawing.Size(171, 109);
+            this.btnQuanLyDeThi.TabIndex = 2;
             this.btnQuanLyDeThi.Text = "Quản lý đề thi";
             this.btnQuanLyDeThi.UseVisualStyleBackColor = true;
             this.btnQuanLyDeThi.Click += new System.EventHandler(this.btnQuanLyDeThi_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(600, 195);
+            this.button2.Location = new System.Drawing.Point(307, 178);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 90);
-            this.button2.TabIndex = 0;
+            this.button2.Size = new System.Drawing.Size(171, 109);
+            this.button2.TabIndex = 4;
             this.button2.Text = "Quản lý sinh viên";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainForm_GV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 315);
+            this.ClientSize = new System.Drawing.Size(783, 322);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnStatistic);
+            this.Controls.Add(this.btnThongKe);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnQuanLyDeThi);
             this.Controls.Add(this.btnExamManagement);
@@ -115,7 +117,7 @@
 
         private System.Windows.Forms.Button btnQuestionBank;
         private System.Windows.Forms.Button btnExamManagement;
-        private System.Windows.Forms.Button btnStatistic;
+        private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnQuanLyDeThi;
         private System.Windows.Forms.Button button2;

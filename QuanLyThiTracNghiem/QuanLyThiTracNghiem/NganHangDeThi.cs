@@ -27,16 +27,16 @@ namespace QuanLyThiTracNghiem
         }
         private void btnXem_Click()
         {
-            NHDT_BUS.Instance.Xem_DeThi(dtgDeThi);
+            BUS_NHDT.Instance.Xem_DeThi(dtgDeThi);
         }
         private void btnXem_Click(object sender, EventArgs e)
         {
-            NHDT_BUS.Instance.Xem_DeThi(dtgDeThi);
+            BUS_NHDT.Instance.Xem_DeThi(dtgDeThi);
         }
 
         private void btnThemTuDong_Click(object sender, EventArgs e)
         {
-            string maDe = NHDT_BUS.Instance.TaoDeThi(dtgDeThi);
+            string maDe = BUS_NHDT.Instance.TaoDeThi(dtgDeThi);
             btnXem_Click(sender, e);
             int rowIndex = dtgDeThi.Rows.Cast<DataGridViewRow>().Where(r => r.Cells["Mã đề"].Value.ToString().Equals(maDe)).First().Index;
             dtgDeThi.ClearSelection();
@@ -45,7 +45,7 @@ namespace QuanLyThiTracNghiem
 
         private void dtgDeThi_SelectionChanged(object sender, EventArgs e)
         {
-            NHDT_BUS.Instance.Xem_CauHoi(dtgDeThi, dtgCauHoi, this);
+            BUS_NHDT.Instance.Xem_CauHoi(dtgDeThi, dtgCauHoi, this);
         }
         public void UpdateLbSoCH(int i)
         {

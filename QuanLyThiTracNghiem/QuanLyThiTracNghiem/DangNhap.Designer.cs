@@ -48,11 +48,12 @@
             // 
             // txtTenDN
             // 
+            this.txtTenDN.AcceptsTab = true;
             this.txtTenDN.Location = new System.Drawing.Point(176, 56);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(262, 26);
             this.txtTenDN.TabIndex = 1;
-            this.txtTenDN.Text = "sv0001";
+            this.txtTenDN.Text = "gv0001";
             // 
             // lbPass
             // 
@@ -69,7 +70,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '-';
             this.txtMatKhau.Size = new System.Drawing.Size(262, 26);
-            this.txtMatKhau.TabIndex = 1;
+            this.txtMatKhau.TabIndex = 2;
             this.txtMatKhau.Text = "123";
             // 
             // btnLogin
@@ -77,7 +78,7 @@
             this.btnLogin.Location = new System.Drawing.Point(92, 157);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(107, 37);
-            this.btnLogin.TabIndex = 2;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -87,7 +88,7 @@
             this.btnCancel.Location = new System.Drawing.Point(250, 157);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(107, 37);
-            this.btnCancel.TabIndex = 2;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Thoát";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -104,6 +105,7 @@
             this.Controls.Add(this.txtTenDN);
             this.Controls.Add(this.lbID);
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.ResumeLayout(false);
             this.PerformLayout();

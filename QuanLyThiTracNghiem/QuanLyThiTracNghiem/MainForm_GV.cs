@@ -12,11 +12,14 @@ namespace QuanLyThiTracNghiem
 {
     public partial class MainForm_GV : Form
     {
+        static MainForm_GV mainForm_GV;
+        private string tenDN;
         private FormLogin dangNhap;
-        public MainForm_GV(FormLogin dangNhap)
+        public MainForm_GV(FormLogin dangNhap, string tenDN)
         {
             InitializeComponent();
             this.dangNhap = dangNhap;
+            this.tenDN = tenDN;
         }
 
         private void btnQuestionBank_Click(object sender, EventArgs e)
@@ -41,9 +44,23 @@ namespace QuanLyThiTracNghiem
 
         private void btnExamManagement_Click(object sender, EventArgs e)
         {
-            QuanLyBaiThi quanLyBaiThi = new QuanLyBaiThi(this);
+            QuanLyBaiThi quanLyBaiThi = new QuanLyBaiThi(this, tenDN);
             this.Hide();
             quanLyBaiThi.Show();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            BaoCaoThongKe baoCaoThongKe = new BaoCaoThongKe(this);
+            this.Hide();
+            baoCaoThongKe.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            QLSinhVien qlSV = new QLSinhVien(this);
+            this.Hide();
+            qlSV.Show();
         }
     }
 }

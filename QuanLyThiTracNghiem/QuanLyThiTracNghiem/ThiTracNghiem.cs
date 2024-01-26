@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 using Microsoft.VisualBasic;
 
 namespace QuanLyThiTracNghiem
@@ -16,26 +17,26 @@ namespace QuanLyThiTracNghiem
     public partial class ThiTracNghiem : Form
     {
         private MainForm_SV mainForm_SV;
-        private SinhVien_DTO sv;
-        private DeThi_DTO de;
-        private BaiThi_DTO baiThi;
+        private DTO_SinhVien sv;
+        private DTO_DeThi de;
+        private DTO_BaiThi baiThi;
         private int count=0;
-        List<CauHoi_DTO> DSCauHoi;
+        List<DTO_CauHoi> DSCauHoi;
         public ThiTracNghiem(MainForm_SV mainForm_SV, string maSV)
         {
             InitializeComponent();
             this.mainForm_SV = mainForm_SV;
-            this.sv = ThiTN_BUS.Instance.DangNhap(sv, maSV);
-            this.de = ThiTN_BUS.Instance.DeThi();
-            this.baiThi = ThiTN_BUS.Instance.TaoBaiThi(maSV,de.MaDe);
+            this.sv = BUS_ThiTN.Instance.DangNhap(sv, maSV);
+            this.de = BUS_ThiTN.Instance.DeThi();
+            this.baiThi = BUS_ThiTN.Instance.TaoBaiThi(maSV,de.MaDe);
             this.DSCauHoi = de.CauHois;
             lbTen.Text = sv.TenSV;
             lbLop.Text = sv.MaLop;
             lbSoDE.Text = de.MaDe;
             
 
-            ThiTN_BUS.Instance.HienThiCauHoi(count, DSCauHoi, pnNoiDungCH);
-            pnDSCH = ThiTN_BUS.Instance.TaoButtonCauHoi(DSCauHoi ,pnNoiDungCH, pnDSCH, this);
+            BUS_ThiTN.Instance.HienThiCauHoi(count, DSCauHoi, pnNoiDungCH);
+            pnDSCH = BUS_ThiTN.Instance.TaoButtonCauHoi(DSCauHoi ,pnNoiDungCH, pnDSCH, this);
             
         }
 
@@ -43,10 +44,10 @@ namespace QuanLyThiTracNghiem
         {
             if(count < DSCauHoi.Count)
             {
-            ThiTN_BUS.Instance.LuuDapAn(DSCauHoi[count], rbDA1, rbDA2, rbDA3, rbDA4);
-                ThiTN_BUS.Instance.CauDaLam(DSCauHoi, pnDSCH);
+            BUS_ThiTN.Instance.LuuDapAn(DSCauHoi[count], rbDA1, rbDA2, rbDA3, rbDA4);
+                BUS_ThiTN.Instance.CauDaLam(DSCauHoi, pnDSCH);
                 count++;
-            ThiTN_BUS.Instance.HienThiCauHoi(count, DSCauHoi, pnNoiDungCH);
+            BUS_ThiTN.Instance.HienThiCauHoi(count, DSCauHoi, pnNoiDungCH);
             }
         }
 
@@ -54,20 +55,43 @@ namespace QuanLyThiTracNghiem
         {
             if (count < DSCauHoi.Count)
             {
-                ThiTN_BUS.Instance.LuuDapAn(DSCauHoi[count], rbDA1, rbDA2, rbDA3, rbDA4);
-               ThiTN_BUS.Instance.CauDaLam(DSCauHoi, pnDSCH);
+                BUS_ThiTN.Instance.LuuDapAn(DSCauHoi[count], rbDA1, rbDA2, rbDA3, rbDA4);
+               BUS_ThiTN.Instance.CauDaLam(DSCauHoi, pnDSCH);
                 count--;
-                    ThiTN_BUS.Instance.HienThiCauHoi(count, DSCauHoi, pnNoiDungCH);
+                    BUS_ThiTN.Instance.HienThiCauHoi(count, DSCauHoi, pnNoiDungCH);
             }
         }
 
         private void btnNopBai_Click(object sender, EventArgs e)
         {
-            ThiTN_BUS.Instance.LuuDapAn(DSCauHoi[count], rbDA1, rbDA2, rbDA3, rbDA4);
-            float diem = ThiTN_BUS.Instance.TinhDiem(baiThi, de);
-            NopBai nopbai = new NopBai(diem,baiThi);
+            bool lamXong = true;
+            BUS_ThiTN.Instance.LuuDapAn(DSCauHoi[count], rbDA1, rbDA2, rbDA3, rbDA4);
+            for(int i = 0; i< de.CauHois.Count; i++)
+            {
+                bool coDA = false;
+                DTO_CauHoi ch = de.CauHois[i];
+                for(int j = 0; j<ch.DapAns.Count; j++)
+                {
+                    DTO_DapAn da = ch.DapAns[j];
+                    if (da.Dung)
+                    {
+                        coDA = true;
+                        break;
+                    }
+                }
+                if (!coDA)
+                {
+                    lamXong = false;
+                    MessageBox.Show("Bạn chưa trả lời hết câu hỏi");
+                    break;
+                }
+            }
+            if(lamXong)
+            {
+            NopBai nopbai = new NopBai(baiThi,de);
             nopbai.Show();
             this.Hide();
+            }
         }
         public void UpdateCount(int newCount)
         {

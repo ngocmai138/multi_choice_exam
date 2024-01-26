@@ -12,11 +12,10 @@ namespace QuanLyThiTracNghiem
 {
     public partial class NopBai : Form
     {
-        public NopBai(float diem, BaiThi_DTO baiThi)
+        public NopBai(DTO_BaiThi baiThi, DTO_DeThi de)
         {
             InitializeComponent();
-            ThiTN_BUS.Instance.LuuBaiThi(baiThi);
-            lbKetQua.Text = diem.ToString();
+            lbKetQua.Text = BUS_ThiTN.Instance.LuuBaiThi(baiThi, de).ToString();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
