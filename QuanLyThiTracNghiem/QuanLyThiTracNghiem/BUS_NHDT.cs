@@ -20,7 +20,7 @@ namespace QuanLyThiTracNghiem
             dtgDeThi.AllowUserToAddRows = false;
             dtgDeThi.RowHeadersVisible=false;
         }
-        public void Xem_CauHoi(DataGridView dtgDeThi, DataGridView dtgCauHoi, NganHangDeThi nhdt)
+        public void Xem_CauHoi(DataGridView dtgDeThi, DataGridView dtgCauHoi, Form_NganHangDeThi nhdt)
         {
             DTO_DeThi de = new DTO_DeThi();
             DataTable table = new DataTable();

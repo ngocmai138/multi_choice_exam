@@ -23,7 +23,7 @@ namespace QuanLyThiTracNghiem
             string loaiTK = DAO_NHCH.Instance.DangNhap(tenDN.Text,mk.Text);
             if (loaiTK == "GiaoVien")
             {
-                MainForm_GV f = new MainForm_GV(formLogin, tenDN.Text);
+                Form_MainForm_GV f = new Form_MainForm_GV(formLogin, tenDN.Text);
                 f.Show();
                 formLogin.Hide();
 
@@ -31,7 +31,7 @@ namespace QuanLyThiTracNghiem
             else if (loaiTK == "SinhVien")
             {
 
-                MainForm_SV m = new MainForm_SV(formLogin, tenDN.Text);
+                Form_MainForm_SV m = new Form_MainForm_SV(formLogin, tenDN.Text);
                 m.Show();
                 formLogin.Hide();
             }
@@ -69,7 +69,7 @@ namespace QuanLyThiTracNghiem
             else if (cbbTimKiem.Text == "nội dung câu hỏi")
                 dataGridView.DataSource = DAO_NHCH.Instance.TimKiem_NoiDung(tuKhoa.Text);
             else
-                Xem(dataGridView);
+                dataGridView.DataSource = DAO_NHCH.Instance.TimKiem_MaCH_ND(tuKhoa.Text);
 
         }
         public bool XoaCH_MaCH(DataGridView dtgNHCH)

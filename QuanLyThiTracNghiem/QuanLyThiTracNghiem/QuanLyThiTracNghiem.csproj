@@ -68,37 +68,43 @@
     <Compile Include="BUS_BaiLam.cs" />
     <Compile Include="BUS_SinhVien.cs" />
     <Compile Include="BUS_ThongKe.cs" />
+    <Compile Include="Form_DanhSachBaiLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DanhSachBaiLam.Designer.cs">
+      <DependentUpon>Form_DanhSachBaiLam.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO_BaiLam.cs" />
     <Compile Include="DAO_SinhVien.cs" />
     <Compile Include="DAO_ThongKe.cs" />
     <Compile Include="DTO_BaiThi.cs" />
-    <Compile Include="BaoCaoThongKe.cs">
+    <Compile Include="Form_BaoCaoThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BaoCaoThongKe.Designer.cs">
-      <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
+    <Compile Include="Form_BaoCaoThongKe.Designer.cs">
+      <DependentUpon>Form_BaoCaoThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO_CauHoi.cs" />
-    <Compile Include="ChiTietBaiLam.cs">
+    <Compile Include="Form_ChiTietBaiLam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChiTietBaiLam.Designer.cs">
-      <DependentUpon>ChiTietBaiLam.cs</DependentUpon>
+    <Compile Include="Form_ChiTietBaiLam.Designer.cs">
+      <DependentUpon>Form_ChiTietBaiLam.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangNhap.cs">
+    <Compile Include="Form_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangNhap.Designer.cs">
-      <DependentUpon>DangNhap.cs</DependentUpon>
+    <Compile Include="Form_DangNhap.Designer.cs">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO_DapAn.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DTO_DeThi.cs" />
-    <Compile Include="QLSinhVien.cs">
+    <Compile Include="Form_QLSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QLSinhVien.Designer.cs">
-      <DependentUpon>QLSinhVien.cs</DependentUpon>
+    <Compile Include="Form_QLSinhVien.Designer.cs">
+      <DependentUpon>Form_QLSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="UKQThiTheoLop.cs">
       <SubType>UserControl</SubType>
@@ -112,23 +118,23 @@
     <Compile Include="UKQThiTheoSV.Designer.cs">
       <DependentUpon>UKQThiTheoSV.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm_GV.cs">
+    <Compile Include="Form_MainForm_GV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm_GV.Designer.cs">
-      <DependentUpon>MainForm_GV.cs</DependentUpon>
+    <Compile Include="Form_MainForm_GV.Designer.cs">
+      <DependentUpon>Form_MainForm_GV.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm_SV.cs">
+    <Compile Include="Form_MainForm_SV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm_SV.Designer.cs">
-      <DependentUpon>MainForm_SV.cs</DependentUpon>
+    <Compile Include="Form_MainForm_SV.Designer.cs">
+      <DependentUpon>Form_MainForm_SV.cs</DependentUpon>
     </Compile>
-    <Compile Include="NganHangCauHoi.cs">
+    <Compile Include="Form_NganHangCauHoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NganHangCauHoi.Designer.cs">
-      <DependentUpon>NganHangCauHoi.cs</DependentUpon>
+    <Compile Include="Form_NganHangCauHoi.Designer.cs">
+      <DependentUpon>Form_NganHangCauHoi.cs</DependentUpon>
     </Compile>
     <Compile Include="NganHangCauHoiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -150,40 +156,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NganHangCauHoiDataSet3.xsd</DependentUpon>
     </Compile>
-    <Compile Include="NganHangDeThi.cs">
+    <Compile Include="Form_NganHangDeThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NganHangDeThi.Designer.cs">
-      <DependentUpon>NganHangDeThi.cs</DependentUpon>
+    <Compile Include="Form_NganHangDeThi.Designer.cs">
+      <DependentUpon>Form_NganHangDeThi.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO_NHCH.cs" />
     <Compile Include="BUS_NHCH.cs" />
     <Compile Include="DTO_NHCH.cs" />
     <Compile Include="BUS_NHDT.cs" />
     <Compile Include="DAO_NHDT.cs" />
-    <Compile Include="NopBai.cs">
+    <Compile Include="Form_NopBai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NopBai.Designer.cs">
-      <DependentUpon>NopBai.cs</DependentUpon>
+    <Compile Include="Form_NopBai.Designer.cs">
+      <DependentUpon>Form_NopBai.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyBaiThi.cs">
+    <Compile Include="Form_QuanLyBaiThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyBaiThi.Designer.cs">
-      <DependentUpon>QuanLyBaiThi.cs</DependentUpon>
+    <Compile Include="Form_QuanLyBaiThi.Designer.cs">
+      <DependentUpon>Form_QuanLyBaiThi.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO_SinhVien.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="BUS_ThiTN.cs" />
     <Compile Include="DAO_ThiTN.cs" />
-    <Compile Include="ThiTracNghiem.cs">
+    <Compile Include="Form_ThiTracNghiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThiTracNghiem.Designer.cs">
-      <DependentUpon>ThiTracNghiem.cs</DependentUpon>
+    <Compile Include="Form_ThiTracNghiem.Designer.cs">
+      <DependentUpon>Form_ThiTracNghiem.cs</DependentUpon>
     </Compile>
     <Compile Include="UThongKe_NHCH.cs">
       <SubType>UserControl</SubType>
@@ -191,17 +197,20 @@
     <Compile Include="UThongKe_NHCH.Designer.cs">
       <DependentUpon>UThongKe_NHCH.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BaoCaoThongKe.resx">
-      <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
+    <EmbeddedResource Include="Form_BaoCaoThongKe.resx">
+      <DependentUpon>Form_BaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChiTietBaiLam.resx">
-      <DependentUpon>ChiTietBaiLam.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ChiTietBaiLam.resx">
+      <DependentUpon>Form_ChiTietBaiLam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DangNhap.resx">
-      <DependentUpon>DangNhap.cs</DependentUpon>
+    <EmbeddedResource Include="Form_DangNhap.resx">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QLSinhVien.resx">
-      <DependentUpon>QLSinhVien.cs</DependentUpon>
+    <EmbeddedResource Include="Form_DanhSachBaiLam.resx">
+      <DependentUpon>Form_DanhSachBaiLam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QLSinhVien.resx">
+      <DependentUpon>Form_QLSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UKQThiTheoLop.resx">
       <DependentUpon>UKQThiTheoLop.cs</DependentUpon>
@@ -209,20 +218,20 @@
     <EmbeddedResource Include="UKQThiTheoSV.resx">
       <DependentUpon>UKQThiTheoSV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm_GV.resx">
-      <DependentUpon>MainForm_GV.cs</DependentUpon>
+    <EmbeddedResource Include="Form_MainForm_GV.resx">
+      <DependentUpon>Form_MainForm_GV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm_SV.resx">
-      <DependentUpon>MainForm_SV.cs</DependentUpon>
+    <EmbeddedResource Include="Form_MainForm_SV.resx">
+      <DependentUpon>Form_MainForm_SV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NganHangCauHoi.resx">
-      <DependentUpon>NganHangCauHoi.cs</DependentUpon>
+    <EmbeddedResource Include="Form_NganHangCauHoi.resx">
+      <DependentUpon>Form_NganHangCauHoi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NganHangDeThi.resx">
-      <DependentUpon>NganHangDeThi.cs</DependentUpon>
+    <EmbeddedResource Include="Form_NganHangDeThi.resx">
+      <DependentUpon>Form_NganHangDeThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NopBai.resx">
-      <DependentUpon>NopBai.cs</DependentUpon>
+    <EmbeddedResource Include="Form_NopBai.resx">
+      <DependentUpon>Form_NopBai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -233,14 +242,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QuanLyBaiThi.resx">
-      <DependentUpon>QuanLyBaiThi.cs</DependentUpon>
+    <EmbeddedResource Include="Form_QuanLyBaiThi.resx">
+      <DependentUpon>Form_QuanLyBaiThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptChiTietBaiLam.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThiTracNghiem.resx">
-      <DependentUpon>ThiTracNghiem.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ThiTracNghiem.resx">
+      <DependentUpon>Form_ThiTracNghiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UThongKe_NHCH.resx">
       <DependentUpon>UThongKe_NHCH.cs</DependentUpon>

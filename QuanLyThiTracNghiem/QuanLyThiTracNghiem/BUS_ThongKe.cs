@@ -22,5 +22,9 @@ namespace QuanLyThiTracNghiem
         {
             dtg.DataSource = DAO_ThongKe.Instance.TyLeDatTruotTheoLop(maLop, diemTruot); 
         }
+        public void ThongKeTheoMaSV(DataGridView dtg, string maSV)
+        {
+            dtg.DataSource = DAO_ThongKe.Instance.ThongKeTheoMaSV(maSV);
+        }
     }
 }

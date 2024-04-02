@@ -1,7 +1,7 @@
 ﻿--drop database NganHangCauHoi;
 go
 
-create database NganHangCauHoi;
+--create database NganHangCauHoi;
 go
 use NganHangCauHoi;
 go
@@ -150,12 +150,13 @@ where c.maCH = @maCH
 go
 --exec p_ChiTietDA 'Ch0003'
 -- Tìm kiếm câu hỏi theo mã câu hỏi
+--drop proc p_TimCHTheoMaCH
 create procedure p_TimCHTheoMaCH
 	@maCH nvarchar(6)
 as
 select maCH as N'Mã câu hỏi', noiDungCH as N'Nội dung câu hỏi' 
 from tblCauHoi 
-where maCH like @maCH;
+where maCH like '%'+@maCH+'%';
 --exec p_TimCHTheoMaCH @maCH='CH0001'
 go
 -- Tìm kiếm câu hỏi theo nội dung
@@ -165,6 +166,14 @@ as
 select maCH as N'Mã câu hỏi', noiDungCH as N'Nội dung câu hỏi' 
 from tblCauHoi 
 where noiDungCH like '%'+@noiDungCH+'%';
+go
+-- Tìm kiếm câu hỏi theo nội dung hoặc mã câu hỏi
+create procedure p_TimCHTheoNDMCH
+	@tukhoa nvarchar(50)
+as
+select maCH as N'Mã câu hỏi', noiDungCH as N'Nội dung câu hỏi' 
+from tblCauHoi 
+where noiDungCH like '%'+@tukhoa+'%' or maCH like '%'+@tukhoa+'%';
 go
 -- Thêm câu hỏi và đáp án
 create procedure p_ThemCauHoivaDapAn
@@ -419,6 +428,40 @@ go
 exec p_LayMaDeNgauNhien
 go
 
+-- Xem bài làm theo maKQ
+--drop proc sp_XemBaiLamTheoMaKQ
+CREATE PROCEDURE p_XemBaiLamTheoMaKQ
+    @maKQ nvarchar(6)
+AS
+BEGIN
+    SELECT 
+        ch.noiDungCH,
+        da.noiDungDA,
+        bl.maDA as 'DapAnSinhVien',
+		kq.diem
+    FROM  tblKetQua kq
+    INNER JOIN tblDeThi_CauHoi dt_ch ON kq.maDe = dt_ch.maDe
+    INNER JOIN tblCauHoi ch ON dt_ch.maCH = ch.maCH
+    INNER JOIN tblDapAn da ON ch.maCH = da.maCH
+    LEFT JOIN tblBaiLam bl ON kq.maKQ = bl.maKQ AND ch.maCH = bl.maCH
+    WHERE kq.maKQ = @maKQ
+END
+
+go
+-- Xem danh sách bài làm theo MaSV
+create proc p_XemBaiLamMaSV @maSV nvarchar(6)
+as
+begin
+select maKQ, ngayThi, diem  
+from tblKetQua
+where maSV = @maSV
+end
+
+go
+
+exec p_XemBaiLamMaSV SV0001
+
+go
 -- QUẢN LÝ SINH VIÊN
 -- Xem danh sách sinh viên
 --drop proc XemDSSV
@@ -498,6 +541,21 @@ end;
 go
 select * from tblKetQua
 go
+
+--Thống kê số bài thi và điểm trung bình theo mã sinh viên
+create proc p_ThongKeMaSV @maSV nvarchar(6)
+as
+begin 
+select maSV, tenSV, count(kq.maKQ) as 'Số bài thi', avg(kq.diem) as 'Điểm trung bình'
+from tblSinhVien sv
+inner join tblKetQua kq on sv.maSV = kq.maSV
+where sv.maSV = @maSV
+group by sv.maSV, sv.tenSV 
+end
+
+go
+
+
 -- TRIGGER
 -- Tự động thêm mới tk vào tblTaiKhoan
 create trigger t_ThemMoiTKGV

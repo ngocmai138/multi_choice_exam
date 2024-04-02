@@ -37,5 +37,13 @@ namespace QuanLyThiTracNghiem
             string query = "exec p_DSMaLop";
             return DataProvider.Instance.ExecuteQuery(query);
         }
+
+        public DataTable ThongKeTheoMaSV(string maSV)
+        {
+            string query = "exec p_ThongKeMaSV @maSV";
+            string[] paraName = { "@maSV" };
+            object[] paraValue = { maSV };
+            return DataProvider.Instance.ExecuteQuery(query,paraName, paraValue);
+        }
     }
 }

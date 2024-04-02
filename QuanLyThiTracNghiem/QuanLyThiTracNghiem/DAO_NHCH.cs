@@ -43,6 +43,14 @@ namespace QuanLyThiTracNghiem
                 object[] paraValue = { tuKhoa };
                 return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);     
         }
+        public DataTable TimKiem_MaCH_ND(string tukhoa)
+        {
+            string query = "exec p_TimCHTheoNDMCH @tukhoa";
+            string[] paraName = { "@tukhoa" };
+            object[] paraValue = { tukhoa };
+            return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);
+        }
+
         public DataTable TimKiem_NoiDung(string tuKhoa) {
             string query = "exec p_TimCHTheoND @noiDungCH";
             string[] paraName = { "@noiDungCH" };

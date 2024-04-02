@@ -87,5 +87,21 @@ namespace QuanLyThiTracNghiem
             object[] paraValue = { maKQ };
             return Int32.Parse(DataProvider.Instance.ExecuteScalar(query, paraName, paraValue).ToString());
         }
+
+        public DataTable XemChiTietBaiLam(String maKQ)
+        {
+            string query = "exec p_XemBaiLamTheoMaKQ @maKQ";
+            string[] paraName = { "@maKQ" };
+            object[] paraValue = { maKQ };
+            return DataProvider.Instance.ExecuteQuery(query,paraName,paraValue);
+        }
+
+        public DataTable DanhSachBaiLam(String maSV)
+        {
+            string query = "exec p_XemBaiLamMaSV @maSV";
+            string[] paraName = { "@maSV" };
+            object[] paraValue = { maSV };
+            return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);
+        }
     }
 }

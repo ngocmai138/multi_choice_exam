@@ -204,7 +204,7 @@ namespace QuanLyThiTracNghiem
                 }
             }
         }
-        public FlowLayoutPanel TaoButtonCauHoi(List<DTO_CauHoi> dsCauHoi, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, ThiTracNghiem thiTracNghiem)
+        public FlowLayoutPanel TaoButtonCauHoi(List<DTO_CauHoi> dsCauHoi, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, Form_ThiTracNghiem thiTracNghiem)
         {
             int btnWidth = 30;
             int spacing = 5;
@@ -220,7 +220,7 @@ namespace QuanLyThiTracNghiem
             }
             return pnDSCH;
         }
-        private void Button_Click(object sender, EventArgs e, int index, List<DTO_CauHoi> dsCH, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, ThiTracNghiem thiTracNghiem)
+        private void Button_Click(object sender, EventArgs e, int index, List<DTO_CauHoi> dsCH, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, Form_ThiTracNghiem thiTracNghiem)
         {
             Button clickedButton = (Button)sender;
             RadioButton rbDA1 = (RadioButton) pnNoiDungCH.Controls.Find("rbDA1", true)[0];
@@ -239,5 +239,16 @@ namespace QuanLyThiTracNghiem
 
         }
         
+        public void ChiTietBaiLam(DataGridView dtgv, String maKQ)
+        {
+            DataTable data = DAO_ThiTN.Instance.XemChiTietBaiLam(maKQ);
+            dtgv.DataSource = data;
+        }
+
+        public void DanhSachBaiLam(DataGridView dtgv, String maSV)
+        {
+            DataTable data = DAO_ThiTN.Instance.DanhSachBaiLam(maSV);
+            dtgv.DataSource= data;
+        }
     }
 }
