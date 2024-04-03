@@ -64,7 +64,7 @@
             this.btnThoat.Location = new System.Drawing.Point(839, 0);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(50, 33);
-            this.btnThoat.TabIndex = 3;
+            this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "X";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -108,7 +108,7 @@
             this.btnTK_NHCH.Location = new System.Drawing.Point(0, 0);
             this.btnTK_NHCH.Name = "btnTK_NHCH";
             this.btnTK_NHCH.Size = new System.Drawing.Size(291, 94);
-            this.btnTK_NHCH.TabIndex = 0;
+            this.btnTK_NHCH.TabIndex = 3;
             this.btnTK_NHCH.Text = "Thống kê ngân hàng câu hỏi";
             this.btnTK_NHCH.UseVisualStyleBackColor = true;
             this.btnTK_NHCH.Click += new System.EventHandler(this.Btn_Click);
@@ -133,7 +133,7 @@
             this.btnKQTheoLop.Location = new System.Drawing.Point(0, 0);
             this.btnKQTheoLop.Name = "btnKQTheoLop";
             this.btnKQTheoLop.Size = new System.Drawing.Size(290, 94);
-            this.btnKQTheoLop.TabIndex = 0;
+            this.btnKQTheoLop.TabIndex = 1;
             this.btnKQTheoLop.Text = "Kết quả thi theo LỚP";
             this.btnKQTheoLop.UseVisualStyleBackColor = true;
             this.btnKQTheoLop.Click += new System.EventHandler(this.Btn_Click);
@@ -158,7 +158,7 @@
             this.btnKQTheoSV.Location = new System.Drawing.Point(0, 0);
             this.btnKQTheoSV.Name = "btnKQTheoSV";
             this.btnKQTheoSV.Size = new System.Drawing.Size(290, 94);
-            this.btnKQTheoSV.TabIndex = 0;
+            this.btnKQTheoSV.TabIndex = 2;
             this.btnKQTheoSV.Text = "Kết quả thi theo SINH VIÊN";
             this.btnKQTheoSV.UseVisualStyleBackColor = true;
             this.btnKQTheoSV.Click += new System.EventHandler(this.Btn_Click);
@@ -169,9 +169,9 @@
             this.pnMain.Location = new System.Drawing.Point(0, 133);
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(889, 442);
-            this.pnMain.TabIndex = 0;
+            this.pnMain.TabIndex = 1;
             // 
-            // BaoCaoThongKe
+            // Form_BaoCaoThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +181,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Name = "BaoCaoThongKe";
+            this.Name = "Form_BaoCaoThongKe";
             this.Text = "BaoCaoThongKe";
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

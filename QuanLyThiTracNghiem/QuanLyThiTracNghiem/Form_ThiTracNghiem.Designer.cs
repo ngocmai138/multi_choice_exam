@@ -108,7 +108,7 @@
             this.rbDA1.Location = new System.Drawing.Point(18, 170);
             this.rbDA1.Name = "rbDA1";
             this.rbDA1.Size = new System.Drawing.Size(99, 24);
-            this.rbDA1.TabIndex = 13;
+            this.rbDA1.TabIndex = 0;
             this.rbDA1.TabStop = true;
             this.rbDA1.Text = "Đáp án 1";
             this.rbDA1.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@
             this.rbDA2.Location = new System.Drawing.Point(18, 216);
             this.rbDA2.Name = "rbDA2";
             this.rbDA2.Size = new System.Drawing.Size(99, 24);
-            this.rbDA2.TabIndex = 13;
+            this.rbDA2.TabIndex = 1;
             this.rbDA2.TabStop = true;
             this.rbDA2.Text = "Đáp án 2";
             this.rbDA2.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.btnNopBai.Location = new System.Drawing.Point(677, 363);
             this.btnNopBai.Name = "btnNopBai";
             this.btnNopBai.Size = new System.Drawing.Size(138, 36);
-            this.btnNopBai.TabIndex = 15;
+            this.btnNopBai.TabIndex = 6;
             this.btnNopBai.Text = "Nộp bài";
             this.btnNopBai.UseVisualStyleBackColor = true;
             this.btnNopBai.Click += new System.EventHandler(this.btnNopBai_Click);
@@ -149,7 +149,7 @@
             this.rbDA3.Location = new System.Drawing.Point(18, 265);
             this.rbDA3.Name = "rbDA3";
             this.rbDA3.Size = new System.Drawing.Size(99, 24);
-            this.rbDA3.TabIndex = 13;
+            this.rbDA3.TabIndex = 2;
             this.rbDA3.TabStop = true;
             this.rbDA3.Text = "Đáp án 3";
             this.rbDA3.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             this.rbDA4.Location = new System.Drawing.Point(18, 313);
             this.rbDA4.Name = "rbDA4";
             this.rbDA4.Size = new System.Drawing.Size(99, 24);
-            this.rbDA4.TabIndex = 13;
+            this.rbDA4.TabIndex = 3;
             this.rbDA4.TabStop = true;
             this.rbDA4.Text = "Đáp án 4";
             this.rbDA4.UseVisualStyleBackColor = true;
@@ -206,7 +206,7 @@
             this.btnQuayLai.Location = new System.Drawing.Point(145, 346);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(98, 35);
-            this.btnQuayLai.TabIndex = 3;
+            this.btnQuayLai.TabIndex = 4;
             this.btnQuayLai.Text = "Quay lại";
             this.btnQuayLai.UseVisualStyleBackColor = true;
             this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
@@ -225,7 +225,7 @@
             this.btnTiep.Location = new System.Drawing.Point(293, 346);
             this.btnTiep.Name = "btnTiep";
             this.btnTiep.Size = new System.Drawing.Size(98, 35);
-            this.btnTiep.TabIndex = 3;
+            this.btnTiep.TabIndex = 5;
             this.btnTiep.Text = "Tiếp theo";
             this.btnTiep.UseVisualStyleBackColor = true;
             this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
@@ -257,13 +257,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Danh sách câu hỏi";
             // 
-            // ThiTracNghiem
+            // Form_ThiTracNghiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 450);
             this.Controls.Add(this.pnNoiDungCH);
-            this.Name = "ThiTracNghiem";
+            this.Name = "Form_ThiTracNghiem";
             this.Text = "ThiTracNghiem";
             this.pnNoiDungCH.ResumeLayout(false);
             this.pnNoiDungCH.PerformLayout();

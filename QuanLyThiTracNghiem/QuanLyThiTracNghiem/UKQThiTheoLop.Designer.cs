@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbbMaLop = new System.Windows.Forms.ComboBox();
             this.tabTKTheoLop = new System.Windows.Forms.TabControl();
             this.tabDiemTB = new System.Windows.Forms.TabPage();
             this.dtgDiemTB = new System.Windows.Forms.DataGridView();
@@ -38,7 +39,6 @@
             this.lbDiemTruot = new System.Windows.Forms.Label();
             this.btnTyLeDoTruot = new System.Windows.Forms.Button();
             this.btnXemTK = new System.Windows.Forms.Button();
-            this.cbbMaLop = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.tabTKTheoLop.SuspendLayout();
             this.tabDiemTB.SuspendLayout();
@@ -56,6 +56,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(728, 362);
             this.panel1.TabIndex = 2;
+            // 
+            // cbbMaLop
+            // 
+            this.cbbMaLop.FormattingEnabled = true;
+            this.cbbMaLop.Location = new System.Drawing.Point(23, 22);
+            this.cbbMaLop.Name = "cbbMaLop";
+            this.cbbMaLop.Size = new System.Drawing.Size(276, 28);
+            this.cbbMaLop.TabIndex = 1;
+            this.cbbMaLop.Text = "(Nhập mã lớp)";
             // 
             // tabTKTheoLop
             // 
@@ -147,7 +156,7 @@
             this.btnTyLeDoTruot.Location = new System.Drawing.Point(228, 6);
             this.btnTyLeDoTruot.Name = "btnTyLeDoTruot";
             this.btnTyLeDoTruot.Size = new System.Drawing.Size(140, 30);
-            this.btnTyLeDoTruot.TabIndex = 2;
+            this.btnTyLeDoTruot.TabIndex = 6;
             this.btnTyLeDoTruot.Text = "Xem thống kê";
             this.btnTyLeDoTruot.UseVisualStyleBackColor = true;
             this.btnTyLeDoTruot.Click += new System.EventHandler(this.btnTyLeDoTruot_Click);
@@ -161,15 +170,6 @@
             this.btnXemTK.Text = "Xem thống kê";
             this.btnXemTK.UseVisualStyleBackColor = true;
             this.btnXemTK.Click += new System.EventHandler(this.btnXemTK_Click);
-            // 
-            // cbbMaLop
-            // 
-            this.cbbMaLop.FormattingEnabled = true;
-            this.cbbMaLop.Location = new System.Drawing.Point(23, 22);
-            this.cbbMaLop.Name = "cbbMaLop";
-            this.cbbMaLop.Size = new System.Drawing.Size(276, 28);
-            this.cbbMaLop.TabIndex = 5;
-            this.cbbMaLop.Text = "(Nhập mã lớp)";
             // 
             // UKQThiTheoLop
             // 

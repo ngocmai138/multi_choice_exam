@@ -80,7 +80,7 @@
             this.txtMaLop.Location = new System.Drawing.Point(498, 126);
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.Size = new System.Drawing.Size(100, 26);
-            this.txtMaLop.TabIndex = 15;
+            this.txtMaLop.TabIndex = 6;
             this.txtMaLop.Visible = false;
             // 
             // txtTenSV
@@ -88,7 +88,7 @@
             this.txtTenSV.Location = new System.Drawing.Point(498, 94);
             this.txtTenSV.Name = "txtTenSV";
             this.txtTenSV.Size = new System.Drawing.Size(100, 26);
-            this.txtTenSV.TabIndex = 15;
+            this.txtTenSV.TabIndex = 4;
             this.txtTenSV.Visible = false;
             // 
             // lbMaLop
@@ -181,7 +181,7 @@
             this.cbbTimKiem.Location = new System.Drawing.Point(12, 19);
             this.cbbTimKiem.Name = "cbbTimKiem";
             this.cbbTimKiem.Size = new System.Drawing.Size(145, 28);
-            this.cbbTimKiem.TabIndex = 7;
+            this.cbbTimKiem.TabIndex = 0;
             this.cbbTimKiem.Text = "(Tìm kiếm theo)";
             // 
             // btnXem
@@ -189,7 +189,7 @@
             this.btnXem.Location = new System.Drawing.Point(508, 17);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(110, 34);
-            this.btnXem.TabIndex = 6;
+            this.btnXem.TabIndex = 3;
             this.btnXem.Text = "Xem tất cả";
             this.btnXem.UseVisualStyleBackColor = true;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
@@ -199,7 +199,7 @@
             this.btnSua.Location = new System.Drawing.Point(673, 66);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(110, 34);
-            this.btnSua.TabIndex = 6;
+            this.btnSua.TabIndex = 7;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -209,7 +209,7 @@
             this.btnTimKiem.Location = new System.Drawing.Point(382, 15);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(110, 36);
-            this.btnTimKiem.TabIndex = 9;
+            this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
@@ -219,7 +219,7 @@
             this.btnQuayLai.Location = new System.Drawing.Point(673, 119);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(110, 38);
-            this.btnQuayLai.TabIndex = 4;
+            this.btnQuayLai.TabIndex = 8;
             this.btnQuayLai.Text = "Quay lại";
             this.btnQuayLai.UseVisualStyleBackColor = true;
             this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
@@ -229,20 +229,20 @@
             this.txtTimKiem.Location = new System.Drawing.Point(175, 19);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(201, 26);
-            this.txtTimKiem.TabIndex = 8;
+            this.txtTimKiem.TabIndex = 1;
             // 
             // nganHangCauHoiDataSet1
             // 
             this.nganHangCauHoiDataSet1.DataSetName = "NganHangCauHoiDataSet";
             this.nganHangCauHoiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // QLSinhVien
+            // Form_QLSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pnSV);
-            this.Name = "QLSinhVien";
+            this.Name = "Form_QLSinhVien";
             this.Text = "QLSinhVien";
             this.pnSV.ResumeLayout(false);
             this.pnSV.PerformLayout();

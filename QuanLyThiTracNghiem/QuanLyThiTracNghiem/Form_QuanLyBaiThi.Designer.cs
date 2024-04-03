@@ -48,14 +48,14 @@
             this.dtgBaiLam.RowHeadersWidth = 62;
             this.dtgBaiLam.RowTemplate.Height = 28;
             this.dtgBaiLam.Size = new System.Drawing.Size(526, 343);
-            this.dtgBaiLam.TabIndex = 0;
+            this.dtgBaiLam.TabIndex = 6;
             // 
             // btnQuayLai
             // 
             this.btnQuayLai.Location = new System.Drawing.Point(562, 150);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(174, 38);
-            this.btnQuayLai.TabIndex = 4;
+            this.btnQuayLai.TabIndex = 5;
             this.btnQuayLai.Text = "Quay lại";
             this.btnQuayLai.UseVisualStyleBackColor = true;
             this.btnQuayLai.Click += new System.EventHandler(this.btnThoat_Click);
@@ -75,7 +75,7 @@
             this.btnXem.Location = new System.Drawing.Point(562, 66);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(174, 34);
-            this.btnXem.TabIndex = 6;
+            this.btnXem.TabIndex = 3;
             this.btnXem.Text = "Xem tất cả";
             this.btnXem.UseVisualStyleBackColor = true;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
@@ -89,7 +89,7 @@
             this.cbbTimKiem.Location = new System.Drawing.Point(12, 19);
             this.cbbTimKiem.Name = "cbbTimKiem";
             this.cbbTimKiem.Size = new System.Drawing.Size(145, 28);
-            this.cbbTimKiem.TabIndex = 7;
+            this.cbbTimKiem.TabIndex = 0;
             this.cbbTimKiem.Text = "(Tìm kiếm theo)";
             // 
             // txtTimKiem
@@ -97,14 +97,14 @@
             this.txtTimKiem.Location = new System.Drawing.Point(175, 19);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(201, 26);
-            this.txtTimKiem.TabIndex = 8;
+            this.txtTimKiem.TabIndex = 1;
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Location = new System.Drawing.Point(428, 15);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(110, 34);
-            this.btnTimKiem.TabIndex = 9;
+            this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
@@ -121,15 +121,15 @@
             this.pnBaiThi.Location = new System.Drawing.Point(12, 12);
             this.pnBaiThi.Name = "pnBaiThi";
             this.pnBaiThi.Size = new System.Drawing.Size(790, 426);
-            this.pnBaiThi.TabIndex = 10;
+            this.pnBaiThi.TabIndex = 0;
             // 
-            // QuanLyBaiThi
+            // Form_QuanLyBaiThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 450);
             this.Controls.Add(this.pnBaiThi);
-            this.Name = "QuanLyBaiThi";
+            this.Name = "Form_QuanLyBaiThi";
             this.Text = "QuanLyBaiThi";
             ((System.ComponentModel.ISupportInitialize)(this.dtgBaiLam)).EndInit();
             this.pnBaiThi.ResumeLayout(false);

@@ -85,8 +85,9 @@
             this.dtgvChiTietBaiLam.Size = new System.Drawing.Size(700, 259);
             this.dtgvChiTietBaiLam.TabIndex = 4;
             // 
-            // NopBai
+            // Form_NopBai
             // 
+            this.AcceptButton = this.btnThoat;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -95,7 +96,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label1);
-            this.Name = "NopBai";
+            this.Name = "Form_NopBai";
             this.Text = "NopBai";
             this.Load += new System.EventHandler(this.NopBai_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvChiTietBaiLam)).EndInit();

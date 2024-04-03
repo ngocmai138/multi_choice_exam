@@ -53,7 +53,7 @@
             this.txtTimKiem.Location = new System.Drawing.Point(175, 3);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(206, 26);
-            this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.TabIndex = 1;
             // 
             // cbbTimKiem
             // 
@@ -64,7 +64,7 @@
             this.cbbTimKiem.Location = new System.Drawing.Point(3, 3);
             this.cbbTimKiem.Name = "cbbTimKiem";
             this.cbbTimKiem.Size = new System.Drawing.Size(166, 28);
-            this.cbbTimKiem.TabIndex = 1;
+            this.cbbTimKiem.TabIndex = 0;
             this.cbbTimKiem.Text = "(Nội dung tìm kiếm)";
             // 
             // btnTimKiem
@@ -81,7 +81,7 @@
             this.btnThemTuDong.Location = new System.Drawing.Point(520, 317);
             this.btnThemTuDong.Name = "btnThemTuDong";
             this.btnThemTuDong.Size = new System.Drawing.Size(139, 34);
-            this.btnThemTuDong.TabIndex = 2;
+            this.btnThemTuDong.TabIndex = 6;
             this.btnThemTuDong.Text = "Thêm tự động";
             this.btnThemTuDong.UseVisualStyleBackColor = true;
             this.btnThemTuDong.Click += new System.EventHandler(this.btnThemTuDong_Click);
@@ -149,7 +149,7 @@
             this.dtgCauHoi.RowHeadersWidth = 62;
             this.dtgCauHoi.RowTemplate.Height = 28;
             this.dtgCauHoi.Size = new System.Drawing.Size(321, 342);
-            this.dtgCauHoi.TabIndex = 6;
+            this.dtgCauHoi.TabIndex = 10;
             // 
             // dtgDeThi
             // 
@@ -159,7 +159,7 @@
             this.dtgDeThi.RowHeadersWidth = 62;
             this.dtgDeThi.RowTemplate.Height = 28;
             this.dtgDeThi.Size = new System.Drawing.Size(165, 342);
-            this.dtgDeThi.TabIndex = 3;
+            this.dtgDeThi.TabIndex = 11;
             this.dtgDeThi.SelectionChanged += new System.EventHandler(this.dtgDeThi_SelectionChanged);
             // 
             // btnXoaDe
@@ -167,7 +167,7 @@
             this.btnXoaDe.Location = new System.Drawing.Point(520, 357);
             this.btnXoaDe.Name = "btnXoaDe";
             this.btnXoaDe.Size = new System.Drawing.Size(139, 34);
-            this.btnXoaDe.TabIndex = 2;
+            this.btnXoaDe.TabIndex = 7;
             this.btnXoaDe.Text = "Xóa Đề thi";
             this.btnXoaDe.UseVisualStyleBackColor = true;
             // 
@@ -176,7 +176,7 @@
             this.btnThem.Location = new System.Drawing.Point(520, 277);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(139, 34);
-            this.btnThem.TabIndex = 2;
+            this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm mới";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -186,7 +186,7 @@
             this.btnXem.Location = new System.Drawing.Point(507, 3);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(139, 34);
-            this.btnXem.TabIndex = 2;
+            this.btnXem.TabIndex = 3;
             this.btnXem.Text = "Xem";
             this.btnXem.UseVisualStyleBackColor = true;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
@@ -196,18 +196,18 @@
             this.btnQuayLai.Location = new System.Drawing.Point(652, 3);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(114, 33);
-            this.btnQuayLai.TabIndex = 2;
+            this.btnQuayLai.TabIndex = 4;
             this.btnQuayLai.Text = "Quay lại";
             this.btnQuayLai.UseVisualStyleBackColor = true;
             this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
-            // NganHangDeThi
+            // Form_NganHangDeThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 450);
             this.Controls.Add(this.pnNHDT);
-            this.Name = "NganHangDeThi";
+            this.Name = "Form_NganHangDeThi";
             this.Text = "NganHangDeThi";
             this.pnNHDT.ResumeLayout(false);
             this.pnNHDT.PerformLayout();

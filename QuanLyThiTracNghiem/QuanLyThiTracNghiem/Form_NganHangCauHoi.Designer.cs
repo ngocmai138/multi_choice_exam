@@ -319,13 +319,13 @@
             this.txtExit.UseVisualStyleBackColor = true;
             this.txtExit.Click += new System.EventHandler(this.txtExit_Click);
             // 
-            // NganHangCauHoi
+            // Form_NganHangCauHoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 690);
             this.Controls.Add(this.panel1);
-            this.Name = "NganHangCauHoi";
+            this.Name = "Form_NganHangCauHoi";
             this.Text = "NganHangCauHoi";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -26,5 +26,9 @@ namespace QuanLyThiTracNghiem
         {
             dtg.DataSource = DAO_ThongKe.Instance.ThongKeTheoMaSV(maSV);
         }
+        public void ThongKeTheoNHCH(DataGridView dtg)
+        {
+            dtg.DataSource = DAO_ThongKe.Instance.ThongKeNHCH();
+        }
     }
 }

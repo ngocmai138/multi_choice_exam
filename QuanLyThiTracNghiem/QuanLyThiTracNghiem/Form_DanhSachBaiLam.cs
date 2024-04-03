@@ -32,5 +32,18 @@ namespace QuanLyThiTracNghiem
         {
             BUS_ThiTN.Instance.DanhSachBaiLam(dtgvDSBL, maSV);
         }
+
+
+        private void dtgvDSBL_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                string maKQ = dtgvDSBL.SelectedRows[0].Cells["maKQ"].Value.ToString();
+                Form_XemLaiChiTietBaiLam xemCT = new Form_XemLaiChiTietBaiLam(this,maKQ);
+                xemCT.Show();
+                this.Hide();
+            }
+
+        }
     }
 }

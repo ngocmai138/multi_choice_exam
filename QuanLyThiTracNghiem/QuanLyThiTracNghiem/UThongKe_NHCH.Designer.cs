@@ -29,14 +29,28 @@
         private void InitializeComponent()
         {
             this.pnMain = new System.Windows.Forms.Panel();
+            this.dtgThongKeNHCH = new System.Windows.Forms.DataGridView();
+            this.pnMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgThongKeNHCH)).BeginInit();
             this.SuspendLayout();
             // 
             // pnMain
             // 
+            this.pnMain.Controls.Add(this.dtgThongKeNHCH);
             this.pnMain.Location = new System.Drawing.Point(18, 16);
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(728, 362);
             this.pnMain.TabIndex = 4;
+            // 
+            // dtgThongKeNHCH
+            // 
+            this.dtgThongKeNHCH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgThongKeNHCH.Location = new System.Drawing.Point(24, 14);
+            this.dtgThongKeNHCH.Name = "dtgThongKeNHCH";
+            this.dtgThongKeNHCH.RowHeadersWidth = 62;
+            this.dtgThongKeNHCH.RowTemplate.Height = 28;
+            this.dtgThongKeNHCH.Size = new System.Drawing.Size(687, 337);
+            this.dtgThongKeNHCH.TabIndex = 0;
             // 
             // UThongKe_NHCH
             // 
@@ -45,6 +59,9 @@
             this.Controls.Add(this.pnMain);
             this.Name = "UThongKe_NHCH";
             this.Size = new System.Drawing.Size(780, 411);
+            this.Load += new System.EventHandler(this.UThongKe_NHCH_Load);
+            this.pnMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgThongKeNHCH)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -52,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnMain;
+        private System.Windows.Forms.DataGridView dtgThongKeNHCH;
     }
 }

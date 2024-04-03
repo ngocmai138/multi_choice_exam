@@ -68,6 +68,12 @@
     <Compile Include="BUS_BaiLam.cs" />
     <Compile Include="BUS_SinhVien.cs" />
     <Compile Include="BUS_ThongKe.cs" />
+    <Compile Include="Form_XemLaiChiTietBaiLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_XemLaiChiTietBaiLam.Designer.cs">
+      <DependentUpon>Form_XemLaiChiTietBaiLam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_DanhSachBaiLam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_QLSinhVien.resx">
       <DependentUpon>Form_QLSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_XemLaiChiTietBaiLam.resx">
+      <DependentUpon>Form_XemLaiChiTietBaiLam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UKQThiTheoLop.resx">
       <DependentUpon>UKQThiTheoLop.cs</DependentUpon>

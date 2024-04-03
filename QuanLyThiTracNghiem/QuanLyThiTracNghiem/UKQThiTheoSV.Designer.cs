@@ -54,14 +54,14 @@
             this.dtgThongKe.RowHeadersWidth = 62;
             this.dtgThongKe.RowTemplate.Height = 28;
             this.dtgThongKe.Size = new System.Drawing.Size(725, 375);
-            this.dtgThongKe.TabIndex = 3;
+            this.dtgThongKe.TabIndex = 2;
             // 
             // btnXemTK
             // 
             this.btnXemTK.Location = new System.Drawing.Point(322, 22);
             this.btnXemTK.Name = "btnXemTK";
             this.btnXemTK.Size = new System.Drawing.Size(140, 35);
-            this.btnXemTK.TabIndex = 2;
+            this.btnXemTK.TabIndex = 1;
             this.btnXemTK.Text = "Xem thống kê";
             this.btnXemTK.UseVisualStyleBackColor = true;
             this.btnXemTK.Click += new System.EventHandler(this.btnXemTK_Click);
@@ -72,7 +72,7 @@
             this.txtMaSV.Location = new System.Drawing.Point(13, 22);
             this.txtMaSV.Name = "txtMaSV";
             this.txtMaSV.Size = new System.Drawing.Size(289, 26);
-            this.txtMaSV.TabIndex = 1;
+            this.txtMaSV.TabIndex = 0;
             this.txtMaSV.Text = "(Nhập mã sinh viên)";
             this.txtMaSV.Click += new System.EventHandler(this.txtMaSV_Click);
             this.txtMaSV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMaSV_KeyDown);

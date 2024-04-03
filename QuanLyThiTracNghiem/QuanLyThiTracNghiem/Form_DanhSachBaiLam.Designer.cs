@@ -40,8 +40,10 @@
             this.dtgvDSBL.Name = "dtgvDSBL";
             this.dtgvDSBL.RowHeadersWidth = 62;
             this.dtgvDSBL.RowTemplate.Height = 28;
+            this.dtgvDSBL.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvDSBL.Size = new System.Drawing.Size(775, 337);
             this.dtgvDSBL.TabIndex = 0;
+            this.dtgvDSBL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDSBL_CellClick);
             // 
             // btnQuayLai
             // 

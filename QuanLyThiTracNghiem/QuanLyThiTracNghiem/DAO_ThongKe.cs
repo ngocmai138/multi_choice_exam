@@ -45,5 +45,10 @@ namespace QuanLyThiTracNghiem
             object[] paraValue = { maSV };
             return DataProvider.Instance.ExecuteQuery(query,paraName, paraValue);
         }
+        public DataTable ThongKeNHCH()
+        {
+            string query = "exec p_ThongKeNHCH";
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
     }
 }

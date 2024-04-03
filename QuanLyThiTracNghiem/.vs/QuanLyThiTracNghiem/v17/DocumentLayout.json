@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheosv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheosv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\form_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\form_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheosv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheosv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheosv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheosv.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\dao_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\dao_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\bus_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\bus_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\quanlythitracnghiem\\uthongke_nhch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\uthongke_nhch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,79 +34,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UKQThiTheoSV.Designer.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoSV.Designer.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoSV.Designer.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoSV.Designer.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoSV.Designer.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAMwEwAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T07:24:40.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BUS_ThongKe.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAkwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T07:20:03.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DAO_ThongKe.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\DAO_ThongKe.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\DAO_ThongKe.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\DAO_ThongKe.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\DAO_ThongKe.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAuwDEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T07:08:09.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UKQThiTheoLop.cs",
+              "DocumentIndex": 1,
+              "Title": "UKQThiTheoLop.cs [Design]",
               "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
               "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAmwBgAAAAyAAAA",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs [Design]",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T07:07:52.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T06:22:59.449Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UKQThiTheoSV.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoSV.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoSV.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoSV.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoSV.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAkwCUAAAA1AAAA",
+              "Title": "Form_BaoCaoThongKe.cs [Design]",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs [Design]",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T06:59:13.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T13:42:50.868Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UKQThiTheoSV.cs [Design]",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoSV.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoSV.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoSV.cs [Design]",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoSV.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "UThongKe_NHCH.cs [Design]",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UThongKe_NHCH.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UThongKe_NHCH.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UThongKe_NHCH.cs [Design]",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\UThongKe_NHCH.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T06:57:15.621Z",
+              "WhenOpened": "2024-04-02T13:42:46.434Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -460,7 +460,32 @@ end
 go
 
 exec p_XemBaiLamMaSV SV0001
-
+go
+-- Xem lại chi tiết bài làm
+-- drop proc p_XemLaiCTBaiLam
+create proc p_XemLaiCTBaiLam @maKQ nvarchar(6)
+as
+begin
+SELECT 
+    c.maCH, 
+    c.noiDungCH, 
+    b.maDA as 'Đáp án đã chọn', 
+    CASE WHEN d.dung = 1 THEN 'Đúng' ELSE 'Sai' END AS KetQua
+FROM 
+    tblBaiLam b 
+join 
+	tblKetQua k on b.maKQ = k.maKQ
+JOIN 
+    tblCauHoi c ON b.maCH = c.maCH
+LEFT JOIN 
+    tblDapAn d ON b.maCH = d.maCH AND b.maDA = d.maDA
+WHERE 
+    b.maKQ = @maKQ
+ORDER BY 
+    c.maCH;
+end
+go
+exec p_XemLaiCTBaiLam @maKQ = 'KQ1'
 go
 -- QUẢN LÝ SINH VIÊN
 -- Xem danh sách sinh viên
@@ -546,7 +571,7 @@ go
 create proc p_ThongKeMaSV @maSV nvarchar(6)
 as
 begin 
-select maSV, tenSV, count(kq.maKQ) as 'Số bài thi', avg(kq.diem) as 'Điểm trung bình'
+select sv.maSV, tenSV, count(kq.maKQ) as 'Số bài thi', avg(kq.diem) as 'Điểm trung bình'
 from tblSinhVien sv
 inner join tblKetQua kq on sv.maSV = kq.maSV
 where sv.maSV = @maSV
@@ -555,7 +580,32 @@ end
 
 go
 
-
+exec p_ThongKeMaSV sv0001
+go
+-- Thống kê ngân hàng câu hỏi
+-- drop proc p_ThongKeNHCH
+create proc p_ThongKeNHCH
+as
+begin
+	SELECT 
+    c.maCH, 
+    c.noiDungCH, 
+    COUNT(*) AS SoLanXuatHien, 
+    SUM(CASE WHEN d.dung = 1 THEN 1 ELSE 0 END) AS SoLanLamDung
+FROM 
+    tblBaiLam b 
+JOIN 
+    tblCauHoi c ON b.maCH = c.maCH
+LEFT JOIN 
+    tblDapAn d ON b.maCH = d.maCH AND b.maDA = d.maDA
+GROUP BY 
+    c.maCH, c.noiDungCH
+ORDER BY 
+    c.maCH;
+end
+go
+exec p_ThongKeNHCH
+go
 -- TRIGGER
 -- Tự động thêm mới tk vào tblTaiKhoan
 create trigger t_ThemMoiTKGV

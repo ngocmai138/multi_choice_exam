@@ -250,5 +250,9 @@ namespace QuanLyThiTracNghiem
             DataTable data = DAO_ThiTN.Instance.DanhSachBaiLam(maSV);
             dtgv.DataSource= data;
         }
+        public void XemLaiChiTietBaiLam(DataGridView dtg, String maKQ) {
+            DataTable data = DAO_ThiTN.Instance.XemLaiChiTietBaiLam(maKQ);
+            dtg.DataSource = data;
+        }
     }
 }

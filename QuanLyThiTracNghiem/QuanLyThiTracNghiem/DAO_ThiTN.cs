@@ -103,5 +103,13 @@ namespace QuanLyThiTracNghiem
             object[] paraValue = { maSV };
             return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);
         }
+
+        public DataTable XemLaiChiTietBaiLam(String maKQ)
+        {
+            string query = "exec p_XemLaiCTBaiLam @maKQ";
+            string[] paraName = { "@maKQ" };
+            object[] paraValue = { maKQ };
+            return DataProvider.Instance.ExecuteQuery(query,paraName,paraValue);
+        }
     }
 }

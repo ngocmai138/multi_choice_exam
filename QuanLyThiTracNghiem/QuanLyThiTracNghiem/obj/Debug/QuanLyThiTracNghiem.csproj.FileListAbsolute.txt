@@ -84,3 +84,4 @@ F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_NopBai.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_QuanLyBaiThi.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_ThiTracNghiem.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_XemLaiChiTietBaiLam.resources

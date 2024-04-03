@@ -16,5 +16,10 @@ namespace QuanLyThiTracNghiem
         {
             InitializeComponent();
         }
+
+        private void UThongKe_NHCH_Load(object sender, EventArgs e)
+        {
+            BUS_ThongKe.Instance.ThongKeTheoNHCH(dtgThongKeNHCH);
+        }
     }
 }
