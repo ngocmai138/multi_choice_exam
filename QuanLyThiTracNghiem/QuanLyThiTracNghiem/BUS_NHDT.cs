@@ -32,7 +32,6 @@ namespace QuanLyThiTracNghiem
             }
             dtgCauHoi.AllowUserToAddRows = false;
             dtgCauHoi.RowHeadersVisible = false;
-            nhdt.UpdateLbSoCH(table.Rows.Count);
         }
         public string TaoDeThi(DataGridView dtgDeThi)
         {
@@ -64,6 +63,20 @@ namespace QuanLyThiTracNghiem
             de.CauHois = DSCauHoi;
             MessageBox.Show("Thêm mới thành công: " + de.MaDe);
             return de.MaDe;
+        }
+
+        public void Xoa_DeThi(DataGridView dtgDeThi)
+        {
+            if(dtgDeThi.SelectedCells.Count > 0)
+            {
+                string maDe = dtgDeThi.SelectedCells[0].Value.ToString();
+                if (DAO_NHDT.Instance.XoaDeThi(maDe))
+                {
+                    MessageBox.Show("Xóa thành công");
+                    Xem_DeThi(dtgDeThi);
+                }
+                else MessageBox.Show("Xóa không thành công");
+            }
         }
     }
 }

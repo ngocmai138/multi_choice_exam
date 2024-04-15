@@ -25,7 +25,7 @@ namespace QuanLyThiTracNghiem
         {
             DataTable dt1 = DAO_BaiLam.Instance.TenNguoiDung(tenDN);
             DataTable dt2 = DAO_BaiLam.Instance.TimKiemTheoMaKQ(baiLam.MaKQ);
-            DataTable dt3 = DAO_BaiLam.Instance.XemDeThi_CauHoi(baiLam.MaDe);
+            DataTable dt3 = DAO_ThiTN.Instance.XemLaiChiTietBaiLam(baiLam.MaKQ);
             ReportDataSource rds1 = new ReportDataSource();
             rds1.Name = "DataSet1";
             rds1.Value = dt1;
@@ -44,7 +44,7 @@ namespace QuanLyThiTracNghiem
             ReportParameter[] parameters = new ReportParameter[3];
             parameters[0] = new ReportParameter("maKQ", baiLam.MaKQ);
             parameters[1] = new ReportParameter("maGV", baiLam.MaSV);
-            parameters[2] = new ReportParameter("maDe", baiLam.MaSV);
+            parameters[2] = new ReportParameter("maKQ", baiLam.MaKQ);
             this.reportViewer1.LocalReport.SetParameters(parameters);
             this.reportViewer1.RefreshReport();
         }

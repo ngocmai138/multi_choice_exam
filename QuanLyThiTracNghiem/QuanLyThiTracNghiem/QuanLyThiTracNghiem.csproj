@@ -112,6 +112,9 @@
     <Compile Include="Form_QLSinhVien.Designer.cs">
       <DependentUpon>Form_QLSinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="NganHangCauHoiDataSet1.cs">
+      <DependentUpon>NganHangCauHoiDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UKQThiTheoLop.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -33,10 +33,6 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnThemTuDong = new System.Windows.Forms.Button();
             this.pnNHDT = new System.Windows.Forms.Panel();
-            this.pnDSCH = new System.Windows.Forms.FlowLayoutPanel();
-            this.lbSoCH = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dtgCauHoi = new System.Windows.Forms.DataGridView();
             this.dtgDeThi = new System.Windows.Forms.DataGridView();
             this.btnXoaDe = new System.Windows.Forms.Button();
@@ -78,7 +74,7 @@
             // 
             // btnThemTuDong
             // 
-            this.btnThemTuDong.Location = new System.Drawing.Point(520, 317);
+            this.btnThemTuDong.Location = new System.Drawing.Point(636, 84);
             this.btnThemTuDong.Name = "btnThemTuDong";
             this.btnThemTuDong.Size = new System.Drawing.Size(139, 34);
             this.btnThemTuDong.TabIndex = 6;
@@ -88,10 +84,6 @@
             // 
             // pnNHDT
             // 
-            this.pnNHDT.Controls.Add(this.pnDSCH);
-            this.pnNHDT.Controls.Add(this.lbSoCH);
-            this.pnNHDT.Controls.Add(this.label2);
-            this.pnNHDT.Controls.Add(this.label1);
             this.pnNHDT.Controls.Add(this.dtgCauHoi);
             this.pnNHDT.Controls.Add(this.dtgDeThi);
             this.pnNHDT.Controls.Add(this.cbbTimKiem);
@@ -107,40 +99,6 @@
             this.pnNHDT.Size = new System.Drawing.Size(790, 435);
             this.pnNHDT.TabIndex = 3;
             // 
-            // pnDSCH
-            // 
-            this.pnDSCH.Location = new System.Drawing.Point(520, 145);
-            this.pnDSCH.Name = "pnDSCH";
-            this.pnDSCH.Size = new System.Drawing.Size(246, 126);
-            this.pnDSCH.TabIndex = 9;
-            // 
-            // lbSoCH
-            // 
-            this.lbSoCH.AutoSize = true;
-            this.lbSoCH.Location = new System.Drawing.Point(603, 84);
-            this.lbSoCH.Name = "lbSoCH";
-            this.lbSoCH.Size = new System.Drawing.Size(56, 20);
-            this.lbSoCH.TabIndex = 8;
-            this.lbSoCH.Text = "số câu";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(516, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Danh sách câu hỏi: ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(516, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Số câu hỏi:";
-            // 
             // dtgCauHoi
             // 
             this.dtgCauHoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -148,7 +106,7 @@
             this.dtgCauHoi.Name = "dtgCauHoi";
             this.dtgCauHoi.RowHeadersWidth = 62;
             this.dtgCauHoi.RowTemplate.Height = 28;
-            this.dtgCauHoi.Size = new System.Drawing.Size(321, 342);
+            this.dtgCauHoi.Size = new System.Drawing.Size(454, 342);
             this.dtgCauHoi.TabIndex = 10;
             // 
             // dtgDeThi
@@ -164,22 +122,20 @@
             // 
             // btnXoaDe
             // 
-            this.btnXoaDe.Location = new System.Drawing.Point(520, 357);
+            this.btnXoaDe.Location = new System.Drawing.Point(636, 124);
             this.btnXoaDe.Name = "btnXoaDe";
             this.btnXoaDe.Size = new System.Drawing.Size(139, 34);
             this.btnXoaDe.TabIndex = 7;
             this.btnXoaDe.Text = "Xóa Đề thi";
             this.btnXoaDe.UseVisualStyleBackColor = true;
+            this.btnXoaDe.Click += new System.EventHandler(this.btnXoaDe_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(520, 277);
+            this.btnThem.Location = new System.Drawing.Point(0, 0);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(139, 34);
-            this.btnThem.TabIndex = 5;
-            this.btnThem.Text = "Thêm mới";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 12;
             // 
             // btnXem
             // 
@@ -230,9 +186,5 @@
         private System.Windows.Forms.Button btnXoaDe;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Button btnQuayLai;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbSoCH;
-        private System.Windows.Forms.FlowLayoutPanel pnDSCH;
-        private System.Windows.Forms.Label label2;
     }
 }

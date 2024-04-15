@@ -45,12 +45,5 @@ namespace QuanLyThiTracNghiem
             object[] paraValue = { tenDN };
             return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);
         }
-        public DataTable XemDeThi_CauHoi(string maDe)
-        {
-            string query = "exec p_DeThi_CauHoi @maDe";
-            string[] paraName = { "@maDe" };
-            object[] paraValue = { maDe };
-            return DataProvider.Instance.ExecuteQuery(query,paraName,paraValue);
-        }
     }
 }

@@ -78,28 +78,7 @@ namespace QuanLyThiTracNghiem
             dethi.CauHois = DSCauHoi;
             return dethi;
         }
-        public DTO_BaiThi BaiThi(string maSV, string maDe)
-        {
-            DTO_BaiThi baithi = new DTO_BaiThi();
-            List<object> bt = DAO_ThiTN.Instance.BaiThi(maSV, maDe);
-            if (bt.Count <= 0)
-            {
-                return null;
-                MessageBox.Show("Lỗi tạo bài thi");
-            }
-            baithi.MaSV = maSV;
-            baithi.MaDe = maDe;
-            baithi.MaKQ = bt[0].ToString();
-            baithi.NgayThi = Convert.ToDateTime(bt[1]);
-            if (Int32.TryParse(bt[2].ToString(), out int result))
-            {
-                baithi.Diem = result;
-            }
-            else { 
-                baithi.Diem = 0; 
-            }
-            return baithi;
-        }
+        
         public DTO_BaiThi TaoBaiThi(string maSV, string maDe)
         {
             DTO_BaiThi baiThi = new DTO_BaiThi();

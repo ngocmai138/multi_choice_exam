@@ -80,6 +80,8 @@ VALUES
 ('Lop1', N'Đặng Thị F'),
 ('Lop1', N'Bùi Văn G'),
 ('Lop2', N'Ngô Thị H');
+
+select * from tblSinhVien
 -- Thêm dữ liệu vào bảng tblTaiKhoan
 insert into tblTaiKhoan(id, loaiTK) 
 select maGV, 'GiaoVien' from tblGiaoVien 
@@ -266,6 +268,17 @@ begin
 	end
 end
 go
+-- Xóa đề thi
+create procedure p_XoaDeThi
+@maDe nvarchar(10)
+as
+begin
+delete from tblDeThi
+where maDe = @maDe;
+end;
+go
+exec p_XoaDeThi @maDe='De11'
+go
 -- Xem câu hỏi trong Đề thi
 --drop proc p_DeThi_CauHoi 
 create proc p_DeThi_CauHoi 
@@ -446,6 +459,8 @@ BEGIN
     LEFT JOIN tblBaiLam bl ON kq.maKQ = bl.maKQ AND ch.maCH = bl.maCH
     WHERE kq.maKQ = @maKQ
 END
+go
+exec p_XemBaiLamTheoMaKQ @maKQ = 'KQ1';
 
 go
 -- Xem danh sách bài làm theo MaSV
@@ -469,7 +484,7 @@ begin
 SELECT 
     c.maCH, 
     c.noiDungCH, 
-    b.maDA as 'Đáp án đã chọn', 
+    d.noiDungDA as 'DapAnDaChon', 
     CASE WHEN d.dung = 1 THEN 'Đúng' ELSE 'Sai' END AS KetQua
 FROM 
     tblBaiLam b 
@@ -622,6 +637,20 @@ after insert
 as
 begin
 insert into tblTaiKhoan(id, loaiTK) select maSV, 'SinhVien' from inserted;
+end;
+go
+
+--Tự động xóa bản ghi trong tblDeThi_CauHoi khi xóa 1 bản ghi trong tblDeThi
+--drop trigger t_XoaDeThi
+create trigger t_XoaDeThi
+on tblDeThi
+instead of delete
+as 
+begin
+	delete from tblDeThi_CauHoi
+	where maDe in (select maDe from deleted);
+	delete from tblDeThi
+	where maDe in (select maDe from deleted);
 end;
 go
 --select * from tblTaiKhoan

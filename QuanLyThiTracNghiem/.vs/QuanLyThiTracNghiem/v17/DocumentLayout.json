@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\form_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\form_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\bus_sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\bus_sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\form_nganhangcauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\form_nganhangcauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\quanlythitracnghiem\\uthongke_nhch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\uthongke_nhch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\form_qlsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\form_qlsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\form_qlsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\form_qlsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BUS_SinhVien.cs",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\BUS_SinhVien.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\BUS_SinhVien.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\BUS_SinhVien.cs*",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\BUS_SinhVien.cs*",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:49:50.288Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -35,37 +52,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UKQThiTheoLop.cs [Design]",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs [Design]",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs [Design]",
+              "Title": "Form_NganHangCauHoi.cs [Design]",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_NganHangCauHoi.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\Form_NganHangCauHoi.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_NganHangCauHoi.cs [Design]",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\Form_NganHangCauHoi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T06:22:59.449Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form_BaoCaoThongKe.cs [Design]",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs [Design]",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\Form_BaoCaoThongKe.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T13:42:50.868Z",
+              "WhenOpened": "2024-04-15T09:48:51.693Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UThongKe_NHCH.cs [Design]",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UThongKe_NHCH.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UThongKe_NHCH.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UThongKe_NHCH.cs [Design]",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UThongKe_NHCH.cs [Design]",
+              "Title": "Form_QLSinhVien.cs",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_QLSinhVien.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\Form_QLSinhVien.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_QLSinhVien.cs",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\Form_QLSinhVien.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAA8wEQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T13:42:46.434Z",
+              "WhenOpened": "2024-04-15T09:44:03.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form_QLSinhVien.cs [Design]",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_QLSinhVien.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\Form_QLSinhVien.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_QLSinhVien.cs [Design]",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\Form_QLSinhVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:43:49.931Z",
               "EditorCaption": " [Design]"
             }
           ]

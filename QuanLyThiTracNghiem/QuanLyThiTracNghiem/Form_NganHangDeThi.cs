@@ -47,14 +47,10 @@ namespace QuanLyThiTracNghiem
         {
             BUS_NHDT.Instance.Xem_CauHoi(dtgDeThi, dtgCauHoi, this);
         }
-        public void UpdateLbSoCH(int i)
-        {
-            lbSoCH.Text = i.ToString();
-        }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void btnXoaDe_Click(object sender, EventArgs e)
         {
-
+            BUS_NHDT.Instance.Xoa_DeThi(dtgDeThi);
         }
     }
 }

@@ -29,14 +29,6 @@
         private void InitializeComponent()
         {
             this.pnSV = new System.Windows.Forms.Panel();
-            this.txtMaLop = new System.Windows.Forms.TextBox();
-            this.txtTenSV = new System.Windows.Forms.TextBox();
-            this.lbMaLop = new System.Windows.Forms.Label();
-            this.lbTenSV = new System.Windows.Forms.Label();
-            this.lbMaSV = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dtgChiTiet = new System.Windows.Forms.DataGridView();
             this.dtgDSSV = new System.Windows.Forms.DataGridView();
             this.cbbTimKiem = new System.Windows.Forms.ComboBox();
@@ -46,6 +38,14 @@
             this.btnQuayLai = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.nganHangCauHoiDataSet1 = new QuanLyThiTracNghiem.NganHangCauHoiDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbMaSV = new System.Windows.Forms.Label();
+            this.lbTenSV = new System.Windows.Forms.Label();
+            this.lbMaLop = new System.Windows.Forms.Label();
+            this.txtTenSV = new System.Windows.Forms.TextBox();
+            this.txtMaLop = new System.Windows.Forms.TextBox();
             this.pnSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgChiTiet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDSSV)).BeginInit();
@@ -74,79 +74,6 @@
             this.pnSV.Name = "pnSV";
             this.pnSV.Size = new System.Drawing.Size(790, 426);
             this.pnSV.TabIndex = 11;
-            // 
-            // txtMaLop
-            // 
-            this.txtMaLop.Location = new System.Drawing.Point(498, 126);
-            this.txtMaLop.Name = "txtMaLop";
-            this.txtMaLop.Size = new System.Drawing.Size(100, 26);
-            this.txtMaLop.TabIndex = 6;
-            this.txtMaLop.Visible = false;
-            // 
-            // txtTenSV
-            // 
-            this.txtTenSV.Location = new System.Drawing.Point(498, 94);
-            this.txtTenSV.Name = "txtTenSV";
-            this.txtTenSV.Size = new System.Drawing.Size(100, 26);
-            this.txtTenSV.TabIndex = 4;
-            this.txtTenSV.Visible = false;
-            // 
-            // lbMaLop
-            // 
-            this.lbMaLop.AutoSize = true;
-            this.lbMaLop.Location = new System.Drawing.Point(494, 128);
-            this.lbMaLop.Name = "lbMaLop";
-            this.lbMaLop.Size = new System.Drawing.Size(51, 20);
-            this.lbMaLop.TabIndex = 14;
-            this.lbMaLop.Text = "label4";
-            this.lbMaLop.Visible = false;
-            // 
-            // lbTenSV
-            // 
-            this.lbTenSV.AutoSize = true;
-            this.lbTenSV.Location = new System.Drawing.Point(494, 97);
-            this.lbTenSV.Name = "lbTenSV";
-            this.lbTenSV.Size = new System.Drawing.Size(51, 20);
-            this.lbTenSV.TabIndex = 14;
-            this.lbTenSV.Text = "label4";
-            this.lbTenSV.Visible = false;
-            // 
-            // lbMaSV
-            // 
-            this.lbMaSV.AutoSize = true;
-            this.lbMaSV.Location = new System.Drawing.Point(494, 66);
-            this.lbMaSV.Name = "lbMaSV";
-            this.lbMaSV.Size = new System.Drawing.Size(51, 20);
-            this.lbMaSV.TabIndex = 14;
-            this.lbMaSV.Text = "label4";
-            this.lbMaSV.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(387, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 20);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Mã lớp:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(387, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 20);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Tên sinh viên:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(387, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Mã sinh viên:";
             // 
             // dtgChiTiet
             // 
@@ -236,6 +163,79 @@
             this.nganHangCauHoiDataSet1.DataSetName = "NganHangCauHoiDataSet";
             this.nganHangCauHoiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(387, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Mã sinh viên:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(387, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 20);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Tên sinh viên:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(387, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Mã lớp:";
+            // 
+            // lbMaSV
+            // 
+            this.lbMaSV.AutoSize = true;
+            this.lbMaSV.Location = new System.Drawing.Point(494, 66);
+            this.lbMaSV.Name = "lbMaSV";
+            this.lbMaSV.Size = new System.Drawing.Size(51, 20);
+            this.lbMaSV.TabIndex = 14;
+            this.lbMaSV.Text = "label4";
+            this.lbMaSV.Visible = false;
+            // 
+            // lbTenSV
+            // 
+            this.lbTenSV.AutoSize = true;
+            this.lbTenSV.Location = new System.Drawing.Point(494, 97);
+            this.lbTenSV.Name = "lbTenSV";
+            this.lbTenSV.Size = new System.Drawing.Size(51, 20);
+            this.lbTenSV.TabIndex = 14;
+            this.lbTenSV.Text = "label4";
+            this.lbTenSV.Visible = false;
+            // 
+            // lbMaLop
+            // 
+            this.lbMaLop.AutoSize = true;
+            this.lbMaLop.Location = new System.Drawing.Point(494, 128);
+            this.lbMaLop.Name = "lbMaLop";
+            this.lbMaLop.Size = new System.Drawing.Size(51, 20);
+            this.lbMaLop.TabIndex = 14;
+            this.lbMaLop.Text = "label4";
+            this.lbMaLop.Visible = false;
+            // 
+            // txtTenSV
+            // 
+            this.txtTenSV.Location = new System.Drawing.Point(498, 94);
+            this.txtTenSV.Name = "txtTenSV";
+            this.txtTenSV.Size = new System.Drawing.Size(100, 26);
+            this.txtTenSV.TabIndex = 4;
+            this.txtTenSV.Visible = false;
+            // 
+            // txtMaLop
+            // 
+            this.txtMaLop.Location = new System.Drawing.Point(498, 126);
+            this.txtMaLop.Name = "txtMaLop";
+            this.txtMaLop.Size = new System.Drawing.Size(100, 26);
+            this.txtMaLop.TabIndex = 6;
+            this.txtMaLop.Visible = false;
+            // 
             // Form_QLSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -264,14 +264,14 @@
         private System.Windows.Forms.DataGridView dtgDSSV;
         private NganHangCauHoiDataSet nganHangCauHoiDataSet1;
         private System.Windows.Forms.Button btnXem;
+        private System.Windows.Forms.DataGridView dtgChiTiet;
+        private System.Windows.Forms.TextBox txtMaLop;
+        private System.Windows.Forms.TextBox txtTenSV;
         private System.Windows.Forms.Label lbMaLop;
         private System.Windows.Forms.Label lbTenSV;
         private System.Windows.Forms.Label lbMaSV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgChiTiet;
-        private System.Windows.Forms.TextBox txtMaLop;
-        private System.Windows.Forms.TextBox txtTenSV;
     }
 }

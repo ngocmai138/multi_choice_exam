@@ -57,5 +57,16 @@ namespace QuanLyThiTracNghiem
             List<object> objs = DataProvider.Instance.ExecuteReader(query, paraName, paraValue);
             return objs;
         }
+        public bool XoaDeThi(string maDe)
+        {
+            string query = "exec p_XoaDeThi @maDe";
+            string[] paraName = { "@maDe" };
+            object[] paraValue = {maDe};
+            if(DataProvider.Instance.ExecuteNonQuery(query, paraName, paraValue) > 0)
+            {
+                return true;
+            }else 
+                return false;
+        }
     }
 }
