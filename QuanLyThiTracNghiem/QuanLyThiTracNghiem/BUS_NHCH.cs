@@ -100,8 +100,6 @@ namespace QuanLyThiTracNghiem
 
         public bool Them(RichTextBox noiDungCH, TextBox da1, TextBox da2, TextBox da3, TextBox da4, CheckBox dung1, CheckBox dung2, CheckBox dung3, CheckBox dung4)
         {
-            MessageBox.Show(noiDungCH.Text);
-            MessageBox.Show(da1.Text);
             DTO_NHCH cauHoi = new DTO_NHCH();
             cauHoi.NoiDungCH = noiDungCH.Text;
             cauHoi.DA = new List<DTO_DapAn>();

@@ -74,8 +74,8 @@ namespace QuanLyThiTracNghiem
                 }
                 catch (SqlException ex)
                 {
-                    //  throw new Exception(ex.Message);
-                    return -1;
+                      throw new Exception(ex.Message);
+                    //return -1;
                 }
                 connection.Close();
                 return acceptedRow;

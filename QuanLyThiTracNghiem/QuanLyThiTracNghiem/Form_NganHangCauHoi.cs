@@ -72,7 +72,7 @@ namespace QuanLyThiTracNghiem
                     MessageBox.Show("Xóa thành công");
                     btnXem_Click(sender, e);
                 }
-            }catch(Exception ex)
+            }catch
             {
                 MessageBox.Show("Xóa không thành công");
             }

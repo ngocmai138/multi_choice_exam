@@ -67,15 +67,21 @@ namespace QuanLyThiTracNghiem
 
         public void Xoa_DeThi(DataGridView dtgDeThi)
         {
-            if(dtgDeThi.SelectedCells.Count > 0)
+            try
             {
-                string maDe = dtgDeThi.SelectedCells[0].Value.ToString();
-                if (DAO_NHDT.Instance.XoaDeThi(maDe))
+                if(dtgDeThi.SelectedCells.Count > 0)
                 {
-                    MessageBox.Show("Xóa thành công");
-                    Xem_DeThi(dtgDeThi);
+                    string maDe = dtgDeThi.SelectedCells[0].Value.ToString();
+                    if (DAO_NHDT.Instance.XoaDeThi(maDe))
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        Xem_DeThi(dtgDeThi);
+                    }
                 }
-                else MessageBox.Show("Xóa không thành công");
+            }
+            catch
+            {
+                 MessageBox.Show("Xóa không thành công");
             }
         }
     }
