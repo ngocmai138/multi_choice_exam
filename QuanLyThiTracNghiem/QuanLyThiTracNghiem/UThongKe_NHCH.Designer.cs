@@ -37,19 +37,20 @@
             // pnMain
             // 
             this.pnMain.Controls.Add(this.dtgThongKeNHCH);
-            this.pnMain.Location = new System.Drawing.Point(18, 16);
+            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain.Location = new System.Drawing.Point(0, 0);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(728, 362);
+            this.pnMain.Size = new System.Drawing.Size(1157, 473);
             this.pnMain.TabIndex = 4;
             // 
             // dtgThongKeNHCH
             // 
             this.dtgThongKeNHCH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgThongKeNHCH.Location = new System.Drawing.Point(24, 14);
+            this.dtgThongKeNHCH.Location = new System.Drawing.Point(12, 14);
             this.dtgThongKeNHCH.Name = "dtgThongKeNHCH";
             this.dtgThongKeNHCH.RowHeadersWidth = 62;
             this.dtgThongKeNHCH.RowTemplate.Height = 28;
-            this.dtgThongKeNHCH.Size = new System.Drawing.Size(687, 337);
+            this.dtgThongKeNHCH.Size = new System.Drawing.Size(1129, 441);
             this.dtgThongKeNHCH.TabIndex = 0;
             // 
             // UThongKe_NHCH
@@ -58,7 +59,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnMain);
             this.Name = "UThongKe_NHCH";
-            this.Size = new System.Drawing.Size(780, 411);
+            this.Size = new System.Drawing.Size(1157, 473);
             this.Load += new System.EventHandler(this.UThongKe_NHCH_Load);
             this.pnMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgThongKeNHCH)).EndInit();

@@ -23,7 +23,7 @@ namespace QuanLyThiTracNghiem
             string loaiTK = DAO_NHCH.Instance.DangNhap(tenDN.Text,mk.Text);
             if (loaiTK == "GiaoVien")
             {
-                Form_MainForm_GV f = new Form_MainForm_GV(formLogin, tenDN.Text);
+                Form_MainForm_GV2 f = new Form_MainForm_GV2(formLogin, tenDN.Text);
                 f.Show();
                 formLogin.Hide();
 

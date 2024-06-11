@@ -289,6 +289,33 @@ from tblDeThi_CauHoi d
 join tblCauHoi c 
 on  d.maCH = c.maCH
 where d.maDe = @maDe
+go
+-- Tìm kiếm Đề thi theo mã đề
+create proc p_TimDeTheoMaDe @maDe nvarchar(10)
+as
+select maDe as N'Mã đề'
+from tblDeThi_CauHoi
+where maDe like '%'+@maDe+'%';
+go
+-- Tìm kiếm Đề thi theo nội dung câu hỏi
+create proc p_TimDeTheoND @noiDungCH nvarchar(100)
+as
+select d.maDe as N'Mã đề'
+from tblDeThi_CauHoi d 
+join tblCauHoi c
+on  d.maCH = c.maCH
+where c.noiDungCH like '%'+@noiDungCH+'%';
+go
+-- Tìm kiếm Đề thi theo nội dung câu hỏi hoặc mã đề
+create proc p_TimDeTheoNDDe @tukhoa nvarchar(100)
+as
+select d.maDe as N'Mã đề'
+from tblDeThi_CauHoi d 
+join tblCauHoi c
+on  d.maCH = c.maCH
+where (c.noiDungCH like '%'+@tukhoa+'%') or (d.maDe like '%'+@tukhoa+'%');
+
+
 
 --exec p_DeThi_CauHoi @maDe = 'DE2'
 go

@@ -41,9 +41,10 @@
             this.pnMain.Controls.Add(this.dtgThongKe);
             this.pnMain.Controls.Add(this.btnXemTK);
             this.pnMain.Controls.Add(this.txtMaSV);
-            this.pnMain.Location = new System.Drawing.Point(17, 24);
+            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain.Location = new System.Drawing.Point(0, 0);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(741, 453);
+            this.pnMain.Size = new System.Drawing.Size(1157, 473);
             this.pnMain.TabIndex = 3;
             // 
             // dtgThongKe
@@ -53,7 +54,7 @@
             this.dtgThongKe.Name = "dtgThongKe";
             this.dtgThongKe.RowHeadersWidth = 62;
             this.dtgThongKe.RowTemplate.Height = 28;
-            this.dtgThongKe.Size = new System.Drawing.Size(725, 375);
+            this.dtgThongKe.Size = new System.Drawing.Size(1127, 382);
             this.dtgThongKe.TabIndex = 2;
             // 
             // btnXemTK
@@ -84,7 +85,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnMain);
             this.Name = "UKQThiTheoSV";
-            this.Size = new System.Drawing.Size(779, 500);
+            this.Size = new System.Drawing.Size(1157, 473);
             this.pnMain.ResumeLayout(false);
             this.pnMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgThongKe)).EndInit();

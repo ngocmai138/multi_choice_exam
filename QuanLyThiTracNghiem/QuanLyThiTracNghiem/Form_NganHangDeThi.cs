@@ -45,7 +45,7 @@ namespace QuanLyThiTracNghiem
 
         private void dtgDeThi_SelectionChanged(object sender, EventArgs e)
         {
-            BUS_NHDT.Instance.Xem_CauHoi(dtgDeThi, dtgCauHoi, this);
+            BUS_NHDT.Instance.Xem_CauHoi(dtgDeThi, dtgCauHoi);
         }
 
         private void btnXoaDe_Click(object sender, EventArgs e)

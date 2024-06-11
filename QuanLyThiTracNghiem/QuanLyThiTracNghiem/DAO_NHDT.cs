@@ -68,5 +68,27 @@ namespace QuanLyThiTracNghiem
             }else 
                 return false;
         }
+        public DataTable TimKiem_MaDe(string tuKhoa)
+        {
+            string query = "exec p_TimDeTheoMaDe @maDe";
+            string[] paraName = { "@maDe" };
+            object[] paraValue = { tuKhoa };
+            return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);
+        }
+        public DataTable TimKiem_MaDe_ND(string tukhoa)
+        {
+            string query = "exec p_TimDeTheoNDDe @tukhoa";
+            string[] paraName = { "@tukhoa" };
+            object[] paraValue = { tukhoa };
+            return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);
+        }
+
+        public DataTable TimKiem_NoiDung(string tuKhoa)
+        {
+            string query = "exec p_TimDeTheoND @noiDungCH";
+            string[] paraName = { "@noiDungCH" };
+            object[] paraValue = { tuKhoa };
+            return DataProvider.Instance.ExecuteQuery(query, paraName, paraValue);
+        }
     }
 }

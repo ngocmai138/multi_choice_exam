@@ -20,7 +20,7 @@ namespace QuanLyThiTracNghiem
             dtgDeThi.AllowUserToAddRows = false;
             dtgDeThi.RowHeadersVisible=false;
         }
-        public void Xem_CauHoi(DataGridView dtgDeThi, DataGridView dtgCauHoi, Form_NganHangDeThi nhdt)
+        public void Xem_CauHoi(DataGridView dtgDeThi, DataGridView dtgCauHoi)
         {
             DTO_DeThi de = new DTO_DeThi();
             DataTable table = new DataTable();
@@ -83,6 +83,17 @@ namespace QuanLyThiTracNghiem
             {
                  MessageBox.Show("Xóa không thành công");
             }
+        }
+
+        public void TimKiem(DataGridView dataGridView, ComboBox cbbTimKiem, TextBox tuKhoa)
+        {
+            if (cbbTimKiem.Text == "Mã đề")
+                dataGridView.DataSource = DAO_NHDT.Instance.TimKiem_MaDe(tuKhoa.Text);
+            else if (cbbTimKiem.Text == "Nội dung câu hỏi")
+                dataGridView.DataSource = DAO_NHDT.Instance.TimKiem_NoiDung(tuKhoa.Text);
+            else
+                dataGridView.DataSource = DAO_NHDT.Instance.TimKiem_MaDe_ND(tuKhoa.Text);
+
         }
     }
 }

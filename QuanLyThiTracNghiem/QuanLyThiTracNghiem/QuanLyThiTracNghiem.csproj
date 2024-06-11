@@ -68,6 +68,12 @@
     <Compile Include="BUS_BaiLam.cs" />
     <Compile Include="BUS_SinhVien.cs" />
     <Compile Include="BUS_ThongKe.cs" />
+    <Compile Include="Form_MainForm_GV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MainForm_GV2.Designer.cs">
+      <DependentUpon>Form_MainForm_GV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_XemLaiChiTietBaiLam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,36 @@
     </Compile>
     <Compile Include="NganHangCauHoiDataSet1.cs">
       <DependentUpon>NganHangCauHoiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UC_BaoCaoThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_BaoCaoThongKe.Designer.cs">
+      <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NganHangCauHoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NganHangCauHoi.Designer.cs">
+      <DependentUpon>UC_NganHangCauHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NganHangDeThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NganHangDeThi.Designer.cs">
+      <DependentUpon>UC_NganHangDeThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_QLSinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_QLSinhVien.Designer.cs">
+      <DependentUpon>UC_QLSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_QuanLyBaiThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_QuanLyBaiThi.Designer.cs">
+      <DependentUpon>UC_QuanLyBaiThi.cs</DependentUpon>
     </Compile>
     <Compile Include="UKQThiTheoLop.cs">
       <SubType>UserControl</SubType>
@@ -218,11 +254,29 @@
     <EmbeddedResource Include="Form_DanhSachBaiLam.resx">
       <DependentUpon>Form_DanhSachBaiLam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_MainForm_GV2.resx">
+      <DependentUpon>Form_MainForm_GV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_QLSinhVien.resx">
       <DependentUpon>Form_QLSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_XemLaiChiTietBaiLam.resx">
       <DependentUpon>Form_XemLaiChiTietBaiLam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_BaoCaoThongKe.resx">
+      <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NganHangCauHoi.resx">
+      <DependentUpon>UC_NganHangCauHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NganHangDeThi.resx">
+      <DependentUpon>UC_NganHangDeThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_QLSinhVien.resx">
+      <DependentUpon>UC_QLSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_QuanLyBaiThi.resx">
+      <DependentUpon>UC_QuanLyBaiThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UKQThiTheoLop.resx">
       <DependentUpon>UKQThiTheoLop.cs</DependentUpon>
