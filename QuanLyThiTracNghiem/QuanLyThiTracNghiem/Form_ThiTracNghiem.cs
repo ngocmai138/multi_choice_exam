@@ -36,7 +36,6 @@ namespace QuanLyThiTracNghiem
             
 
             BUS_ThiTN.Instance.HienThiCauHoi(count, DSCauHoi, pnNoiDungCH);
-            pnDSCH = BUS_ThiTN.Instance.TaoButtonCauHoi(DSCauHoi ,pnNoiDungCH, pnDSCH, this);
             
         }
 

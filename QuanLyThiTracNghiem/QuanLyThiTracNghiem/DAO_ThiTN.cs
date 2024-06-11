@@ -57,6 +57,32 @@ namespace QuanLyThiTracNghiem
             }
             return false;
         }
+
+        public string GenerateUniqueMaKQ()
+        {
+            string maKQ;
+            bool exists;
+            do
+            {
+                maKQ = GenerateMaKQ();
+                string query = "SELECT COUNT(*) FROM tblKetQua WHERE maKQ = @maKQ";
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+            new SqlParameter("@maKQ", maKQ)
+                };
+                object result = DataProvider.Instance.ExecuteScalar(query, parameters);
+                exists = Convert.ToInt32(result) > 0;
+            } while (exists);
+            return maKQ;
+        }
+        public string GenerateMaKQ()
+        {
+            // Generate a random alphanumeric string for maKQ
+            var random = new Random();
+            var maKQ = new string(Enumerable.Repeat("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", 6)
+                                             .Select(s => s[random.Next(s.Length)]).ToArray());
+            return maKQ;
+        }
         public (string, DateTime) TaoBaiThi(string maSV, string maDe)
         {
             string query = "exec p_ThemBaiThiMoi @maDe, @maSV, @maKQ output, @ngaythi output";

@@ -73,16 +73,10 @@ F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UKQThiTheoSV.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UThongKe_NHCH.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyTh.2DC55A70.Up2Date
-F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_BaoCaoThongKe.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_ChiTietBaiLam.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_DanhSachBaiLam.resources
-F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_QLSinhVien.resources
-F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_MainForm_GV.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_MainForm_SV.resources
-F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_NganHangCauHoi.resources
-F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_NganHangDeThi.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_NopBai.resources
-F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_QuanLyBaiThi.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_ThiTracNghiem.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_XemLaiChiTietBaiLam.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_MainForm_GV2.resources
@@ -91,3 +85,6 @@ F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_QLSinhVien.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_QuanLyBaiThi.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_BaoCaoThongKe.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_ThiTracNghiem.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_NopBai.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_DanhSachBaiLam.resources

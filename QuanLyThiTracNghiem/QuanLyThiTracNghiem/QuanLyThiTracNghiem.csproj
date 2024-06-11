@@ -90,12 +90,6 @@
     <Compile Include="DAO_SinhVien.cs" />
     <Compile Include="DAO_ThongKe.cs" />
     <Compile Include="DTO_BaiThi.cs" />
-    <Compile Include="Form_BaoCaoThongKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_BaoCaoThongKe.Designer.cs">
-      <DependentUpon>Form_BaoCaoThongKe.cs</DependentUpon>
-    </Compile>
     <Compile Include="DTO_CauHoi.cs" />
     <Compile Include="Form_ChiTietBaiLam.cs">
       <SubType>Form</SubType>
@@ -112,12 +106,6 @@
     <Compile Include="DTO_DapAn.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DTO_DeThi.cs" />
-    <Compile Include="Form_QLSinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_QLSinhVien.Designer.cs">
-      <DependentUpon>Form_QLSinhVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="NganHangCauHoiDataSet1.cs">
       <DependentUpon>NganHangCauHoiDataSet1.xsd</DependentUpon>
     </Compile>
@@ -126,6 +114,12 @@
     </Compile>
     <Compile Include="UC_BaoCaoThongKe.Designer.cs">
       <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DanhSachBaiLam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DanhSachBaiLam.Designer.cs">
+      <DependentUpon>UC_DanhSachBaiLam.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_NganHangCauHoi.cs">
       <SubType>UserControl</SubType>
@@ -139,6 +133,12 @@
     <Compile Include="UC_NganHangDeThi.Designer.cs">
       <DependentUpon>UC_NganHangDeThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_NopBai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NopBai.Designer.cs">
+      <DependentUpon>UC_NopBai.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_QLSinhVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +150,12 @@
     </Compile>
     <Compile Include="UC_QuanLyBaiThi.Designer.cs">
       <DependentUpon>UC_QuanLyBaiThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ThiTracNghiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ThiTracNghiem.Designer.cs">
+      <DependentUpon>UC_ThiTracNghiem.cs</DependentUpon>
     </Compile>
     <Compile Include="UKQThiTheoLop.cs">
       <SubType>UserControl</SubType>
@@ -163,23 +169,11 @@
     <Compile Include="UKQThiTheoSV.Designer.cs">
       <DependentUpon>UKQThiTheoSV.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_MainForm_GV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_MainForm_GV.Designer.cs">
-      <DependentUpon>Form_MainForm_GV.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_MainForm_SV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_MainForm_SV.Designer.cs">
       <DependentUpon>Form_MainForm_SV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_NganHangCauHoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_NganHangCauHoi.Designer.cs">
-      <DependentUpon>Form_NganHangCauHoi.cs</DependentUpon>
     </Compile>
     <Compile Include="NganHangCauHoiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -201,12 +195,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NganHangCauHoiDataSet3.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form_NganHangDeThi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_NganHangDeThi.Designer.cs">
-      <DependentUpon>Form_NganHangDeThi.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO_NHCH.cs" />
     <Compile Include="BUS_NHCH.cs" />
     <Compile Include="DTO_NHCH.cs" />
@@ -220,12 +208,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Form_QuanLyBaiThi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_QuanLyBaiThi.Designer.cs">
-      <DependentUpon>Form_QuanLyBaiThi.cs</DependentUpon>
-    </Compile>
     <Compile Include="DTO_SinhVien.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="BUS_ThiTN.cs" />
@@ -242,9 +224,6 @@
     <Compile Include="UThongKe_NHCH.Designer.cs">
       <DependentUpon>UThongKe_NHCH.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form_BaoCaoThongKe.resx">
-      <DependentUpon>Form_BaoCaoThongKe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_ChiTietBaiLam.resx">
       <DependentUpon>Form_ChiTietBaiLam.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,14 +236,14 @@
     <EmbeddedResource Include="Form_MainForm_GV2.resx">
       <DependentUpon>Form_MainForm_GV2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_QLSinhVien.resx">
-      <DependentUpon>Form_QLSinhVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_XemLaiChiTietBaiLam.resx">
       <DependentUpon>Form_XemLaiChiTietBaiLam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_BaoCaoThongKe.resx">
       <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DanhSachBaiLam.resx">
+      <DependentUpon>UC_DanhSachBaiLam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_NganHangCauHoi.resx">
       <DependentUpon>UC_NganHangCauHoi.cs</DependentUpon>
@@ -272,11 +251,17 @@
     <EmbeddedResource Include="UC_NganHangDeThi.resx">
       <DependentUpon>UC_NganHangDeThi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_NopBai.resx">
+      <DependentUpon>UC_NopBai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_QLSinhVien.resx">
       <DependentUpon>UC_QLSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_QuanLyBaiThi.resx">
       <DependentUpon>UC_QuanLyBaiThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ThiTracNghiem.resx">
+      <DependentUpon>UC_ThiTracNghiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UKQThiTheoLop.resx">
       <DependentUpon>UKQThiTheoLop.cs</DependentUpon>
@@ -284,17 +269,8 @@
     <EmbeddedResource Include="UKQThiTheoSV.resx">
       <DependentUpon>UKQThiTheoSV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_MainForm_GV.resx">
-      <DependentUpon>Form_MainForm_GV.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_MainForm_SV.resx">
       <DependentUpon>Form_MainForm_SV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_NganHangCauHoi.resx">
-      <DependentUpon>Form_NganHangCauHoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_NganHangDeThi.resx">
-      <DependentUpon>Form_NganHangDeThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_NopBai.resx">
       <DependentUpon>Form_NopBai.cs</DependentUpon>
@@ -308,9 +284,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form_QuanLyBaiThi.resx">
-      <DependentUpon>Form_QuanLyBaiThi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="rptChiTietBaiLam.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>

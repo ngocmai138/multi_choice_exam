@@ -39,8 +39,6 @@ namespace QuanLyThiTracNghiem
             if(e.RowIndex >= 0)
             {
                 string maKQ = dtgvDSBL.SelectedRows[0].Cells["maKQ"].Value.ToString();
-                Form_XemLaiChiTietBaiLam xemCT = new Form_XemLaiChiTietBaiLam(this,maKQ);
-                xemCT.Show();
                 this.Hide();
             }
 

@@ -13,8 +13,8 @@ namespace QuanLyThiTracNghiem
     public partial class Form_XemLaiChiTietBaiLam : Form
     {
         private String maKQ;
-        Form_DanhSachBaiLam dsbl;
-        public Form_XemLaiChiTietBaiLam(Form_DanhSachBaiLam dsbl,String maKQ)
+        UC_DanhSachBaiLam dsbl;
+        public Form_XemLaiChiTietBaiLam(UC_DanhSachBaiLam dsbl,String maKQ)
         {
             InitializeComponent();
             this.maKQ = maKQ;
