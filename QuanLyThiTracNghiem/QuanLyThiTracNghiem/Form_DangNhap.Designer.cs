@@ -53,7 +53,7 @@
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(262, 26);
             this.txtTenDN.TabIndex = 1;
-            this.txtTenDN.Text = "sv0001";
+            this.txtTenDN.Text = "gv0001";
             // 
             // lbPass
             // 

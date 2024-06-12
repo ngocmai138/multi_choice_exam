@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +19,17 @@ namespace QuanLyThiTracNghiem
         public void ThongKeDTBTheoLop(DataGridView dtg, string maLop)
         {
             dtg.DataSource = DAO_ThongKe.Instance.ThongKeDTBTheoLop(maLop);
+            /*  DataTable dt =  DAO_ThongKe.Instance.ThongKeDTBTheoLop(maLop);
+              ReportDataSource rds = new ReportDataSource();
+              rds.Name = "ds_ThongKeDTB";
+              rds.Value = dt;
+              rpv.Visible = true;
+              rpv.LocalReport.ReportPath = "prt_ThongKeDTBTheoLop.rdlc";
+              rpv.LocalReport.DataSources.Clear();
+              rpv.LocalReport.DataSources.Add(rds);
+              ReportParameter para = new ReportParameter("maLop",maLop);
+              rpv.LocalReport.SetParameters(para);
+              rpv.RefreshReport();*/
         }
         public void TyLeDatTruotTheoLop(DataGridView dtg, string maLop, int diemTruot)
         {

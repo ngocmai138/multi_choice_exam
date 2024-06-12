@@ -52,7 +52,7 @@ namespace QuanLyThiTracNghiem
 
         private void btnTK_NHCH_Click(object sender, EventArgs e)
         {
-            UThongKe_NHCH uc = new UThongKe_NHCH();
+            UThongKe_NHCH2 uc = new UThongKe_NHCH2();
             addUserControl(uc);
         }
     }

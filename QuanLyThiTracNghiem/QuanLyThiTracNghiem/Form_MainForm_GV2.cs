@@ -41,7 +41,7 @@ namespace QuanLyThiTracNghiem
 
         private void quảnLýĐềThiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UC_NganHangDeThi uc = new UC_NganHangDeThi();
+            UC_QuanLyDeThi uc = new UC_QuanLyDeThi();
             addUserControl(uc);
         }
 
