@@ -17,11 +17,11 @@ namespace QuanLyThiTracNghiem
             DataTable data = DAO_SinhVien.Instance.XemDSSV();
             dtg.DataSource = data;
             dtg.Columns[0].ReadOnly = true;
-            dtg.Columns[0].Width = 50;
             dtg.Columns[1].ReadOnly = true;
-            dtg.Columns[1].Width = 100;
             dtg.Columns[2].ReadOnly = true;
-            dtg.Columns[2].Width = 50;
+         /*   dtg.Columns[0].Width = 50;
+            dtg.Columns[1].Width = 100;
+            dtg.Columns[2].Width = 50;*/
         }
         public void HienThiThongTinSV(DataGridView dtgDSSV, DataGridView dtgChiTiet, Label lbMaSV, Label lbTenSV, Label lbMaLop)
         {
@@ -33,9 +33,9 @@ namespace QuanLyThiTracNghiem
                 dtgChiTiet.Columns[0].Visible = false;
                 dtgChiTiet.Columns[1].Visible = false;
                 dtgChiTiet.Columns[2].Visible = false;
-                dtgChiTiet.Columns[3].Width = 50;
+               /* dtgChiTiet.Columns[3].Width = 50;
                 dtgChiTiet.Columns[4].Width = 50;
-                dtgChiTiet.Columns[6].Width = 50;
+                dtgChiTiet.Columns[6].Width = 50;*/
                 lbMaSV.Text = maSV;
                 lbMaSV.Visible = true;
                 lbTenSV.Text = dtgDSSV.SelectedRows[0].Cells[1].Value.ToString();

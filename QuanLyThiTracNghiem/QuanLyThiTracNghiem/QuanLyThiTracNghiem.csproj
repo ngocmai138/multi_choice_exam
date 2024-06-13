@@ -112,6 +112,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ds_ThongKeNHCH.xsd</DependentUpon>
     </Compile>
+    <Compile Include="NganHangCauHoiDataSet5.cs">
+      <DependentUpon>NganHangCauHoiDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NganHangCauHoiDataSet5.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,6 +125,12 @@
     </Compile>
     <Compile Include="UC_BaoCaoThongKe.Designer.cs">
       <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ChiTietBaiLam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ChiTietBaiLam.Designer.cs">
+      <DependentUpon>UC_ChiTietBaiLam.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_KetQuaThi.cs">
       <SubType>UserControl</SubType>
@@ -164,12 +173,6 @@
     </Compile>
     <Compile Include="UC_LamBaiThi.Designer.cs">
       <DependentUpon>UC_LamBaiThi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UKQThiTheoLop.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UKQThiTheoLop.Designer.cs">
-      <DependentUpon>UKQThiTheoLop.cs</DependentUpon>
     </Compile>
     <Compile Include="UKQThiTheoLop2.cs">
       <SubType>UserControl</SubType>
@@ -243,6 +246,9 @@
     <EmbeddedResource Include="UC_BaoCaoThongKe.resx">
       <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_ChiTietBaiLam.resx">
+      <DependentUpon>UC_ChiTietBaiLam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_KetQuaThi.resx">
       <DependentUpon>UC_KetQuaThi.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,9 +269,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_LamBaiThi.resx">
       <DependentUpon>UC_LamBaiThi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UKQThiTheoLop.resx">
-      <DependentUpon>UKQThiTheoLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UKQThiTheoLop2.resx">
       <DependentUpon>UKQThiTheoLop2.cs</DependentUpon>

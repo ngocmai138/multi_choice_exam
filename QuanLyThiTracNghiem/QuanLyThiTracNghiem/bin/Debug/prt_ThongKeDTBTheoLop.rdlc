@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>95c75025-b176-42af-ad34-c4ecb45dafcd</rd:DataSourceID>
+      <rd:DataSourceID>1ffaaf01-579c-4b72-b9fe-24f62dcfcbf2</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -17,15 +17,15 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Mã sinh viên">
+        <Field Name="Ma_sinh_vien">
           <DataField>Mã sinh viên</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Tên sinh viên">
+        <Field Name="Ten_sinh_vien">
           <DataField>Tên sinh viên</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Điểm trung bình">
+        <Field Name="Diem_trung_binh">
           <DataField>Điểm trung bình</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
@@ -50,32 +50,32 @@
                 <ChartMember>
                   <Group Name="Chart2_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Mã sinh viên.Value</GroupExpression>
+                      <GroupExpression>=Fields!Ma_sinh_vien.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Mã sinh viên.Value</Value>
+                      <Value>=Fields!Ma_sinh_vien.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Mã sinh viên.Value</Label>
+                  <Label>=Fields!Ma_sinh_vien.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label />
+                  <Label>Diem trung binh</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Điểmtrungbình">
+                <ChartSeries Name="Diem_trung_binh">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Điểm trung bình.Value)</Y>
+                        <Y>=Sum(Fields!Diem_trung_binh.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -87,7 +87,6 @@
                       <DataElementOutput>Output</DataElementOutput>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Line</Type>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -360,7 +359,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Thống kê điểm trung bình của lớp </Caption>
+                <Caption>Thống kê điểm trung bình của học sinh theo Lớp</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -390,10 +389,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>ds_ThongKeDTB</DataSetName>
-            <Top>0.12722in</Top>
-            <Left>0.34944in</Left>
-            <Height>2.39583in</Height>
-            <Width>6.96528in</Width>
+            <Top>0.28in</Top>
+            <Left>0.31944in</Left>
+            <Height>2.42361in</Height>
+            <Width>5.8425in</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -404,10 +403,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>2.65278in</Height>
+        <Height>2.99528in</Height>
         <Style />
       </Body>
-      <Width>7.5625in</Width>
+      <Width>6.5in</Width>
       <Page>
         <PageHeader>
           <Height>1in</Height>
@@ -430,7 +429,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.20486in</Top>
-              <Left>0.19444in</Left>
+              <Left>0.31944in</Left>
               <Height>0.25in</Height>
               <Width>1.72222in</Width>
               <Style>
@@ -450,7 +449,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>THỐNG KÊ ĐIỂM TRUNG BÌNH LỚP </Value>
+                      <Value>ĐIỂM TRUNG BÌNH CỦA </Value>
                       <Style>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -470,10 +469,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox51</rd:DefaultName>
-              <Top>0.625in</Top>
-              <Left>1.64584in</Left>
-              <Height>0.30556in</Height>
-              <Width>4.5625in</Width>
+              <Top>0.54513in</Top>
+              <Left>1.38889in</Left>
+              <Height>0.31944in</Height>
+              <Width>4.11111in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -522,5 +521,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>67059afd-f8c8-4649-b635-161aba3b6ce2</rd:ReportID>
+  <rd:ReportID>6991d41d-a0bb-40dd-b6a7-ed0624705944</rd:ReportID>
 </Report>

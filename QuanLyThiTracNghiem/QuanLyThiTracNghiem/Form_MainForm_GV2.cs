@@ -29,36 +29,50 @@ namespace QuanLyThiTracNghiem
         }
         private void ngânHàngCâuHỏiToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ResetMenuItemColor();
+            ngânHàngCâuHỏiToolStripMenuItem.BackColor = Color.LightBlue;
             UC_NganHangCauHoi ucNHCH = new UC_NganHangCauHoi(); ;
             addUserControl(ucNHCH);
         }
 
         private void quảnLýBàiThiToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ResetMenuItemColor();
+            quảnLýBàiThiToolStripMenuItem.BackColor = Color.LightBlue;
             UC_QuanLyBaiThi uc = new UC_QuanLyBaiThi(tenDN);
             addUserControl(uc);
         }
 
         private void quảnLýĐềThiToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ResetMenuItemColor();
+            quảnLýĐềThiToolStripMenuItem.BackColor = Color.LightBlue;
             UC_QuanLyDeThi uc = new UC_QuanLyDeThi();
             addUserControl(uc);
         }
 
         private void quảnLýSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ResetMenuItemColor();
+            quảnLýSinhViênToolStripMenuItem.BackColor = Color.LightBlue;
             UC_QLSinhVien uc = new UC_QLSinhVien();
             addUserControl(uc);
         }
 
         private void sinhViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ResetMenuItemColor();
+            sinhViênToolStripMenuItem.BackColor = Color.LightBlue;
+            báoCáoThốngKêToolStripMenuItem.BackColor = Color.LightBlue;
             UC_BaoCaoThongKe uc = new UC_BaoCaoThongKe("SV");
             addUserControl(uc);
         }
 
         private void ngânHàngCâuHỏiToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            ResetMenuItemColor() ;
+            ngânHàngCâuHỏiToolStripMenuItem1 .BackColor = Color.LightBlue;
+            báoCáoThốngKêToolStripMenuItem.BackColor = Color.LightBlue;
             UC_BaoCaoThongKe uc = new UC_BaoCaoThongKe("NHCH");
             addUserControl(uc);
         }
@@ -71,8 +85,26 @@ namespace QuanLyThiTracNghiem
 
         private void theoLớpToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ResetMenuItemColor();
+            theoLớpToolStripMenuItem.BackColor = Color.LightBlue;
+            báoCáoThốngKêToolStripMenuItem.BackColor = Color.LightBlue;
             UC_BaoCaoThongKe uc = new UC_BaoCaoThongKe("Lop");
             addUserControl(uc);
+        }
+
+        private void ResetMenuItemColor()
+        {
+            foreach(ToolStripMenuItem menuItem in menuStrip1.Items)
+            {
+                if (menuItem.HasDropDownItems)
+                {
+                    foreach(ToolStripMenuItem subItem in menuItem.DropDownItems)
+                    {
+                        subItem.BackColor = SystemColors.Control;
+                    }
+                }
+                menuItem.BackColor = SystemColors.Control;
+            }
         }
     }
 }

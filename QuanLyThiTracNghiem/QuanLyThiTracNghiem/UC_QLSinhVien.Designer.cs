@@ -147,6 +147,7 @@
             // 
             // dtgChiTiet
             // 
+            this.dtgChiTiet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgChiTiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgChiTiet.Location = new System.Drawing.Point(382, 184);
             this.dtgChiTiet.Name = "dtgChiTiet";
@@ -158,6 +159,7 @@
             // 
             // dtgDSSV
             // 
+            this.dtgDSSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgDSSV.Location = new System.Drawing.Point(21, 66);
             this.dtgDSSV.Name = "dtgDSSV";

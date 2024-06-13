@@ -24,11 +24,10 @@ namespace QuanLyThiTracNghiem
                 return instance;
             }
         }
-        public DTO_SinhVien DangNhap(DTO_SinhVien sv, string maSV)
+        public DTO_SinhVien DangNhap(string maSV)
         {
             List<object> info = DAO_ThiTN.Instance.XemSV(maSV);
-            sv = new DTO_SinhVien();
-            sv.MaSV = maSV;
+            DTO_SinhVien sv = new DTO_SinhVien{MaSV = maSV};
             if (info.Count >= 2)
             {
                 sv.TenSV = (string)info[0];
@@ -39,11 +38,6 @@ namespace QuanLyThiTracNghiem
                 MessageBox.Show("Sinh viên thiếu thông tin");
             }
             return sv;
-        }
-        public string MaDe()
-        {
-            string maDe = "";
-            return maDe;
         }
         public DTO_DeThi DeThi()
         {
@@ -220,7 +214,8 @@ namespace QuanLyThiTracNghiem
         
         public void ChiTietBaiLam(DataGridView dtgv, String maKQ)
         {
-            DataTable data = DAO_ThiTN.Instance.XemChiTietBaiLam(maKQ);
+            //  DataTable data = DAO_ThiTN.Instance.XemChiTietBaiLam(maKQ);
+            DataTable data = DAO_ThiTN.Instance.XemLaiChiTietBaiLam(maKQ);
             dtgv.DataSource = data;
         }
 

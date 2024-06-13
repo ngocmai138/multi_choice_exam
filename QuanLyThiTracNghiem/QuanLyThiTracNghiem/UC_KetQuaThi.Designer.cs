@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnMain = new System.Windows.Forms.Panel();
             this.dtgvDSBL = new System.Windows.Forms.DataGridView();
-            this.panel1.SuspendLayout();
+            this.pnMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDSBL)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnMain
             // 
-            this.panel1.Controls.Add(this.dtgvDSBL);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1166, 585);
-            this.panel1.TabIndex = 0;
+            this.pnMain.Controls.Add(this.dtgvDSBL);
+            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain.Location = new System.Drawing.Point(0, 0);
+            this.pnMain.Name = "pnMain";
+            this.pnMain.Size = new System.Drawing.Size(1166, 585);
+            this.pnMain.TabIndex = 0;
             // 
             // dtgvDSBL
             // 
@@ -60,11 +60,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnMain);
             this.Name = "UC_KetQuaThi";
             this.Size = new System.Drawing.Size(1166, 585);
             this.Load += new System.EventHandler(this.UC_DanhSachBaiLam_Load);
-            this.panel1.ResumeLayout(false);
+            this.pnMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDSBL)).EndInit();
             this.ResumeLayout(false);
 
@@ -72,7 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnMain;
         private System.Windows.Forms.DataGridView dtgvDSBL;
     }
 }

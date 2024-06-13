@@ -22,7 +22,7 @@ namespace QuanLyThiTracNghiem
         public UC_LamBaiThi(string maSV)
         {
             InitializeComponent();
-            this.sv = BUS_ThiTN.Instance.DangNhap(sv, maSV);
+            this.sv = BUS_ThiTN.Instance.DangNhap(maSV);
             this.de = BUS_ThiTN.Instance.DeThi();
             this.baiThi = BUS_ThiTN.Instance.TaoBaiThi(maSV, de.MaDe);
             this.DSCauHoi = de.CauHois;

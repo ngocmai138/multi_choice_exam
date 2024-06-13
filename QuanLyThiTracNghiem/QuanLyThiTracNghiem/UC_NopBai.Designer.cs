@@ -53,6 +53,7 @@
             // 
             this.dtgvChiTietBaiLam.AllowUserToAddRows = false;
             this.dtgvChiTietBaiLam.AllowUserToDeleteRows = false;
+            this.dtgvChiTietBaiLam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvChiTietBaiLam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvChiTietBaiLam.Location = new System.Drawing.Point(28, 169);
             this.dtgvChiTietBaiLam.Name = "dtgvChiTietBaiLam";

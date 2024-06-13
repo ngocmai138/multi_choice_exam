@@ -18,7 +18,13 @@ namespace QuanLyThiTracNghiem
             InitializeComponent();
             this.maSV = maSV;
         }
-
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            pnMain.Controls.Clear();
+            pnMain.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
         private void UC_DanhSachBaiLam_Load(object sender, EventArgs e)
         {
             BUS_ThiTN.Instance.DanhSachBaiLam(dtgvDSBL, maSV);

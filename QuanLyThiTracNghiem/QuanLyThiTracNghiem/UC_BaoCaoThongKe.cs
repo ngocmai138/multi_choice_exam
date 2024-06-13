@@ -40,7 +40,7 @@ namespace QuanLyThiTracNghiem
         }
         private void btnKQTheoLop_Click(object sender, EventArgs e)
         {
-            UKQThiTheoLop uc = new UKQThiTheoLop();
+            UKQThiTheoLop2 uc = new UKQThiTheoLop2();
             addUserControl(uc);
         }
 

@@ -22,7 +22,12 @@ namespace QuanLyThiTracNghiem
 
         private void btnXemTK_Click(object sender, EventArgs e)
         {
-           // BUS_ThongKe.Instance.ThongKeDTBTheoLop(rpvDiemTB, cbbMaLop.Text);
+            BUS_ThongKe.Instance.ThongKeDTBTheoLop(rpvDiemTB, cbbMaLop.Text);
+        }
+
+        private void btnTyLeDoTruot_Click(object sender, EventArgs e)
+        {
+            BUS_ThongKe.Instance.TyLeDatTruotTheoLop(dtgTyLeDoTruot, cbbMaLop.Text, Int32.Parse(cbbDiemTruot.Text));
         }
     }
 }

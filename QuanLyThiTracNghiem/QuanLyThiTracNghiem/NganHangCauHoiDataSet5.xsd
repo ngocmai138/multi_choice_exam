@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="XemDTBLopTableAdapter" GeneratorDataComponentClassName="XemDTBLopTableAdapter" Name="XemDTBLop" UserDataComponentName="XemDTBLopTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="NganHangCauHoiConnectionString (Settings)" DbObjectName="NganHangCauHoi.dbo.XemDTBLop" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="NganHangCauHoiConnectionString (Settings)" DbObjectName="NganHangCauHoi.dbo.XemDTBLop" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.XemDTBLop</CommandText>
@@ -22,9 +22,9 @@
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="Mã sinh viên" DataSetColumn="Mã sinh viên" />
-              <Mapping SourceColumn="Tên sinh viên" DataSetColumn="Tên sinh viên" />
-              <Mapping SourceColumn="Điểm trung bình" DataSetColumn="Điểm trung bình" />
+              <Mapping SourceColumn="Mã sinh viên" DataSetColumn="Ma_sinh_vien" />
+              <Mapping SourceColumn="Tên sinh viên" DataSetColumn="Ten_sinh_vien" />
+              <Mapping SourceColumn="Điểm trung bình" DataSetColumn="Diem_trung_binh" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -36,24 +36,24 @@
   <xs:element name="NganHangCauHoiDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="NganHangCauHoiDataSet5" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="NganHangCauHoiDataSet5">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="XemDTBLop" msprop:Generator_RowClassName="XemDTBLopRow" msprop:Generator_RowEvHandlerName="XemDTBLopRowChangeEventHandler" msprop:Generator_RowDeletedName="XemDTBLopRowDeleted" msprop:Generator_RowDeletingName="XemDTBLopRowDeleting" msprop:Generator_RowEvArgName="XemDTBLopRowChangeEvent" msprop:Generator_TablePropName="XemDTBLop" msprop:Generator_RowChangedName="XemDTBLopRowChanged" msprop:Generator_UserTableName="XemDTBLop" msprop:Generator_RowChangingName="XemDTBLopRowChanging" msprop:Generator_TableClassName="XemDTBLopDataTable" msprop:Generator_TableVarName="tableXemDTBLop">
+        <xs:element name="XemDTBLop" msprop:Generator_RowEvHandlerName="XemDTBLopRowChangeEventHandler" msprop:Generator_RowDeletedName="XemDTBLopRowDeleted" msprop:Generator_RowDeletingName="XemDTBLopRowDeleting" msprop:Generator_RowEvArgName="XemDTBLopRowChangeEvent" msprop:Generator_TablePropName="XemDTBLop" msprop:Generator_RowChangedName="XemDTBLopRowChanged" msprop:Generator_UserTableName="XemDTBLop" msprop:Generator_RowChangingName="XemDTBLopRowChanging" msprop:Generator_RowClassName="XemDTBLopRow" msprop:Generator_TableClassName="XemDTBLopDataTable" msprop:Generator_TableVarName="tableXemDTBLop">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Mã_x0020_sinh_x0020_viên" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Mã sinh viên" msprop:Generator_ColumnPropNameInTable="Mã_sinh_viênColumn" msprop:Generator_ColumnPropNameInRow="Mã_sinh_viên" msprop:Generator_ColumnVarNameInTable="columnMã_sinh_viên" minOccurs="0">
+              <xs:element name="Ma_sinh_vien" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="Ma_sinh_vienColumn" msprop:Generator_ColumnPropNameInRow="Ma_sinh_vien" msprop:Generator_UserColumnName="Ma_sinh_vien" msprop:Generator_ColumnVarNameInTable="columnMa_sinh_vien" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="6" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Tên_x0020_sinh_x0020_viên" msprop:Generator_UserColumnName="Tên sinh viên" msprop:Generator_ColumnPropNameInTable="Tên_sinh_viênColumn" msprop:Generator_ColumnPropNameInRow="Tên_sinh_viên" msprop:Generator_ColumnVarNameInTable="columnTên_sinh_viên" minOccurs="0">
+              <xs:element name="Ten_sinh_vien" msprop:Generator_ColumnPropNameInTable="Ten_sinh_vienColumn" msprop:Generator_ColumnPropNameInRow="Ten_sinh_vien" msprop:Generator_UserColumnName="Ten_sinh_vien" msprop:Generator_ColumnVarNameInTable="columnTen_sinh_vien" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Điểm_x0020_trung_x0020_bình" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Điểm trung bình" msprop:Generator_ColumnPropNameInTable="Điểm_trung_bìnhColumn" msprop:Generator_ColumnPropNameInRow="Điểm_trung_bình" msprop:Generator_ColumnVarNameInTable="columnĐiểm_trung_bình" type="xs:double" minOccurs="0" />
+              <xs:element name="Diem_trung_binh" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="Diem_trung_binhColumn" msprop:Generator_ColumnPropNameInRow="Diem_trung_binh" msprop:Generator_UserColumnName="Diem_trung_binh" msprop:Generator_ColumnVarNameInTable="columnDiem_trung_binh" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -61,7 +61,7 @@
     </xs:complexType>
     <xs:unique name="Constraint1">
       <xs:selector xpath=".//mstns:XemDTBLop" />
-      <xs:field xpath="mstns:Mã_x0020_sinh_x0020_viên" />
+      <xs:field xpath="mstns:Ma_sinh_vien" />
     </xs:unique>
   </xs:element>
 </xs:schema>

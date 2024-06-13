@@ -279,11 +279,11 @@ namespace QuanLyThiTracNghiem {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class XemDTBLopDataTable : global::System.Data.TypedTableBase<XemDTBLopRow> {
             
-            private global::System.Data.DataColumn columnMã_sinh_viên;
+            private global::System.Data.DataColumn columnMa_sinh_vien;
             
-            private global::System.Data.DataColumn columnTên_sinh_viên;
+            private global::System.Data.DataColumn columnTen_sinh_vien;
             
-            private global::System.Data.DataColumn columnĐiểm_trung_bình;
+            private global::System.Data.DataColumn columnDiem_trung_binh;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -320,25 +320,25 @@ namespace QuanLyThiTracNghiem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Mã_sinh_viênColumn {
+            public global::System.Data.DataColumn Ma_sinh_vienColumn {
                 get {
-                    return this.columnMã_sinh_viên;
+                    return this.columnMa_sinh_vien;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Tên_sinh_viênColumn {
+            public global::System.Data.DataColumn Ten_sinh_vienColumn {
                 get {
-                    return this.columnTên_sinh_viên;
+                    return this.columnTen_sinh_vien;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Điểm_trung_bìnhColumn {
+            public global::System.Data.DataColumn Diem_trung_binhColumn {
                 get {
-                    return this.columnĐiểm_trung_bình;
+                    return this.columnDiem_trung_binh;
                 }
             }
             
@@ -379,12 +379,12 @@ namespace QuanLyThiTracNghiem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public XemDTBLopRow AddXemDTBLopRow(string Mã_sinh_viên, string Tên_sinh_viên, double Điểm_trung_bình) {
+            public XemDTBLopRow AddXemDTBLopRow(string Ma_sinh_vien, string Ten_sinh_vien, double Diem_trung_binh) {
                 XemDTBLopRow rowXemDTBLopRow = ((XemDTBLopRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Mã_sinh_viên,
-                        Tên_sinh_viên,
-                        Điểm_trung_bình};
+                        Ma_sinh_vien,
+                        Ten_sinh_vien,
+                        Diem_trung_binh};
                 rowXemDTBLopRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowXemDTBLopRow);
                 return rowXemDTBLopRow;
@@ -407,27 +407,27 @@ namespace QuanLyThiTracNghiem {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnMã_sinh_viên = base.Columns["Mã sinh viên"];
-                this.columnTên_sinh_viên = base.Columns["Tên sinh viên"];
-                this.columnĐiểm_trung_bình = base.Columns["Điểm trung bình"];
+                this.columnMa_sinh_vien = base.Columns["Ma_sinh_vien"];
+                this.columnTen_sinh_vien = base.Columns["Ten_sinh_vien"];
+                this.columnDiem_trung_binh = base.Columns["Diem_trung_binh"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnMã_sinh_viên = new global::System.Data.DataColumn("Mã sinh viên", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMã_sinh_viên);
-                this.columnTên_sinh_viên = new global::System.Data.DataColumn("Tên sinh viên", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTên_sinh_viên);
-                this.columnĐiểm_trung_bình = new global::System.Data.DataColumn("Điểm trung bình", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnĐiểm_trung_bình);
+                this.columnMa_sinh_vien = new global::System.Data.DataColumn("Ma_sinh_vien", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMa_sinh_vien);
+                this.columnTen_sinh_vien = new global::System.Data.DataColumn("Ten_sinh_vien", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTen_sinh_vien);
+                this.columnDiem_trung_binh = new global::System.Data.DataColumn("Diem_trung_binh", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDiem_trung_binh);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnMã_sinh_viên}, false));
-                this.columnMã_sinh_viên.ReadOnly = true;
-                this.columnMã_sinh_viên.Unique = true;
-                this.columnMã_sinh_viên.MaxLength = 6;
-                this.columnTên_sinh_viên.MaxLength = 50;
-                this.columnĐiểm_trung_bình.ReadOnly = true;
+                                this.columnMa_sinh_vien}, false));
+                this.columnMa_sinh_vien.ReadOnly = true;
+                this.columnMa_sinh_vien.Unique = true;
+                this.columnMa_sinh_vien.MaxLength = 6;
+                this.columnTen_sinh_vien.MaxLength = 50;
+                this.columnDiem_trung_binh.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -570,86 +570,86 @@ namespace QuanLyThiTracNghiem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Mã_sinh_viên {
+            public string Ma_sinh_vien {
                 get {
                     try {
-                        return ((string)(this[this.tableXemDTBLop.Mã_sinh_viênColumn]));
+                        return ((string)(this[this.tableXemDTBLop.Ma_sinh_vienColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Mã sinh viên\' in table \'XemDTBLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Ma_sinh_vien\' in table \'XemDTBLop\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableXemDTBLop.Mã_sinh_viênColumn] = value;
+                    this[this.tableXemDTBLop.Ma_sinh_vienColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Tên_sinh_viên {
+            public string Ten_sinh_vien {
                 get {
                     try {
-                        return ((string)(this[this.tableXemDTBLop.Tên_sinh_viênColumn]));
+                        return ((string)(this[this.tableXemDTBLop.Ten_sinh_vienColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Tên sinh viên\' in table \'XemDTBLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Ten_sinh_vien\' in table \'XemDTBLop\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableXemDTBLop.Tên_sinh_viênColumn] = value;
+                    this[this.tableXemDTBLop.Ten_sinh_vienColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Điểm_trung_bình {
+            public double Diem_trung_binh {
                 get {
                     try {
-                        return ((double)(this[this.tableXemDTBLop.Điểm_trung_bìnhColumn]));
+                        return ((double)(this[this.tableXemDTBLop.Diem_trung_binhColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Điểm trung bình\' in table \'XemDTBLop\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Diem_trung_binh\' in table \'XemDTBLop\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableXemDTBLop.Điểm_trung_bìnhColumn] = value;
+                    this[this.tableXemDTBLop.Diem_trung_binhColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMã_sinh_viênNull() {
-                return this.IsNull(this.tableXemDTBLop.Mã_sinh_viênColumn);
+            public bool IsMa_sinh_vienNull() {
+                return this.IsNull(this.tableXemDTBLop.Ma_sinh_vienColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMã_sinh_viênNull() {
-                this[this.tableXemDTBLop.Mã_sinh_viênColumn] = global::System.Convert.DBNull;
+            public void SetMa_sinh_vienNull() {
+                this[this.tableXemDTBLop.Ma_sinh_vienColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTên_sinh_viênNull() {
-                return this.IsNull(this.tableXemDTBLop.Tên_sinh_viênColumn);
+            public bool IsTen_sinh_vienNull() {
+                return this.IsNull(this.tableXemDTBLop.Ten_sinh_vienColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTên_sinh_viênNull() {
-                this[this.tableXemDTBLop.Tên_sinh_viênColumn] = global::System.Convert.DBNull;
+            public void SetTen_sinh_vienNull() {
+                this[this.tableXemDTBLop.Ten_sinh_vienColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsĐiểm_trung_bìnhNull() {
-                return this.IsNull(this.tableXemDTBLop.Điểm_trung_bìnhColumn);
+            public bool IsDiem_trung_binhNull() {
+                return this.IsNull(this.tableXemDTBLop.Diem_trung_binhColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetĐiểm_trung_bìnhNull() {
-                this[this.tableXemDTBLop.Điểm_trung_bìnhColumn] = global::System.Convert.DBNull;
+            public void SetDiem_trung_binhNull() {
+                this[this.tableXemDTBLop.Diem_trung_binhColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -812,9 +812,9 @@ namespace QuanLyThiTracNghiem.NganHangCauHoiDataSet5TableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "XemDTBLop";
-            tableMapping.ColumnMappings.Add("Mã sinh viên", "Mã sinh viên");
-            tableMapping.ColumnMappings.Add("Tên sinh viên", "Tên sinh viên");
-            tableMapping.ColumnMappings.Add("Điểm trung bình", "Điểm trung bình");
+            tableMapping.ColumnMappings.Add("Mã sinh viên", "Ma_sinh_vien");
+            tableMapping.ColumnMappings.Add("Tên sinh viên", "Ten_sinh_vien");
+            tableMapping.ColumnMappings.Add("Điểm trung bình", "Diem_trung_binh");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

@@ -69,7 +69,6 @@ F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\bin
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\bin\Debug\rptChiTietBaiLam.rdlc
-F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UKQThiTheoLop.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UKQThiTheoSV.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyTh.2DC55A70.Up2Date
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.Form_ChiTietBaiLam.resources
@@ -86,3 +85,4 @@ F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UKQThiTheoLop2.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_KetQuaThi.resources
 F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_LamBaiThi.resources
+F:\Downloads\Github projects\ASP.NET\QuanLyThiTracNghiem\QuanLyThiTracNghiem\obj\Debug\QuanLyThiTracNghiem.UC_ChiTietBaiLam.resources

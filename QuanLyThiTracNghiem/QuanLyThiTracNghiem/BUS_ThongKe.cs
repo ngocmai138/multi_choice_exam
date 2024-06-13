@@ -16,20 +16,20 @@ namespace QuanLyThiTracNghiem
                 if(instance == null) { instance = new BUS_ThongKe();}
                 return instance; } }
 
-        public void ThongKeDTBTheoLop(DataGridView dtg, string maLop)
+        public void ThongKeDTBTheoLop(ReportViewer rpv, string maLop)
         {
-            dtg.DataSource = DAO_ThongKe.Instance.ThongKeDTBTheoLop(maLop);
-            /*  DataTable dt =  DAO_ThongKe.Instance.ThongKeDTBTheoLop(maLop);
-              ReportDataSource rds = new ReportDataSource();
-              rds.Name = "ds_ThongKeDTB";
-              rds.Value = dt;
-              rpv.Visible = true;
-              rpv.LocalReport.ReportPath = "prt_ThongKeDTBTheoLop.rdlc";
-              rpv.LocalReport.DataSources.Clear();
-              rpv.LocalReport.DataSources.Add(rds);
-              ReportParameter para = new ReportParameter("maLop",maLop);
-              rpv.LocalReport.SetParameters(para);
-              rpv.RefreshReport();*/
+            // dtg.DataSource = DAO_ThongKe.Instance.ThongKeDTBTheoLop(maLop);
+            DataTable dt = DAO_ThongKe.Instance.ThongKeDTBTheoLop(maLop);
+            ReportDataSource rds = new ReportDataSource();
+            rds.Name = "ds_ThongKeDTB";
+            rds.Value = dt;
+            rpv.Visible = true;
+            rpv.LocalReport.ReportPath = "prt_ThongKeDTBTheoLop.rdlc";
+            rpv.LocalReport.DataSources.Clear();
+            rpv.LocalReport.DataSources.Add(rds);
+            ReportParameter para = new ReportParameter("maLop", maLop);
+            rpv.LocalReport.SetParameters(para);
+            rpv.RefreshReport();
         }
         public void TyLeDatTruotTheoLop(DataGridView dtg, string maLop, int diemTruot)
         {
