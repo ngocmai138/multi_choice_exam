@@ -60,6 +60,7 @@
             // 
             // dtgCauHoi
             // 
+            this.dtgCauHoi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgCauHoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgCauHoi.Location = new System.Drawing.Point(309, 84);
             this.dtgCauHoi.Name = "dtgCauHoi";
@@ -70,6 +71,7 @@
             // 
             // dtgDeThi
             // 
+            this.dtgDeThi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgDeThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgDeThi.Location = new System.Drawing.Point(18, 84);
             this.dtgDeThi.Name = "dtgDeThi";
@@ -138,12 +140,12 @@
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // UC_NganHangDeThi
+            // UC_QuanLyDeThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnNHDT);
-            this.Name = "UC_NganHangDeThi";
+            this.Name = "UC_QuanLyDeThi";
             this.Size = new System.Drawing.Size(1166, 588);
             this.pnNHDT.ResumeLayout(false);
             this.pnNHDT.PerformLayout();

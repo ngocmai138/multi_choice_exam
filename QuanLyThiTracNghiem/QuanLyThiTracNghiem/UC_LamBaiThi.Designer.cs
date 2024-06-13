@@ -1,6 +1,6 @@
 ﻿namespace QuanLyThiTracNghiem
 {
-    partial class UC_ThiTracNghiem
+    partial class UC_LamBaiThi
     {
         /// <summary> 
         /// Required designer variable.

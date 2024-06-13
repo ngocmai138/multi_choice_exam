@@ -49,9 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cbbMaLop);
             this.panel1.Controls.Add(this.tabTKTheoLop);
-            this.panel1.Controls.Add(this.btnXemTK);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -61,7 +59,7 @@
             // cbbMaLop
             // 
             this.cbbMaLop.FormattingEnabled = true;
-            this.cbbMaLop.Location = new System.Drawing.Point(23, 22);
+            this.cbbMaLop.Location = new System.Drawing.Point(11, 12);
             this.cbbMaLop.Name = "cbbMaLop";
             this.cbbMaLop.Size = new System.Drawing.Size(276, 28);
             this.cbbMaLop.TabIndex = 1;
@@ -71,32 +69,34 @@
             // 
             this.tabTKTheoLop.Controls.Add(this.tabDiemTB);
             this.tabTKTheoLop.Controls.Add(this.tabTyLeDoTruot);
-            this.tabTKTheoLop.Location = new System.Drawing.Point(13, 64);
+            this.tabTKTheoLop.Location = new System.Drawing.Point(13, 22);
             this.tabTKTheoLop.Name = "tabTKTheoLop";
             this.tabTKTheoLop.SelectedIndex = 0;
-            this.tabTKTheoLop.Size = new System.Drawing.Size(1125, 388);
+            this.tabTKTheoLop.Size = new System.Drawing.Size(1125, 424);
             this.tabTKTheoLop.TabIndex = 4;
             // 
             // tabDiemTB
             // 
+            this.tabDiemTB.Controls.Add(this.cbbMaLop);
             this.tabDiemTB.Controls.Add(this.dtgDiemTB);
+            this.tabDiemTB.Controls.Add(this.btnXemTK);
             this.tabDiemTB.Location = new System.Drawing.Point(4, 29);
             this.tabDiemTB.Name = "tabDiemTB";
             this.tabDiemTB.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDiemTB.Size = new System.Drawing.Size(1117, 355);
+            this.tabDiemTB.Size = new System.Drawing.Size(1117, 391);
             this.tabDiemTB.TabIndex = 0;
             this.tabDiemTB.Text = "Điểm trung bình";
             this.tabDiemTB.UseVisualStyleBackColor = true;
             // 
             // dtgDiemTB
             // 
+            this.dtgDiemTB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgDiemTB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDiemTB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgDiemTB.Location = new System.Drawing.Point(3, 3);
+            this.dtgDiemTB.Location = new System.Drawing.Point(11, 57);
             this.dtgDiemTB.Name = "dtgDiemTB";
             this.dtgDiemTB.RowHeadersWidth = 62;
             this.dtgDiemTB.RowTemplate.Height = 28;
-            this.dtgDiemTB.Size = new System.Drawing.Size(1111, 349);
+            this.dtgDiemTB.Size = new System.Drawing.Size(1089, 295);
             this.dtgDiemTB.TabIndex = 3;
             // 
             // tabTyLeDoTruot
@@ -108,7 +108,7 @@
             this.tabTyLeDoTruot.Location = new System.Drawing.Point(4, 29);
             this.tabTyLeDoTruot.Name = "tabTyLeDoTruot";
             this.tabTyLeDoTruot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTyLeDoTruot.Size = new System.Drawing.Size(1117, 355);
+            this.tabTyLeDoTruot.Size = new System.Drawing.Size(1117, 391);
             this.tabTyLeDoTruot.TabIndex = 1;
             this.tabTyLeDoTruot.Text = "Tỷ lệ đỗ/trượt";
             this.tabTyLeDoTruot.UseVisualStyleBackColor = true;
@@ -136,6 +136,7 @@
             // 
             // dtgTyLeDoTruot
             // 
+            this.dtgTyLeDoTruot.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgTyLeDoTruot.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgTyLeDoTruot.Location = new System.Drawing.Point(11, 59);
             this.dtgTyLeDoTruot.Name = "dtgTyLeDoTruot";
@@ -165,7 +166,7 @@
             // 
             // btnXemTK
             // 
-            this.btnXemTK.Location = new System.Drawing.Point(322, 22);
+            this.btnXemTK.Location = new System.Drawing.Point(310, 12);
             this.btnXemTK.Name = "btnXemTK";
             this.btnXemTK.Size = new System.Drawing.Size(140, 30);
             this.btnXemTK.TabIndex = 2;

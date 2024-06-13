@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\uc_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\uc_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\uc_lambaithi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\uc_lambaithi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\uc_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\uc_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\form_mainform_sv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\form_mainform_sv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheolop2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheolop2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\form_mainform_sv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\form_mainform_sv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\ukqthitheolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\bus_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\bus_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|f:\\downloads\\github projects\\asp.net\\quanlythitracnghiem\\quanlythitracnghiem\\uc_lambaithi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0802FF8-4AD4-47E2-AC9F-E56AD7110BD3}|QuanLyThiTracNghiem\\QuanLyThiTracNghiem.csproj|solutionrelative:quanlythitracnghiem\\uc_lambaithi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 189,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,78 +38,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_BaoCaoThongKe.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAgwCoAAAAwAAAA",
+              "DocumentIndex": 1,
+              "Title": "Form_MainForm_SV.cs",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_MainForm_SV.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\Form_MainForm_SV.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_MainForm_SV.cs",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\Form_MainForm_SV.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:37:47.42Z",
+              "WhenOpened": "2024-06-13T02:10:32.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_BaoCaoThongKe.cs [Design]",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs [Design]",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UC_BaoCaoThongKe.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Form_MainForm_SV.cs [Design]",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_MainForm_SV.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\Form_MainForm_SV.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\Form_MainForm_SV.cs [Design]",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\Form_MainForm_SV.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:36:48.877Z",
+              "WhenOpened": "2024-06-13T02:10:13.861Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UKQThiTheoLop2.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop2.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoLop2.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop2.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoLop2.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAqwBgAAAANAAAA",
+              "DocumentIndex": 0,
+              "Title": "UC_LamBaiThi.cs",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_LamBaiThi.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UC_LamBaiThi.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_LamBaiThi.cs",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\UC_LamBaiThi.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAAAFsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:36:00.518Z",
+              "WhenOpened": "2024-06-13T02:06:17.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UKQThiTheoLop.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAyAAAA",
+              "Title": "UC_LamBaiThi.cs [Design]",
+              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_LamBaiThi.cs",
+              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UC_LamBaiThi.cs",
+              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UC_LamBaiThi.cs [Design]",
+              "RelativeToolTip": "QuanLyThiTracNghiem\\UC_LamBaiThi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:35:42.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BUS_ThongKe.cs",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\BUS_ThongKe.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAcwBIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:33:59.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UKQThiTheoLop.cs [Design]",
-              "DocumentMoniker": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "RelativeDocumentMoniker": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs",
-              "ToolTip": "F:\\Downloads\\Github projects\\ASP.NET\\QuanLyThiTracNghiem\\QuanLyThiTracNghiem\\UKQThiTheoLop.cs [Design]",
-              "RelativeToolTip": "QuanLyThiTracNghiem\\UKQThiTheoLop.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T08:33:51.754Z",
+              "WhenOpened": "2024-06-13T02:05:13.836Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -18,10 +18,10 @@ namespace QuanLyThiTracNghiem
             dtgDe.DataSource = DAO_BaiLam.Instance.XemBaiLam();
             dtgDe.RowHeadersVisible = false;
             dtgDe.AllowUserToAddRows = false;
-            dtgDe.Columns["Mã bài thi"].Width = 60;
+        /*    dtgDe.Columns["Mã bài thi"].Width = 60;
             dtgDe.Columns["Mã sinh viên"].Width = 60;
             dtgDe.Columns["Mã đề"].Width = 60;
-            dtgDe.Columns["Điểm"].Width = 60;        
+            dtgDe.Columns["Điểm"].Width = 60;   */     
         }
         public void TimKiem(Panel panelBaiThi)
         {

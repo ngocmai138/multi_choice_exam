@@ -104,6 +104,7 @@
             // 
             // dtgBaiLam
             // 
+            this.dtgBaiLam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgBaiLam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgBaiLam.Location = new System.Drawing.Point(12, 66);
             this.dtgBaiLam.Name = "dtgBaiLam";

@@ -49,6 +49,7 @@
             // 
             // dtgThongKe
             // 
+            this.dtgThongKe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgThongKe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgThongKe.Location = new System.Drawing.Point(13, 75);
             this.dtgThongKe.Name = "dtgThongKe";

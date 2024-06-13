@@ -123,11 +123,11 @@
     <Compile Include="UC_BaoCaoThongKe.Designer.cs">
       <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_DanhSachBaiLam.cs">
+    <Compile Include="UC_KetQuaThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_DanhSachBaiLam.Designer.cs">
-      <DependentUpon>UC_DanhSachBaiLam.cs</DependentUpon>
+    <Compile Include="UC_KetQuaThi.Designer.cs">
+      <DependentUpon>UC_KetQuaThi.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_NganHangCauHoi.cs">
       <SubType>UserControl</SubType>
@@ -159,11 +159,11 @@
     <Compile Include="UC_QuanLyBaiThi.Designer.cs">
       <DependentUpon>UC_QuanLyBaiThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ThiTracNghiem.cs">
+    <Compile Include="UC_LamBaiThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ThiTracNghiem.Designer.cs">
-      <DependentUpon>UC_ThiTracNghiem.cs</DependentUpon>
+    <Compile Include="UC_LamBaiThi.Designer.cs">
+      <DependentUpon>UC_LamBaiThi.cs</DependentUpon>
     </Compile>
     <Compile Include="UKQThiTheoLop.cs">
       <SubType>UserControl</SubType>
@@ -243,8 +243,8 @@
     <EmbeddedResource Include="UC_BaoCaoThongKe.resx">
       <DependentUpon>UC_BaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_DanhSachBaiLam.resx">
-      <DependentUpon>UC_DanhSachBaiLam.cs</DependentUpon>
+    <EmbeddedResource Include="UC_KetQuaThi.resx">
+      <DependentUpon>UC_KetQuaThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_NganHangCauHoi.resx">
       <DependentUpon>UC_NganHangCauHoi.cs</DependentUpon>
@@ -261,8 +261,8 @@
     <EmbeddedResource Include="UC_QuanLyBaiThi.resx">
       <DependentUpon>UC_QuanLyBaiThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ThiTracNghiem.resx">
-      <DependentUpon>UC_ThiTracNghiem.cs</DependentUpon>
+    <EmbeddedResource Include="UC_LamBaiThi.resx">
+      <DependentUpon>UC_LamBaiThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UKQThiTheoLop.resx">
       <DependentUpon>UKQThiTheoLop.cs</DependentUpon>

@@ -183,7 +183,7 @@ namespace QuanLyThiTracNghiem
                 }
             }
         }
-        public FlowLayoutPanel TaoButtonCauHoi(List<DTO_CauHoi> dsCauHoi, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, UC_ThiTracNghiem thiTracNghiem)
+        public FlowLayoutPanel TaoButtonCauHoi(List<DTO_CauHoi> dsCauHoi, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, UC_LamBaiThi thiTracNghiem)
         {
             int btnWidth = 30;
             int spacing = 5;
@@ -199,7 +199,7 @@ namespace QuanLyThiTracNghiem
             }
             return pnDSCH;
         }
-        private void Button_Click(object sender, EventArgs e, int index, List<DTO_CauHoi> dsCH, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, UC_ThiTracNghiem thiTracNghiem)
+        private void Button_Click(object sender, EventArgs e, int index, List<DTO_CauHoi> dsCH, Panel pnNoiDungCH, FlowLayoutPanel pnDSCH, UC_LamBaiThi thiTracNghiem)
         {
             Button clickedButton = (Button)sender;
             RadioButton rbDA1 = (RadioButton) pnNoiDungCH.Controls.Find("rbDA1", true)[0];

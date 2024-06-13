@@ -100,6 +100,7 @@
             // 
             // dtgDA
             // 
+            this.dtgDA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgDA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgDA.Location = new System.Drawing.Point(24, 323);
             this.dtgDA.Name = "dtgDA";
@@ -111,6 +112,7 @@
             // 
             // dtgNHCH
             // 
+            this.dtgNHCH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgNHCH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgNHCH.Location = new System.Drawing.Point(24, 76);
             this.dtgNHCH.Name = "dtgNHCH";

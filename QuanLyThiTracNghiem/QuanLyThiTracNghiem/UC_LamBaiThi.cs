@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace QuanLyThiTracNghiem
 {
-    public partial class UC_ThiTracNghiem : UserControl
+    public partial class UC_LamBaiThi : UserControl
     {
         private DTO_SinhVien sv;
         private DTO_DeThi de;
@@ -19,7 +19,7 @@ namespace QuanLyThiTracNghiem
         List<DTO_CauHoi> DSCauHoi;
         public delegate void NopBaiHandler(DTO_BaiThi baiThi, DTO_DeThi de);
         public event NopBaiHandler NopBai;
-        public UC_ThiTracNghiem(string maSV)
+        public UC_LamBaiThi(string maSV)
         {
             InitializeComponent();
             this.sv = BUS_ThiTN.Instance.DangNhap(sv, maSV);

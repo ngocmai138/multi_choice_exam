@@ -29,14 +29,14 @@ namespace QuanLyThiTracNghiem
         }
         private void làmBàiThiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UC_ThiTracNghiem uc = new UC_ThiTracNghiem(maSV);
+            UC_LamBaiThi uc = new UC_LamBaiThi(maSV);
             uc.NopBai += nopBai;
             addUserControl(uc);
         }
 
         private void kếtQuảThiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UC_DanhSachBaiLam uc = new UC_DanhSachBaiLam(maSV);
+            UC_KetQuaThi uc = new UC_KetQuaThi(maSV);
             addUserControl(uc );
         }
 

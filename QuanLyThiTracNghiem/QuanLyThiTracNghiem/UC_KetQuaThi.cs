@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QuanLyThiTracNghiem
 {
-    public partial class UC_DanhSachBaiLam : UserControl
+    public partial class UC_KetQuaThi : UserControl
     {
         String maSV;
-        public UC_DanhSachBaiLam(string maSV)
+        public UC_KetQuaThi(string maSV)
         {
             InitializeComponent();
             this.maSV = maSV;

@@ -44,21 +44,21 @@ namespace QuanLyThiTracNghiem
         public void Xem(DataGridView dtgNHCH)
         {
             dtgNHCH.DataSource = DAO_NHCH.Instance.Xem();
-            dtgNHCH.Columns["Mã câu hỏi"].ReadOnly = true;
-            dtgNHCH.Columns["Mã câu hỏi"].Width = 60;
-            dtgNHCH.Columns["Nội dung câu hỏi"].Width = 240;
             dtgNHCH.AllowUserToAddRows = false;
+            dtgNHCH.Columns["Mã câu hỏi"].ReadOnly = true;
+         /*   dtgNHCH.Columns["Mã câu hỏi"].Width = 60;
+            dtgNHCH.Columns["Nội dung câu hỏi"].Width = 240;*/
         }
         public void Xem_DA(DataGridView dtgNHCH, DataGridView dtgDA) {
             if (dtgNHCH.SelectedRows.Count > 0)
             {                
                 string maCH = dtgNHCH.SelectedRows[0].Cells["Mã câu hỏi"].Value.ToString();
                 dtgDA.DataSource = DAO_NHCH.Instance.Xem_DA(maCH);
+                dtgDA.AllowUserToAddRows=false;
                 dtgDA.Columns["Mã câu hỏi"].ReadOnly = true;
                 dtgDA.Columns["Mã đáp án"].ReadOnly = true;
-                dtgDA.Columns["Mã câu hỏi"].Width = 70;
-                dtgDA.Columns["Mã đáp án"].Width = 60;
-                dtgDA.AllowUserToAddRows=false;
+           /*     dtgDA.Columns["Mã câu hỏi"].Width = 70;
+                dtgDA.Columns["Mã đáp án"].Width = 60;*/
             }                
         }
 

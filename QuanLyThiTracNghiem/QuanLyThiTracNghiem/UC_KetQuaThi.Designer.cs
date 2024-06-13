@@ -1,6 +1,6 @@
 ﻿namespace QuanLyThiTracNghiem
 {
-    partial class UC_DanhSachBaiLam
+    partial class UC_KetQuaThi
     {
         /// <summary> 
         /// Required designer variable.
@@ -45,6 +45,7 @@
             // 
             // dtgvDSBL
             // 
+            this.dtgvDSBL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDSBL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDSBL.Location = new System.Drawing.Point(18, 21);
             this.dtgvDSBL.Name = "dtgvDSBL";
@@ -55,12 +56,12 @@
             this.dtgvDSBL.TabIndex = 2;
             this.dtgvDSBL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDSBL_CellClick);
             // 
-            // UC_DanhSachBaiLam
+            // UC_KetQuaThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "UC_DanhSachBaiLam";
+            this.Name = "UC_KetQuaThi";
             this.Size = new System.Drawing.Size(1166, 585);
             this.Load += new System.EventHandler(this.UC_DanhSachBaiLam_Load);
             this.panel1.ResumeLayout(false);
